@@ -538,6 +538,46 @@ article.recette .nutri span{background:#fff;border-radius:999px;padding:.15rem .
   .o-btn{display:none !important}
 }
 
+
+    /* Recherche : résultats triés, surlignage, propositions */
+    #resultats-recherche mark { background: #ffe38a; color: inherit; border-radius: 3px; padding: 0 .1em; }
+    #resultats-recherche .rech-titre { font-weight: 700; color: var(--teal-dark, #0f5b5a); }
+    #resultats-recherche .rech-rub { display: inline-block; font-size: .8rem; color: var(--ink-soft, #4b5b5b); margin-left: .4rem; }
+    #resultats-recherche .rech-partiel { font-size: .78rem; font-style: italic; color: var(--ink-soft, #4b5b5b); }
+    #resultats-recherche .rech-props { display: flex; flex-wrap: wrap; gap: .35rem; align-items: center; font-size: .92rem; }
+    #resultats-recherche .rech-prop { background: #e3f4f2; border-radius: 999px; padding: .2rem .65rem; color: var(--teal-dark, #0f5b5a); font-weight: 700; text-decoration: none; }
+    #resultats-recherche .rech-prop:hover, #resultats-recherche .rech-prop:focus { background: #c9ebe7; }
+    #resultats-recherche .rech-urgence { background: #fde7df; border-radius: 8px; padding: .5rem .6rem; color: #7a2416; font-weight: 600; }
+    #resultats-recherche .rech-compte { font-size: .82rem; color: var(--ink-soft, #4b5b5b); }
+
+    /* Taille maîtrisée : recherche et assistant ne couvrent pas la page */
+    #resultats-recherche { max-height: min(300px, 50vh) !important; font-size: .92rem; padding: .3rem .75rem !important; }
+    #resultats-recherche li { padding: .35rem 0 !important; }
+    #resultats-recherche .note-pieds { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; margin: .15rem 0 0 !important; font-size: .84rem; }
+    #resultats-recherche .rech-props { font-size: .86rem; }
+    .chat-panel { width: min(340px, calc(100vw - 2.2rem)); height: min(440px, calc(100vh - 8rem)); }
+    .chat-panel .chat-note { font-size: .78rem; padding: .45rem .7rem; }
+    .chat-panel #chat-log { min-height: 0; }
+    .chat-panel .chat-suggest { max-height: 4.4rem; overflow: auto; padding: .4rem .6rem; }
+    .chat-panel.reduit { height: auto; }
+    .chat-panel.reduit > :not(.chat-head) { display: none !important; }
+    .chat-head #chat-reduire { white-space: nowrap; }
+    @media (max-width: 760px) {
+      .chat-panel { right: .6rem; left: .6rem; width: auto; bottom: 4.8rem; height: min(38vh, 320px); }
+      .chat-panel.reduit { height: auto; }
+      #resultats-recherche { max-height: 45vh !important; }
+    }
+
+    @media (max-width: 760px) {
+      .chat-panel .chat-head { padding: .5rem .6rem; gap: .45rem; }
+      .chat-panel .chat-head .avatar { width: 36px; height: 36px; }
+      .chat-panel .chat-head .titre small { display: none; }
+      .chat-panel .chat-head strong { font-size: .95rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+      .chat-panel .chat-head button { padding: .25rem .5rem; font-size: .85rem; }
+      .chat-panel .chat-note { font-size: .72rem; line-height: 1.35; padding: .35rem .6rem; }
+      .chat-panel .chat-suggest { max-height: 3rem; }
+      .chat-panel #chat-form { padding: .4rem .6rem .5rem; }
+    }
 </style>
 </head>
 <body>
@@ -2118,7 +2158,7 @@ article.recette .nutri span{background:#fff;border-radius:999px;padding:.15rem .
 
     <h3>Journal des modifications</h3>
     <ol class="o-journal">
-      <li><time datetime="2026-10-10">10 octobre 2026</time> : valeurs nutritionnelles par portion pour les 25 recettes (Table Ciqual 2020) ; outils imprimables (journal de symptômes, planificateur, décryptage d’une publication) ; sections Pour les proches et Pour les professionnels ; date de mise à jour par rubrique ; avatar et illustrations allégés ; six illustrations ajoutées ; repères PNNS vérifiés sur mangerbouger.fr et les avis du HCSP (seuil de sel retiré faute de source officielle vérifiée).</li>
+      <li><time datetime="2026-10-10">10 octobre 2026</time> : valeurs nutritionnelles par portion pour les 25 recettes (Table Ciqual 2020) ; outils imprimables (journal de symptômes, planificateur, décryptage d’une publication) ; sections Pour les proches et Pour les professionnels ; date de mise à jour par rubrique ; avatar et illustrations allégés ; cinq illustrations ajoutées ; repères PNNS vérifiés sur mangerbouger.fr et les avis du HCSP (seuil de sel retiré faute de source officielle vérifiée).</li>
       <li><time datetime="2026-10-10">10 octobre 2026</time> : drainage lymphatique : formulation précisée (utile pour certaines personnes, non universel, pas d’effet volumétrique important démontré, non recommandé en routine pour le lipœdème seul selon la S2k via l’ILA, à réaliser par un praticien formé).</li>
       <li><time datetime="2026-10-10">10 octobre 2026</time> : chatbot : règles de réponse testées sur 107 questions types (rédigées par nos soins) ; urgences traitées en priorité ; réponses fondées sur des mots-clés, sans envoi de données.</li>
     </ol>
@@ -2456,6 +2496,7 @@ article.recette .nutri span{background:#fff;border-radius:999px;padding:.15rem .
   <div class="chat-head">
     <img class="avatar" src="data:image/webp;base64,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" width="192" height="192" alt="">
     <div class="titre"><strong id="chat-titre">Assistant du guide</strong><small>Automatique · sans diagnostic</small></div>
+    <button type="button" id="chat-reduire" aria-expanded="true" aria-controls="chat-panel" aria-label="Réduire l’assistant">Réduire</button>
     <button type="button" id="chat-fermer" aria-label="Fermer l’assistant">Fermer</button>
   </div>
   <p class="chat-note">Assistant automatique : il répond à partir de règles simples et renvoie vers le guide. Il ne pose pas de diagnostic, ne donne pas de conseil personnalisé et n’enregistre pas vos messages. En cas d’urgence : 15 ou 112.</p>
@@ -2685,42 +2726,218 @@ article.recette .nutri span{background:#fff;border-radius:999px;padding:.15rem .
   document.getElementById('btn-imprimer').addEventListener('click', function () { window.print(); });
   updateAlerts();
 
-  /* ---------- Recherche dans le site ---------- */
-  function norm(s) {
-    return (s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-  }
-  var input = document.getElementById('recherche-site');
-  var results = document.getElementById('resultats-recherche');
-  var index = Array.prototype.slice.call(document.querySelectorAll('section.rubrique')).map(function (sec) {
-    var h = sec.querySelector('h2');
-    return { id: sec.id, titre: h ? h.textContent.trim() : sec.id, texte: sec.textContent.replace(/\s+/g, ' ') };
-  });
-  input.addEventListener('input', function () {
-    var q = norm(input.value.trim());
-    results.innerHTML = '';
-    if (q.length < 2) { return; }
-    var found = 0;
-    index.forEach(function (item) {
-      var pos = norm(item.texte).indexOf(q);
-      if (pos === -1 && norm(item.titre).indexOf(q) === -1) { return; }
-      found += 1;
-      var li = el('li');
-      var a = el('a', { href: '#' + item.id }, item.titre);
-      li.appendChild(a);
-      if (pos !== -1) {
-        var debut = Math.max(0, pos - 50);
-        var extrait = item.texte.substr(debut, 140);
-        li.appendChild(el('div', { class: 'note-pieds' }, (debut > 0 ? '… ' : '') + extrait + ' …'));
+  /* ---------- Recherche dans le site : tri par pertinence, mots partiels, fautes, propositions ---------- */
+  var LipoRech = (function () {
+    var VIDE = ['le','la','les','des','du','de','et','ou','un','une','est','en','pour','que','qui','quoi','comment','mon','ma','mes','ton','sur','par','avec','sans','dans','je','tu','il','elle','on','nous','vous','ils','ai','suis','a','ce','cet','cette','quel','quelle','quels','quelles','au','aux','se','si','pas','ne','plus','mais'];
+    var ACC = { a: 'aàâä', c: 'cç', e: 'eéèêë', i: 'iîï', o: 'oôö', u: 'uùûü', y: 'yÿ' };
+    var URGENCE_MOTS = ['urgence', 'urgent', 'samu', 'suicide', 'suicidaire', 'mourir', 'caillot', 'malaise', 'poitrine', 'essoufflement', 'embolie', 'thrombose', 'phlebite', 'saignement'];
+    var SUJETS = [
+      { mots: ['dlm', 'drainage', 'lymphatique', 'drainer', 'massage'], label: 'Drainage lymphatique (DLM)', cible: 'traitements' },
+      { mots: ['compression', 'contention', 'collant', 'collants'], label: 'Compression et contention', cible: 'traitements' },
+      { mots: ['chirurgie', 'liposuccion', 'lipoaspiration', 'operation', 'opere', 'operee'], label: 'Chirurgie', cible: 'chirurgie' },
+      { mots: ['remboursement', 'rembourse', 'remboursee', 'cpam', 'ameli', 'mutuelle', 'droits', 'mdph', 'cout', 'prise en charge', 'ald'], label: 'Remboursements et droits en France', cible: 'france' },
+      { mots: ['recette', 'recettes', 'menu', 'menus', 'vegan', 'vegetarien', 'vegetarienne', 'halal', 'casher', 'dejeuner', 'diner'], label: 'Recettes et menus', cible: 'alimentation' },
+      { mots: ['regime', 'alimentation', 'manger', 'sucre', 'gluten', 'jeune', 'jeuner', 'cetogene', 'keto', 'aliment', 'nutrition'], label: 'Alimentation et régimes', cible: 'alimentation' },
+      { mots: ['sport', 'sportive', 'natation', 'marche', 'velo', 'activite', 'exercice', 'musculation', 'yoga', 'fitness'], label: 'Activité physique par zone', cible: 'sport' },
+      { mots: ['symptome', 'symptomes', 'douleur', 'douleurs', 'bleu', 'bleus', 'lourdeur', 'gonflement', 'stade', 'stades', 'evolution'], label: 'Signes et stades', cible: 'signes' },
+      { mots: ['diagnostic', 'diagnostiquer', 'medecin', 'consulter', 'examen', 'rendez vous', 'specialiste', 'bilan', 'parcours'], label: 'Diagnostic et parcours de soins', cible: 'diagnostic' },
+      { mots: ['questionnaire', 'quiz', 'orientation'], label: 'Questionnaire d’orientation', cible: 'questionnaire' },
+      { mots: ['temoignage', 'temoignages', 'facebook', 'tiktok', 'reseaux', 'groupe', 'groupes'], label: 'Témoignages et ce qui circule', cible: 'temoignages' },
+      { mots: ['association', 'associations', 'soutien', 'entraide'], label: 'Associations et liens', cible: 'associations' },
+      { mots: ['proche', 'proches', 'conjoint', 'famille', 'enfant', 'enfants'], label: 'Pour les proches', cible: 'proches' },
+      { mots: ['professionnel', 'professionnels', 'infirmiere', 'kine', 'diaetetic', 'diététicienne'], label: 'Pour les professionnels', cible: 'pros' },
+      { mots: ['imprimer', 'journal', 'outil', 'outils', 'planning', 'decrypter'], label: 'Outils pratiques à imprimer', cible: 'outils' },
+      { mots: ['lipoedeme', 'lymphoedeme', 'definition', 'heredite', 'hereditaire'], label: 'Comprendre le lipœdème', cible: 'comprendre' },
+      { mots: ['mythe', 'mythes', 'idee recue', 'idees recues', 'vrai', 'faux'], label: 'Mythes et faits', cible: 'mythes' },
+      { mots: ['glossaire', 'definir', 'terme', 'termes', 'signification'], label: 'Glossaire', cible: 'glossaire' },
+      { mots: ['faq', 'question', 'questions'], label: 'Questions fréquentes', cible: 'faq' },
+      { mots: ['source', 'sources', 'bibliographie', 'verifier', 'signaler', 'erreur'], label: 'Sources et vérification', cible: 'sources' }
+    ];
+
+    function norm(s) {
+      return (s || '').toLowerCase()
+        .replace(/œ/g, 'oe').replace(/æ/g, 'ae')
+        .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+        .replace(/[^a-z0-9]+/g, ' ').trim();
+    }
+    function lev(a, b) {
+      var i, j, d = [];
+      for (i = 0; i <= a.length; i++) { d[i] = [i]; }
+      for (j = 0; j <= b.length; j++) { d[0][j] = j; }
+      for (i = 1; i <= a.length; i++) {
+        for (j = 1; j <= b.length; j++) {
+          d[i][j] = Math.min(d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+        }
       }
-      results.appendChild(li);
+      return d[a.length][b.length];
+    }
+    // Force d'une correspondance entre un mot tapé (tok) et un mot du texte (w) :
+    // 3 = identique ; 2 = préfixe (mot partiel) ; 1 = partie de mot ou faute de frappe ; 0 = aucune
+    function score(tok, w) {
+      if (tok === w) { return 3; }
+      if (w.indexOf(tok) === 0) { return tok.length >= 4 ? 2 : 1; }
+      if (w.length >= 5 && tok.length >= 4 && tok.indexOf(w) === 0) { return 2; }
+      if (tok.length >= 4 && w.length >= 4 && w.indexOf(tok) > 0) { return 1; }
+      if (tok.length >= 5 && w.length >= 5 && Math.abs(tok.length - w.length) <= 1 && lev(tok, w) <= 1) { return 1; }
+      return 0;
+    }
+    function meilleur(tok, liste) {
+      var i, v, m = 0;
+      for (i = 0; i < liste.length; i++) {
+        v = score(tok, liste[i]);
+        if (v > m) { m = v; if (m === 3) { break; } }
+      }
+      return m;
+    }
+    function uniques(s) {
+      var seen = {}, out = [];
+      norm(s).split(' ').forEach(function (w) { if (w && !seen[w]) { seen[w] = true; out.push(w); } });
+      return out;
+    }
+    function reTok(t) {
+      var out = '', i, c;
+      for (i = 0; i < t.length; i++) {
+        if (t.substr(i, 2) === 'oe') { out += '(?:oe|œ)'; i++; continue; }
+        c = t.charAt(i);
+        out += ACC[c] ? '[' + ACC[c] + ']' : c.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      }
+      return out;
+    }
+    function surligner(texte, toks) {
+      var frag = document.createDocumentFragment();
+      var motifs = toks.slice().sort(function (a, b) { return b.length - a.length; }).map(reTok);
+      var re = motifs.length ? new RegExp('(' + motifs.join('|') + ')', 'gi') : null;
+      var pos = 0, m;
+      if (!re) { frag.appendChild(document.createTextNode(texte)); return frag; }
+      while ((m = re.exec(texte)) !== null) {
+        if (m[0].length === 0) { re.lastIndex++; continue; }
+        if (m.index > pos) { frag.appendChild(document.createTextNode(texte.slice(pos, m.index))); }
+        frag.appendChild(el('mark', null, m[0]));
+        pos = m.index + m[0].length;
+      }
+      if (pos < texte.length) { frag.appendChild(document.createTextNode(texte.slice(pos))); }
+      return frag;
+    }
+
+    // Index : une entrée par sous-partie (h2 = introduction de la rubrique, h3/h4/questions = sous-parties)
+    var blocs = [];
+    var compteur = 0;
+    Array.prototype.slice.call(document.querySelectorAll('section.rubrique')).forEach(function (sec) {
+      var h2 = sec.querySelector('h2');
+      var rub = h2 ? h2.textContent.trim() : sec.id;
+      var titres = Array.prototype.slice.call(sec.querySelectorAll('h2, h3, h4, summary'));
+      titres.forEach(function (h, i) {
+        var estH2 = h.tagName === 'H2';
+        if (!h.id && !estH2 && h.tagName !== 'SUMMARY') { compteur += 1; h.id = 'rech-' + compteur; }
+        var ancre = (estH2 || h.tagName === 'SUMMARY') ? sec.id : h.id;
+        var rg = document.createRange();
+        rg.setStartAfter(h);
+        if (titres[i + 1]) { rg.setEndBefore(titres[i + 1]); } else { rg.setEnd(sec, sec.childNodes.length); }
+        var corps = rg.toString().replace(/\s+/g, ' ').trim();
+        var titre = h.textContent.trim();
+        blocs.push({
+          anc: ancre, rub: rub, titre: titre, corps: corps,
+          tN: uniques(titre), rN: uniques(rub), cN: uniques(corps)
+        });
+      });
     });
-    if (!found) { results.appendChild(el('li', null, 'Aucun résultat dans le site pour « ' + input.value.trim() + ' ».')); }
+
+    function correspond(nq, toks, m) {
+      var nm = norm(m);
+      if (nm.indexOf(' ') >= 0) { return (' ' + nq + ' ').indexOf(' ' + nm) >= 0; }
+      return toks.some(function (t) { return score(t, nm) >= 1 && (t.length >= 3 || t === nm); });
+    }
+
+    function rechercher(question) {
+      var nq = norm(question);
+      var toks = nq.split(' ').filter(function (w) { return w.length >= 2 && VIDE.indexOf(w) < 0; });
+      var vide = { props: [], urgence: false, resultats: [], toks: toks, requete: nq };
+      if (!toks.length) { return vide; }
+      vide.urgence = toks.some(function (t) { return URGENCE_MOTS.some(function (m) { return score(t, m) >= 2; }); });
+      vide.props = SUJETS.filter(function (s) {
+        return s.mots.some(function (m) { return correspond(nq, toks, m); });
+      });
+      var res = [];
+      blocs.forEach(function (b) {
+        var total = 0, couv = 0;
+        toks.forEach(function (t) {
+          var v = Math.max(meilleur(t, b.tN) * 4, meilleur(t, b.rN) * 2, meilleur(t, b.cN));
+          total += v;
+          if (v > 0) { couv += 1; }
+        });
+        if (couv === 0) { return; }
+        if (toks.length > 1 && (' ' + norm(b.titre + ' ' + b.corps) + ' ').indexOf(' ' + nq + ' ') >= 0) { total += 6; }
+        res.push({ b: b, couv: couv, total: total, complet: couv === toks.length });
+      });
+      res.sort(function (x, y) {
+        return (y.complet - x.complet) || (y.couv - x.couv) || (y.total - x.total);
+      });
+      vide.resultats = res.slice(0, 8).map(function (r) {
+        return { id: r.b.anc, titre: r.b.titre, rub: r.b.rub, corps: r.b.corps, complet: r.complet, toks: toks };
+      });
+      return vide;
+    }
+
+    var LR = { rechercher: rechercher, norm: norm, reTok: reTok, surligner: surligner, nombre: function () { return blocs.length; } };
+    return LR;
+  })();
+  window.LipoRech = LipoRech;
+
+  var rechInput = document.getElementById('recherche-site');
+  var rechRes = document.getElementById('resultats-recherche');
+  function afficherRecherche(q) {
+    rechRes.innerHTML = '';
+    var r = LipoRech.rechercher(q);
+    if (r.urgence) {
+      rechRes.appendChild(el('li', { class: 'rech-urgence' }, 'En cas d’urgence : 15 ou 112. Détresse psychique : 3114 (24 h/24).'));
+    }
+    if (r.props.length) {
+      var lp = el('li', { class: 'rech-props' });
+      lp.appendChild(el('span', null, 'Vous cherchez peut-être : '));
+      r.props.forEach(function (p) { lp.appendChild(el('a', { href: '#' + p.cible, class: 'rech-prop' }, p.label)); });
+      rechRes.appendChild(lp);
+    }
+    if (!r.resultats.length) {
+      rechRes.appendChild(el('li', null, 'Aucun résultat pour « ' + q + ' ». Essayez un mot plus court (par exemple « compres » ou « drain »), ou un mot-clé : compression, drainage, chirurgie, CPAM, sport, alimentation, témoignages.'));
+      return;
+    }
+    var affiches = r.resultats.slice(0, 5);
+    var total = r.resultats.length;
+    rechRes.appendChild(el('li', { class: 'rech-compte' }, total + (total > 1 ? ' résultats' : ' résultat') + ', classés par pertinence' + (total > affiches.length ? ' (5 affichés)' : '')));
+    affiches.forEach(function (x) {
+      var li = el('li');
+      var a = el('a', { href: '#' + x.id, class: 'rech-titre' }, x.titre);
+      li.appendChild(a);
+      li.appendChild(el('span', { class: 'rech-rub' }, x.rub));
+      if (!x.complet) { li.appendChild(el('span', { class: 'rech-partiel' }, ' (correspondance partielle)')); }
+      var re = new RegExp(x.toks.map(function (t) { return LipoRech.reTok(t); }).join('|'), 'i');
+      var m = re.exec(x.corps);
+      var debut = m ? Math.max(0, m.index - 60) : 0;
+      var extrait = x.corps.substr(debut, 120);
+      var p = el('div', { class: 'note-pieds' }, (debut > 0 ? '… ' : '') + extrait + ' …');
+      p.textContent = '';
+      p.appendChild(surlignerTexte((debut > 0 ? '… ' : '') + extrait + ' …', x.toks));
+      li.appendChild(p);
+      rechRes.appendChild(li);
+    });
+  }
+  function surlignerTexte(texte, toks) {
+    return LipoRech.surligner(texte, toks);
+  }
+  rechInput.addEventListener('input', function () {
+    var q = rechInput.value.trim();
+    rechRes.innerHTML = '';
+    if (q.length < 2) { return; }
+    afficherRecherche(q);
   });
-  input.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape') { input.value = ''; results.innerHTML = ''; }
+  rechInput.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') { rechInput.value = ''; rechRes.innerHTML = ''; }
   });
-  results.addEventListener('click', function (e) {
-    if (e.target && e.target.tagName === 'A') { results.innerHTML = ''; input.value = ''; }
+  document.addEventListener('click', function (e) {
+    if (e.target && e.target.closest && !e.target.closest('.wrap-rech')) { rechRes.innerHTML = ''; }
+  });
+  rechRes.addEventListener('click', function (e) {
+    if (e.target && e.target.tagName === 'A') { rechRes.innerHTML = ''; rechInput.value = ''; }
   });
 
   /* ---------- Bouton retour en haut ---------- */
@@ -2859,10 +3076,35 @@ article.recette .nutri span{background:#fff;border-radius:999px;padding:.15rem .
       .replace(/[’']/g, ' ').replace(/[-]/g, ' ')
       .replace(/\s+/g, ' ');
   }
-  function escRe(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
-  function estDans(texte, mots) {
-    var re = new RegExp('(^|[^a-z])(' + mots.map(function (m) { return escRe(norm(m)); }).join('|') + ')');
-    return re.test(texte);
+  var VIDE_CHAT = ['le', 'la', 'les', 'des', 'du', 'de', 'et', 'ou', 'un', 'une', 'est', 'en', 'pour', 'que', 'qui', 'quoi', 'comment', 'mon', 'ma', 'mes', 'je', 'tu', 'il', 'elle', 'on', 'ai', 'suis', 'ce', 'sur', 'par', 'avec', 'dans'];
+  function levChat(a, b) {
+    var i, j, d = [];
+    for (i = 0; i <= a.length; i++) { d[i] = [i]; }
+    for (j = 0; j <= b.length; j++) { d[0][j] = j; }
+    for (i = 1; i <= a.length; i++) {
+      for (j = 1; j <= b.length; j++) {
+        d[i][j] = Math.min(d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+      }
+    }
+    return d[a.length][b.length];
+  }
+  // Correspondance au niveau des mots : mot exact, mot partiel tapé (4 lettres ou plus), mot plus long
+  // qui commence par le mot-clé, ou faute de frappe d'une lettre (mots-clés de 6 lettres ou plus).
+  function estDans(texte, mots, prefixeMin) {
+    var minP = prefixeMin || 4;
+    var t = ' ' + texte.replace(/[^a-z0-9]+/g, ' ').trim() + ' ';
+    var toks = t.trim().split(' ').filter(function (w) { return w && VIDE_CHAT.indexOf(w) < 0; });
+    return mots.some(function (m) {
+      var k = norm(m).replace(/[^a-z0-9]+/g, ' ').trim();
+      if (!k) { return false; }
+      if (k.indexOf(' ') >= 0) { return t.indexOf(' ' + k) >= 0; }
+      return toks.some(function (tok) {
+        if (tok === k) { return true; }
+        if (k.indexOf(tok) === 0 && tok.length >= minP) { return true; }
+        if (tok.indexOf(k) === 0 && k.length >= 3) { return true; }
+        return k.length >= 6 && Math.abs(tok.length - k.length) <= 1 && levChat(tok, k) <= 1;
+      });
+    });
   }
 
   var URGENCE_PHYSIQUE = ['douleur dans la poitrine', 'douleur thoracique', 'poitrine serree', 'essoufflement', 'essouffle', 'malaise', 'perte de connaissance', 'saignement', 'paralysie', 'paralyse', 'embolie', 'phlebite', 'thrombose', 'jambe rouge', 'jambe chaude', 'caillot', 'embolie pulmonaire'];
@@ -2889,7 +3131,7 @@ article.recette .nutri span{background:#fff;border-radius:999px;padding:.15rem .
     { mots: ['symptome', 'douleur', 'douloureu', 'lourdeur', 'bleu', 'hematome', 'fatigue', 'gonfl', 'lourd'], texte: 'Les symptômes décrits sont la douleur, la sensibilité, la lourdeur et les bleus faciles. Ils doivent être évalués par un professionnel, surtout s’ils s’aggravent ou changent vite.', liens: [['#signes', 'Signes et symptômes']] },
     { mots: ['temoignage', 'tiktok', 'instagram', 'facebook', 'reseau', 'reddit', 'groupe', 'video', 'influenceu'], texte: 'Les témoignages sont des expériences personnelles : utiles pour se sentir moins seul·e, mais non représentatifs. Sur les réseaux, les conseils ne sont pas toujours vérifiés, et certains groupes contiennent de la publicité. Le guide étiquette chaque témoignage.', liens: [['#communautes', 'Ce qui circule'], ['#temoignages', 'Témoignages']] },
     { mots: ['signaler', 'erreur', 'faux', 'verifier', 'source'], texte: 'Pour signaler une information à vérifier, utilisez le bouton « Signaler une information à vérifier » dans la rubrique Sources. Rien n’est envoyé automatiquement : le texte est seulement copié.', liens: [['#sources', 'Sources et vérification']] },
-    { id: 'definition', mots: ['qu est ce que', 'c est quoi', 'definition', 'heredit', 'genetique', 'obesite', 'difference', 'grossesse', 'puberte', 'menopause', 'contagieu', 'causes', 'cause du', 'pourquoi', 'homme', 'hommes', 'adolescen', 'enfant'], texte: 'Le lipœdème est une maladie du tissu adipeux, qui touche presque exclusivement les femmes et se manifeste par une répartition anormale de la graisse, le plus souvent aux jambes et aux hanches, avec une sensibilité ou une douleur. Il est distinct de l’obésité, même si les deux peuvent coexister. Sa cause exacte n’est pas connue ; une composante familiale est fréquemment rapportée. Les rubriques Comprendre et Mythes et faits détaillent ce qui est établi.', liens: [['#comprendre', 'Comprendre le lipœdème'], ['#mythes', 'Mythes et faits']] },
+    { id: 'definition', mots: ['lipoedeme', 'lipoedema', 'qu est ce que', 'c est quoi', 'definition', 'heredit', 'genetique', 'obesite', 'difference', 'grossesse', 'puberte', 'menopause', 'contagieu', 'causes', 'cause du', 'pourquoi', 'homme', 'hommes', 'adolescen', 'enfant'], texte: 'Le lipœdème est une maladie du tissu adipeux, qui touche presque exclusivement les femmes et se manifeste par une répartition anormale de la graisse, le plus souvent aux jambes et aux hanches, avec une sensibilité ou une douleur. Il est distinct de l’obésité, même si les deux peuvent coexister. Sa cause exacte n’est pas connue ; une composante familiale est fréquemment rapportée. Les rubriques Comprendre et Mythes et faits détaillent ce qui est établi.', liens: [['#comprendre', 'Comprendre le lipœdème'], ['#mythes', 'Mythes et faits']] },
     { mots: ['commencer', 'parcours', 'par ou', 'quoi lire', 'quoi faire', 'ou aller', 'aide moi'], texte: 'Pour commencer : lisez « Comprendre le lipœdème », préparez votre rendez-vous avec la fiche de préparation, puis vérifiez vos droits en France.', liens: [['#comprendre', 'Comprendre'], ['#diagnostic', 'Diagnostic'], ['#france', 'Droits']] }
   ];
 
@@ -2905,9 +3147,26 @@ article.recette .nutri span{background:#fff;border-radius:999px;padding:.15rem .
     }
     if (estDans(t, ['bonjour', 'bonsoir', 'salut', 'hello', 'coucou'])) { return BONJOUR; }
     for (var i = 0; i < REGLES.length; i++) {
-      if (estDans(t, REGLES[i].mots)) { return REGLES[i]; }
+      if (estDans(t, REGLES[i].mots, 3)) { return REGLES[i]; }
     }
-    return DEFAUT;
+    return aideRecherche(question) || DEFAUT;
+  }
+
+  function aideRecherche(question) {
+    var LR = (typeof window !== 'undefined') ? window.LipoRech : null;
+    if (!LR) { return null; }
+    var r = LR.rechercher(question);
+    var liens = [];
+    r.props.slice(0, 2).forEach(function (p) { liens.push(['#' + p.cible, p.label]); });
+    r.resultats.slice(0, 3).forEach(function (x) {
+      if (!liens.some(function (l) { return l[0] === '#' + x.id; })) { liens.push(['#' + x.id, x.titre]); }
+    });
+    if (!liens.length) { return null; }
+    return {
+      texte: 'Je n’ai pas de réponse directe à cette question. Ces rubriques correspondent à vos mots : ' +
+        liens.slice(0, 4).map(function (l) { return l[1]; }).join(', ') + '. Vous pouvez aussi utiliser la recherche en haut de page.',
+      liens: liens.slice(0, 5)
+    };
   }
 
   var bouton = document.getElementById('chat-fab');
@@ -2972,14 +3231,27 @@ article.recette .nutri span{background:#fff;border-radius:999px;padding:.15rem .
     if (panel.hidden) { ouvrir(); } else { fermerPanel(true); }
   });
   fermer.addEventListener('click', function () { fermerPanel(true); });
+  var reduire = document.getElementById('chat-reduire');
+  reduire.addEventListener('click', function () {
+    var r = panel.classList.toggle('reduit');
+    reduire.textContent = r ? 'Agrandir' : 'Réduire';
+    reduire.setAttribute('aria-expanded', String(!r));
+    reduire.setAttribute('aria-label', r ? 'Agrandir l’assistant' : 'Réduire l’assistant');
+  });
 
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
+  function soumettre() {
     var v = input.value.trim();
     if (!v) { return; }
     envoyer(v.slice(0, 300));
     input.value = '';
+  }
+  // Envoi explicite : Entrée et bouton. Ne dépend pas de l'événement submit,
+  // que certains navigateurs ou aperçus sandboxés (sans allow-forms) ne déclenchent pas.
+  input.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter' && !e.isComposing) { e.preventDefault(); soumettre(); }
   });
+  form.addEventListener('submit', function (e) { e.preventDefault(); soumettre(); });
+  form.querySelector('button[type="submit"]').addEventListener('click', function (e) { e.preventDefault(); soumettre(); });
 
   [['Par où commencer ?'], ['Compression et drainage'], ['Chirurgie : questions à poser'], ['Droits en France'], ['Une urgence ?']].forEach(function (c) {
     var b = document.createElement('button');
@@ -3095,5 +3367,5 @@ article.recette .nutri span{background:#fff;border-radius:999px;padding:.15rem .
   });
 })();
 </script>
-<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a486b6a83f0da3e7',t:'MTc5MTY0NjcyMQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a486f4c2987f2a3d',t:'MTc5MTY0OTI2NQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
