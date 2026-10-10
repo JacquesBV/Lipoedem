@@ -45,7 +45,6 @@ a[target="_blank"]::after{content:" ↗";font-size:.85em;color:var(--ink-soft)}
 .skip:focus{left:1rem;top:1rem}
 .wrap{max-width:var(--max);margin:0 auto;padding:0 1.2rem}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-
 /* ---------- Bandeau d'accueil ---------- */
 .hero{position:relative;color:#fff;overflow:hidden;background:linear-gradient(118deg,#0a4f4d 0%,#0f6b68 42%,#4a2f7a 100%);padding:3.2rem 0 5.5rem}
 .hero::before{content:"";position:absolute;inset:0;background:
@@ -67,16 +66,12 @@ a[target="_blank"]::after{content:" ↗";font-size:.85em;color:var(--ink-soft)}
 .cartes-hero a:hover{transform:translateY(-3px);background:rgba(255,255,255,.2);color:#fff}
 .cartes-hero strong{display:block;font-size:1.02rem}
 .cartes-hero span{font-size:.9rem;color:#e3f4f1}
-@media (prefers-reduced-motion:no-preference){
-  .cartes-hero a{transition:transform .2s,background .2s}
-}
-
+@media (prefers-reduced-motion:no-preference){.cartes-hero a{transition:transform .2s,background .2s}}
 /* ---------- Avertissement ---------- */
 .avertissement{margin:1.6rem 0 1.4rem;position:relative;z-index:2;background:#fff8e1;border:2px solid #b7791f;border-left:10px solid #b7791f;border-radius:var(--radius);padding:1.1rem 1.3rem;color:#2b1d00;box-shadow:var(--shadow)}
 .avertissement h2{margin:0 0 .4rem;font-size:1.15rem;color:#2b1d00}
 .avertissement p{margin:.4rem 0}
 .meta-verif{font-size:.95rem;color:var(--ink-soft);margin:.2rem 0 1rem;background:#fff;border-radius:12px;padding:.7rem 1rem;border:1px solid var(--line)}
-
 /* ---------- Sections ---------- */
 main{padding-bottom:3rem}
 section.rubrique{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:0 1.3rem 1.3rem;margin:1.6rem 0;scroll-margin-top:150px;box-shadow:0 1px 0 rgba(16,40,50,.04);overflow:hidden}
@@ -197,30 +192,27 @@ dl dd{margin:.15rem 0 .4rem 0}
 footer.site{background:linear-gradient(120deg,#0a4f4d,#2d2250);color:#e7eef0;padding:2rem 0 2.4rem;font-size:.95rem}
 footer.site a{color:#bfe9e3}
 footer.site h2{font-size:1.15rem;color:#fff}
-@media (max-width:760px){
-  .hero{padding:2.3rem 0 4.6rem}
-  .wrap{padding:0 .9rem}
-  section.rubrique{padding:0 .95rem .95rem;border-radius:14px}
-  section.rubrique>h2{margin:0 -.95rem 1rem;padding:.9rem .95rem}
-  .tableau-wrap table thead{display:none}
-  .tableau-wrap table,.tableau-wrap tbody,.tableau-wrap tr,.tableau-wrap td,.tableau-wrap th{display:block;width:100%}
-  .tableau-wrap tr{border-bottom:2px solid var(--line);padding:.4rem 0}
-  .tableau-wrap td{border:0;padding:.25rem .6rem}
-  .tableau-wrap td::before{content:attr(data-label);display:block;font-weight:700;color:var(--teal-dark);font-size:.88rem}
-  .tableau-wrap tbody th{min-width:0}
-  .btn{width:100%;text-align:center}
-  .retour{left:1rem;right:auto;text-align:center}
-  #resultats-recherche{left:.9rem;right:.9rem}
-}
-@media print{
-  nav.menu,.retour,.recherche-bar,.no-print,footer.site,.hero .vague,.cartes-hero{display:none!important}
-  .hero{background:#fff;color:#000;padding:0}
-  body{background:#fff}
-  section.rubrique{border:0;box-shadow:none;break-inside:auto}
-  section.rubrique>h2{background:#fff;color:#000}
-  a[target="_blank"]::after{content:""}
-}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+@media (max-width:760px){.hero{padding:2.3rem 0 4.6rem}
+.wrap{padding:0 .9rem}
+section.rubrique{padding:0 .95rem .95rem;border-radius:14px}
+section.rubrique>h2{margin:0 -.95rem 1rem;padding:.9rem .95rem}
+.tableau-wrap table thead{display:none}
+.tableau-wrap table,.tableau-wrap tbody,.tableau-wrap tr,.tableau-wrap td,.tableau-wrap th{display:block;width:100%}
+.tableau-wrap tr{border-bottom:2px solid var(--line);padding:.4rem 0}
+.tableau-wrap td{border:0;padding:.25rem .6rem}
+.tableau-wrap td::before{content:attr(data-label);display:block;font-weight:700;color:var(--teal-dark);font-size:.88rem}
+.tableau-wrap tbody th{min-width:0}
+.btn{width:100%;text-align:center}
+.retour{left:1rem;right:auto;text-align:center}
+#resultats-recherche{left:.9rem;right:.9rem}}
+@media print{nav.menu,.retour,.recherche-bar,.no-print,footer.site,.hero .vague,.cartes-hero{display:none!important}
+.hero{background:#fff;color:#000;padding:0}
+body{background:#fff}
+section.rubrique{border:0;box-shadow:none;break-inside:auto}
+section.rubrique>h2{background:#fff;color:#000}
+a[target="_blank"]::after{content:""}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}
+*{transition:none!important}}
 /* ---------- Entête : barre supérieure et catégories ---------- */
 .entete{position:sticky;top:0;z-index:50}
 .topbar{background:#fff;border-bottom:1px solid var(--line)}
@@ -242,7 +234,6 @@ footer.site h2{font-size:1.15rem;color:#fff}
 #resultats-recherche li:last-child{border-bottom:0}
 .btn-menu{display:none;font:inherit;font-weight:700;background:var(--teal-dark);color:#fff;border:0;border-radius:12px;padding:.5rem .85rem;cursor:pointer;flex:0 0 auto}
 .btn-menu span{display:inline-block;width:18px;height:2px;background:#fff;box-shadow:0 -6px 0 #fff,0 6px 0 #fff;vertical-align:middle;margin-right:.45rem;border-radius:2px}
-
 nav.catnav{background:linear-gradient(90deg,#0a4f4d,#2d2250);box-shadow:0 6px 18px -12px rgba(16,40,50,.5)}
 nav.catnav .wrap{position:relative}
 ul.cats{list-style:none;margin:0;padding:0;display:flex;justify-content:center;gap:.2rem;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none}
@@ -264,7 +255,6 @@ ul.cats>li{position:static}
 .panel ul.liens a:hover,.panel ul.liens a:focus-visible{background:var(--teal-soft);border-color:var(--teal);color:var(--teal-dark)}
 .panel ul.liens a[aria-current="true"]{background:var(--teal);color:#fff}
 .panel ul.liens small{display:block;font-weight:400;color:var(--ink-soft);font-size:.82rem}
-
 /* Menu mobile plein écran */
 .menu-mobile{position:fixed;inset:0;z-index:200;background:#fff;overflow:auto;padding:1rem 1.1rem 2rem}
 .menu-mobile[hidden]{display:none}
@@ -279,7 +269,6 @@ ul.cats>li{position:static}
 .menu-mobile .bloc a:hover,.menu-mobile .bloc a:focus-visible{background:var(--teal-soft)}
 .menu-mobile .bloc a[aria-current="true"]{background:var(--teal);color:#fff}
 .menu-mobile .bloc a[target="_blank"]::after{content:""}
-
 /* ---------- Accueil : bandeau et illustrations ---------- */
 .hero{background:linear-gradient(118deg,#0a4f4d 0%,#0f6b68 42%,#4a2f7a 100%)}
 .hero .hero-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:2rem;align-items:center}
@@ -292,13 +281,13 @@ ul.cats>li{position:static}
 .hero .bulles span:nth-child(1){width:120px;height:120px;left:4%;top:12%}
 .hero .bulles span:nth-child(2){width:46px;height:46px;left:46%;top:70%;animation-delay:-3s}
 .hero .bulles span:nth-child(3){width:78px;height:78px;right:6%;top:60%;animation-delay:-6s}
-@keyframes flotte{0%,100%{transform:translateY(0)}50%{transform:translateY(-16px)}}
+@keyframes flotte{0%,100%{transform:translateY(0)}
+50%{transform:translateY(-16px)}}
 .cartes-hero{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
 .cartes-hero a{display:flex;gap:.7rem;align-items:flex-start}
 .cartes-hero a>div{min-width:0}
 .cartes-hero .mini{width:38px;height:38px;flex:0 0 auto;border-radius:11px;background:rgba(255,255,255,.18);display:grid;place-items:center}
 .cartes-hero .mini svg{width:22px;height:22px}
-
 /* Hub */
 .hub{padding:.5rem 0 0}
 .hub h2{font-size:clamp(1.5rem,3vw,2rem);margin:1.6rem 0 .3rem;color:var(--teal-dark);letter-spacing:-.01em}
@@ -330,61 +319,55 @@ ul.cats>li{position:static}
 .illus img{display:block;width:100%;height:auto;aspect-ratio:16/7;object-fit:cover}
 .illus figcaption{font-size:.82rem;color:var(--ink-soft);padding:.35rem 1.3rem;text-align:left;margin:0}
 .avertissement{margin-top:1.2rem}
-
 /* Petit libellé de catégorie au-dessus de chaque h2 */
 .cat-label{display:flex;align-items:center;gap:.4rem;margin:0 -1.3rem .9rem;padding:.55rem 1.3rem;background:var(--teal-soft);color:var(--teal-dark);font-size:.82rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
 .cat-label::before{content:"";width:9px;height:9px;border-radius:3px;background:var(--gold);transform:rotate(45deg)}
 section.rubrique>.cat-label+h2{margin-top:0}
 section.rubrique{padding-top:0}
 section.rubrique>h2{margin-top:0}
-.cat-label+h2+p, .cat-label+h2+figure{margin-top:0}
-
+.cat-label+h2+p,.cat-label+h2+figure{margin-top:0}
 /* ---------- Icônes animées (CSS, réduit si demandé) ---------- */
 .ico svg{overflow:visible}
 .ico .a{transform-box:view-box;transform-origin:12px 12px}
 .ico .a-pulse{transform-box:view-box;transform-origin:12px 12px}
-@media (prefers-reduced-motion:no-preference){
-  .ico-idee .rayons{transform-box:view-box;transform-origin:12px 9px;animation:lueur 2.4s ease-in-out infinite}
-  .ico-idee .ampoule{transform-box:view-box;transform-origin:12px 9px;animation:lueur2 2.4s ease-in-out infinite}
-  .ico-coeur .coeur{transform-box:view-box;transform-origin:12px 12px;animation:battement 1.4s ease-in-out infinite}
-  .ico-soleil .rayons{transform-box:view-box;transform-origin:12px 12px;animation:tourne 14s linear infinite}
-  .ico-soleil .noyau{transform-box:view-box;transform-origin:12px 12px;animation:respire 3s ease-in-out infinite}
-  .ico-balance .fleau{transform-box:view-box;transform-origin:12px 6px;animation:balance 3.2s ease-in-out infinite}
-  .ico-groupe .p1{animation:saute 1.8s ease-in-out infinite}
-  .ico-groupe .p2{animation:saute 1.8s ease-in-out infinite .35s}
-  .ico-aide .point{transform-box:view-box;transform-origin:12px 12px;animation:rebondit 1.6s ease-in-out infinite}
-  .ico-aide .cercle{transform-box:view-box;transform-origin:12px 12px;animation:respire 2.4s ease-in-out infinite}
-  .hub-carte:hover .ico-wrap{animation:sursaut .6s ease}
-}
-@keyframes lueur{0%,100%{opacity:.35}50%{opacity:1}}
-@keyframes lueur2{0%,100%{transform:scale(1)}50%{transform:scale(1.07)}}
-@keyframes battement{0%,100%{transform:scale(1)}15%{transform:scale(1.14)}30%{transform:scale(1)}45%{transform:scale(1.09)}60%{transform:scale(1)}}
+@media (prefers-reduced-motion:no-preference){.ico-idee .rayons{transform-box:view-box;transform-origin:12px 9px;animation:lueur 2.4s ease-in-out infinite}
+.ico-idee .ampoule{transform-box:view-box;transform-origin:12px 9px;animation:lueur2 2.4s ease-in-out infinite}
+.ico-coeur .coeur{transform-box:view-box;transform-origin:12px 12px;animation:battement 1.4s ease-in-out infinite}
+.ico-soleil .rayons{transform-box:view-box;transform-origin:12px 12px;animation:tourne 14s linear infinite}
+.ico-soleil .noyau{transform-box:view-box;transform-origin:12px 12px;animation:respire 3s ease-in-out infinite}
+.ico-balance .fleau{transform-box:view-box;transform-origin:12px 6px;animation:balance 3.2s ease-in-out infinite}
+.ico-groupe .p1{animation:saute 1.8s ease-in-out infinite}
+.ico-groupe .p2{animation:saute 1.8s ease-in-out infinite .35s}
+.ico-aide .point{transform-box:view-box;transform-origin:12px 12px;animation:rebondit 1.6s ease-in-out infinite}
+.ico-aide .cercle{transform-box:view-box;transform-origin:12px 12px;animation:respire 2.4s ease-in-out infinite}
+.hub-carte:hover .ico-wrap{animation:sursaut .6s ease}}
+@keyframes lueur{0%,100%{opacity:.35}
+50%{opacity:1}}
+@keyframes lueur2{0%,100%{transform:scale(1)}
+50%{transform:scale(1.07)}}
+@keyframes battement{0%,100%{transform:scale(1)}
+15%{transform:scale(1.14)}
+30%{transform:scale(1)}
+45%{transform:scale(1.09)}
+60%{transform:scale(1)}}
 @keyframes tourne{to{transform:rotate(360deg)}}
-@keyframes respire{0%,100%{transform:scale(1)}50%{transform:scale(1.08)}}
-@keyframes balance{0%,100%{transform:rotate(-7deg)}50%{transform:rotate(7deg)}}
-@keyframes saute{0%,100%{transform:translateY(0)}50%{transform:translateY(-2.2px)}}
-@keyframes rebondit{0%,100%{transform:translateY(0)}50%{transform:translateY(-2px)}}
-@keyframes clin{0%,96%,100%{transform:scaleY(1)}98%{transform:scaleY(.1)}}
-@keyframes sursaut{0%{transform:scale(1)}40%{transform:scale(1.12) rotate(-4deg)}100%{transform:scale(1)}}
-@keyframes salut{0%,100%{transform:rotate(0)}10%{transform:rotate(-8deg)}20%{transform:rotate(6deg)}30%{transform:rotate(0)}}
-
-/* ---------- Chatbot ---------- */
-.chat-fab{position:fixed;right:1.1rem;bottom:1.1rem;z-index:80;display:inline-flex;align-items:center;gap:.5rem;background:#fff;color:var(--teal-dark);border:2px solid var(--teal);border-radius:999px;padding:.35rem .9rem .35rem .35rem;font:inherit;font-weight:700;box-shadow:var(--shadow);cursor:pointer}
-.chat-fab:hover{background:var(--teal-soft)}
-.chat-fab[aria-expanded="true"]{background:var(--teal-dark);color:#fff;border-color:var(--teal-dark)}
-.chat-fab .avatar{width:46px;height:46px;flex:0 0 auto;border-radius:50%;object-fit:cover;border:2px solid var(--teal);background:#fff}
-.chat-fab .lab{font-size:.95rem}
-.chat-fab[aria-expanded="true"] .lab{display:none}
-.chat-panel{position:fixed;right:1.1rem;bottom:5.4rem;z-index:81;width:min(390px,calc(100vw - 2.2rem));height:min(580px,calc(100vh - 7rem));display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:22px;box-shadow:0 30px 60px -20px rgba(16,40,50,.55);overflow:hidden}
-.chat-panel[hidden]{display:none}
-.chat-head{display:flex;align-items:center;gap:.6rem;padding:.8rem .9rem;background:linear-gradient(110deg,#0a4f4d,#4a2f7a);color:#fff}
-.chat-head .avatar{width:44px;height:44px;flex:0 0 auto;background:#fff;border-radius:50%;object-fit:cover;border:2px solid #fff}
-.chat-head .titre{flex:1 1 auto;min-width:0}
-.chat-head strong{display:block;font-size:1.02rem;line-height:1.2}
-.chat-head small{display:block;opacity:.9;font-size:.8rem}
-.chat-head button{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.4);color:#fff;border-radius:10px;font:inherit;font-weight:700;padding:.35rem .65rem;cursor:pointer}
-.chat-note{margin:0;padding:.6rem .9rem;font-size:.82rem;line-height:1.45;background:var(--gold-soft);border-bottom:1px solid #f0dca8;color:#4a3300}
-#chat-log{flex:1 1 auto;overflow:auto;padding:.8rem;display:flex;flex-direction:column;gap:.6rem;background:#fbfaf7}
+@keyframes respire{0%,100%{transform:scale(1)}
+50%{transform:scale(1.08)}}
+@keyframes balance{0%,100%{transform:rotate(-7deg)}
+50%{transform:rotate(7deg)}}
+@keyframes saute{0%,100%{transform:translateY(0)}
+50%{transform:translateY(-2.2px)}}
+@keyframes rebondit{0%,100%{transform:translateY(0)}
+50%{transform:translateY(-2px)}}
+@keyframes clin{0%,96%,100%{transform:scaleY(1)}
+98%{transform:scaleY(.1)}}
+@keyframes sursaut{0%{transform:scale(1)}
+40%{transform:scale(1.12) rotate(-4deg)}
+100%{transform:scale(1)}}
+@keyframes salut{0%,100%{transform:rotate(0)}
+10%{transform:rotate(-8deg)}
+20%{transform:rotate(6deg)}
+30%{transform:rotate(0)}}
 .msg{max-width:88%;padding:.6rem .8rem;border-radius:16px;font-size:.95rem;line-height:1.5;white-space:pre-line}
 .msg.bot{background:#fff;border:1px solid var(--line);border-bottom-left-radius:4px;align-self:flex-start}
 .msg.moi{background:var(--teal);color:#fff;border-bottom-right-radius:4px;align-self:flex-end}
@@ -393,52 +376,29 @@ section.rubrique>h2{margin-top:0}
 .msg .liens-msg a{font-size:.88rem;background:var(--teal-soft);border:1px solid var(--teal);color:var(--teal-dark);padding:.2rem .6rem;border-radius:999px;text-decoration:none;font-weight:700}
 .msg .liens-msg a:hover{background:var(--teal);color:#fff}
 .msg .nb{display:block;font-size:.78rem;color:var(--ink-soft);margin-top:.4rem}
-.chat-suggest{display:flex;flex-wrap:wrap;gap:.35rem;padding:.5rem .8rem;border-top:1px solid var(--line);background:#fff}
-.chat-suggest button{font:inherit;font-size:.85rem;background:#fff;border:1px solid var(--line);border-radius:999px;padding:.25rem .65rem;cursor:pointer;color:var(--ink)}
-.chat-suggest button:hover{border-color:var(--teal);color:var(--teal-dark)}
-#chat-form{display:flex;gap:.45rem;padding:.6rem .8rem .8rem;border-top:1px solid var(--line);background:#fff}
-#chat-form input{flex:1 1 auto;min-width:0;font:inherit;padding:.55rem .75rem;border:2px solid var(--teal);border-radius:12px;color:var(--ink)}
-#chat-form .btn{margin:0;padding:.5rem .9rem}
 .retour{left:1.1rem;right:auto;bottom:1.1rem;z-index:79}
 .retour.visible{display:inline-block}
 [hidden]{display:none!important}
-
 /* ---------- Adaptations mobiles ---------- */
-@media (max-width:1024px){
-  ul.cats .cat-btn{padding:.7rem .55rem;font-size:.88rem}
-  ul.cats .cat-btn svg{display:none}
-}
-@media (max-width:900px){
-  .hero .hero-grid{grid-template-columns:1fr}
-  .hero-img{max-width:560px}
-  nav.catnav{display:none}
-  .btn-menu{display:inline-flex;align-items:center}
-  .marque small{display:none}
-  .recherche-bar{order:3;flex:1 1 100%}
-  .recherche-bar .wrap-rech{max-width:none}
-  .topbar .wrap{flex-wrap:wrap}
-  .topbar .wrap .marque{flex:1 1 auto}
-}
-@media (max-width:760px){
-  .chat-fab .lab{display:none}
-  .chat-fab{padding:.25rem}
-  .chat-panel{right:.6rem;left:.6rem;width:auto;bottom:4.8rem;height:min(560px,calc(100vh - 6.4rem))}
-  .cartes-hero{grid-template-columns:1fr 1fr}
-  .panel{display:none!important}
-  .illus{margin:0 -.95rem .9rem}
-  .cat-label{margin:0 -.95rem .8rem;padding:.5rem .95rem}
-}
-@media (max-width:480px){
-  .cartes-hero{grid-template-columns:1fr}
-}
-@media (prefers-reduced-motion:reduce){
-  .hero .bulles span{animation:none}
-}
-@media print{
-  .entete,.chat-fab,.chat-panel,.menu-mobile,.hub,.cat-label::before,.retour{display:none!important}
-  .cat-label{background:#fff;color:#000}
-}
-
+@media (max-width:1024px){ul.cats .cat-btn{padding:.7rem .55rem;font-size:.88rem}
+ul.cats .cat-btn svg{display:none}}
+@media (max-width:900px){.hero .hero-grid{grid-template-columns:1fr}
+.hero-img{max-width:560px}
+nav.catnav{display:none}
+.btn-menu{display:inline-flex;align-items:center}
+.marque small{display:none}
+.recherche-bar{order:3;flex:1 1 100%}
+.recherche-bar .wrap-rech{max-width:none}
+.topbar .wrap{flex-wrap:wrap}
+.topbar .wrap .marque{flex:1 1 auto}}
+@media (max-width:760px){.cartes-hero{grid-template-columns:1fr 1fr}
+.panel{display:none!important}
+.illus{margin:0 -.95rem .9rem}
+.cat-label{margin:0 -.95rem .8rem;padding:.5rem .95rem}}
+@media (max-width:480px){.cartes-hero{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){.hero .bulles span{animation:none}}
+@media print{.entete,.menu-mobile,.hub,.cat-label::before,.retour{display:none!important}
+.cat-label{background:#fff;color:#000}}
 /* ---------- Rubrique alimentation : recettes, filtres, semaines types ---------- */
 #alimentation h3{margin-top:2rem}
 #alimentation h4{margin-top:1.1rem}
@@ -472,9 +432,7 @@ article.recette ol.etapes-recette{padding-left:1.4rem;margin:0}
 article.recette ol.etapes-recette li{margin:.35rem 0;padding-left:.2rem}
 article.recette .pourquoi,article.recette .conserv{font-size:.95rem;margin:.6rem 0 .2rem;max-width:none}
 article.recette details{margin:.6rem 0 0}
-@media (max-width:760px){
-  article.recette .deux{grid-template-columns:1fr}
-}
+@media (max-width:760px){article.recette .deux{grid-template-columns:1fr}}
 /* Semaines types */
 .plan{margin:1.1rem 0 1.6rem;border:1px solid var(--line);border-radius:18px;padding:.9rem 1rem;background:#fffdf8}
 .plan h4{margin:.1rem 0 .3rem;font-size:1.15rem;color:var(--violet)}
@@ -486,20 +444,13 @@ ul.regles-semaine{font-size:.94rem;margin:.6rem 0 0;padding-left:1.2rem}
 ul.regles-semaine li{margin:.25rem 0}
 table.profils th[scope="row"]{white-space:nowrap}
 .encadre.danger-box{margin-top:.6rem}
-
 /* Valeurs nutritionnelles par portion (Ciqual 2020) */
 article.recette .nutri{display:flex;flex-wrap:wrap;align-items:center;gap:.35rem .5rem;margin:.4rem 0 .8rem;padding:.55rem .75rem;border-radius:12px;background:linear-gradient(135deg,#eef7f1,#f7f3ea);border:1px solid #cfe5d6;font-size:.9rem;color:#1d3b2a}
 article.recette .nutri span{background:#fff;border-radius:999px;padding:.15rem .6rem;font-weight:700;border:1px solid #d7e9dd;white-space:nowrap}
-
 /* Impression d'une semaine type */
-@media print{
-  body.imp-plan *{visibility:hidden !important}
-  body.imp-plan .plan.imp-cible,
-  body.imp-plan .plan.imp-cible *{visibility:visible !important}
-  body.imp-plan .plan.imp-cible{position:absolute;left:0;top:0;width:100%;margin:0;border:0}
-}
-
-
+@media print{body.imp-plan *{visibility:hidden !important}
+body.imp-plan .plan.imp-cible,body.imp-plan .plan.imp-cible *{visibility:visible !important}
+body.imp-plan .plan.imp-cible{position:absolute;left:0;top:0;width:100%;margin:0;border:0}}
 /* ---------- Outils pratiques, proches, professionnels, journal ---------- */
 .o-grille{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1rem;margin:1rem 0 1.4rem}
 .o-carte{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1.1rem 1.1rem 1rem;box-shadow:var(--shadow);position:relative;overflow:hidden}
@@ -528,93 +479,35 @@ article.recette .nutri span{background:#fff;border-radius:999px;padding:.15rem .
 .o-journal li{margin:.5rem 0}
 .o-journal time{font-weight:700;color:var(--teal-dark)}
 .o-zone,.o-carte-plate{scroll-margin-top:90px}
-
 /* Impression : seule la zone demandée est imprimée */
-@media print{
-  body.imp-zone *{visibility:hidden !important}
-  body.imp-zone .o-zone.imp-cible,
-  body.imp-zone .o-zone.imp-cible *{visibility:visible !important}
-  body.imp-zone .o-zone.imp-cible{position:absolute;left:0;top:0;width:100%;border:0;padding:0;margin:0}
-  .o-btn{display:none !important}
-}
-
-
-    /* Recherche : résultats triés, surlignage, propositions */
-    #resultats-recherche mark { background: #ffe38a; color: inherit; border-radius: 3px; padding: 0 .1em; }
-    #resultats-recherche .rech-titre { font-weight: 700; color: var(--teal-dark, #0f5b5a); }
-    #resultats-recherche .rech-rub { display: inline-block; font-size: .8rem; color: var(--ink-soft, #4b5b5b); margin-left: .4rem; }
-    #resultats-recherche .rech-partiel { font-size: .78rem; font-style: italic; color: var(--ink-soft, #4b5b5b); }
-    #resultats-recherche .rech-props { display: flex; flex-wrap: wrap; gap: .35rem; align-items: center; font-size: .92rem; }
-    #resultats-recherche .rech-prop { background: #e3f4f2; border-radius: 999px; padding: .2rem .65rem; color: var(--teal-dark, #0f5b5a); font-weight: 700; text-decoration: none; }
-    #resultats-recherche .rech-prop:hover, #resultats-recherche .rech-prop:focus { background: #c9ebe7; }
-    #resultats-recherche .rech-urgence { background: #fde7df; border-radius: 8px; padding: .5rem .6rem; color: #7a2416; font-weight: 600; }
-    #resultats-recherche .rech-compte { font-size: .82rem; color: var(--ink-soft, #4b5b5b); }
-
-    /* Taille maîtrisée : recherche et assistant ne couvrent pas la page */
-    #resultats-recherche { max-height: min(300px, 50vh) !important; font-size: .92rem; padding: .3rem .75rem !important; }
-    #resultats-recherche li { padding: .35rem 0 !important; }
-    #resultats-recherche .note-pieds { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; margin: .15rem 0 0 !important; font-size: .84rem; }
-    #resultats-recherche .rech-props { font-size: .86rem; }
-    .chat-panel { width: min(340px, calc(100vw - 2.2rem)); height: min(440px, calc(100vh - 8rem)); }
-    .chat-panel .chat-note { font-size: .78rem; padding: .45rem .7rem; }
-    .chat-panel #chat-log { min-height: 0; }
-    .chat-panel .chat-suggest { max-height: 4.4rem; overflow: auto; padding: .4rem .6rem; }
-    .chat-panel.reduit { height: auto; }
-    .chat-head #chat-reduire { white-space: nowrap; }
-    @media (max-width: 760px) {
-      .chat-panel { right: .6rem; left: .6rem; width: auto; bottom: 4.8rem; height: min(38vh, 320px); }
-      .chat-panel.reduit { height: auto; }
-      #resultats-recherche { max-height: 45vh !important; }
-    }
-
-    @media (max-width: 760px) {
-      .chat-panel .chat-head { padding: .5rem .6rem; gap: .45rem; }
-      .chat-panel .chat-head .avatar { width: 36px; height: 36px; }
-      .chat-panel .chat-head .titre small { display: none; }
-      .chat-panel .chat-head strong { font-size: .95rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-      .chat-panel .chat-head button { padding: .25rem .5rem; font-size: .85rem; }
-      .chat-panel .chat-note { font-size: .72rem; line-height: 1.35; padding: .35rem .6rem; }
-      .chat-panel .chat-suggest { max-height: 3rem; }
-      .chat-panel #chat-form { padding: .4rem .6rem .5rem; }
-    }
-
-    /* Recherche réduite sur mobile : loupe qui ouvre le champ */
-    .rech-ouvrir { display: none; }
-    @media (max-width: 760px) {
-      .rech-ouvrir { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 12px; border: 0; background: var(--teal-dark, #0f5b5a); color: #fff; cursor: pointer; flex: 0 0 auto; }
-      .recherche-bar:not(.ouverte) { flex: 0 0 auto; order: 2; }
-      .recherche-bar:not(.ouverte) .wrap-rech { display: none; }
-    }
-    /* Surlignage des mots recherchés dans la page */
-    mark.surl { background: #ffe38a; color: inherit; border-radius: 3px; padding: 0 .1em; }
-    .surl-barre { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; margin: .6rem 0; padding: .45rem .7rem; background: #fff6d6; border: 1px solid #f0dca8; border-radius: 10px; font-size: .9rem; color: #4a3300; }
-    .surl-barre button { font: inherit; font-size: .85rem; background: #fff; border: 1px solid #d9c27a; border-radius: 999px; padding: .2rem .65rem; cursor: pointer; color: #4a3300; }
-    /* Chatbot plus compact */
-    .chat-panel { width: min(330px, calc(100vw - 2.2rem)); height: min(380px, calc(100vh - 8rem)); }
-    .chat-note-d { flex: 0 0 auto; border-bottom: 1px solid #f0dca8; }
-    .chat-note-sum { padding: .4rem .9rem; font-size: .8rem; font-weight: 600; background: var(--gold-soft, #fff4d6); color: #4a3300; cursor: pointer; list-style: none; }
-    .chat-note-sum::-webkit-details-marker { display: none; }
-    .chat-note-sum::after { content: ' ▾'; }
-    .chat-note-d[open] > .chat-note-sum::after { content: ' ▴'; }
-    .chat-note-d > .chat-note { border-bottom: 0; }
-    .chat-panel.reduit > :not(.chat-head):not(.chat-note-d) { display: none !important; }
-    .chat-panel.reduit > .chat-note-d > .chat-note { display: none; }
-    @media (max-width: 760px) {
-      .chat-panel { width: auto; right: .6rem; left: .6rem; bottom: 4.8rem; height: min(34vh, 290px); }
-      .chat-panel .chat-suggest { max-height: 2.6rem; }
-      .chat-panel.reduit { height: auto; }
-    }
-
-    /* Avertissement du chatbot : annule le style général des details */
-    .chat-note-d { background: none; border: 0; border-radius: 0; padding: 0; margin: 0; box-shadow: none; }
-    .chat-note-sum::before { content: none; }
-    .chat-note-d[open] > .chat-note-sum { margin-bottom: 0; }
-    .chat-note-sum { padding: .4rem .9rem; }
-    /* En-tête du chatbot : titre sur une ligne */
-    .chat-head .titre { min-width: 0; }
-    .chat-head strong, .chat-head .titre small { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-    .chat-head button { white-space: nowrap; }
-    .chat-panel.reduit .chat-head .titre small { display: none; }
+@media print{body.imp-zone *{visibility:hidden !important}
+body.imp-zone .o-zone.imp-cible,body.imp-zone .o-zone.imp-cible *{visibility:visible !important}
+body.imp-zone .o-zone.imp-cible{position:absolute;left:0;top:0;width:100%;border:0;padding:0;margin:0}
+.o-btn{display:none !important}}
+/* Recherche : résultats triés, surlignage, propositions */
+#resultats-recherche mark{ background: #ffe38a; color: inherit; border-radius: 3px; padding: 0 .1em; }
+#resultats-recherche .rech-titre{ font-weight: 700; color: var(--teal-dark, #0f5b5a); }
+#resultats-recherche .rech-rub{ display: inline-block; font-size: .8rem; color: var(--ink-soft, #4b5b5b); margin-left: .4rem; }
+#resultats-recherche .rech-partiel{ font-size: .78rem; font-style: italic; color: var(--ink-soft, #4b5b5b); }
+#resultats-recherche .rech-props{ display: flex; flex-wrap: wrap; gap: .35rem; align-items: center; font-size: .92rem; }
+#resultats-recherche .rech-prop{ background: #e3f4f2; border-radius: 999px; padding: .2rem .65rem; color: var(--teal-dark, #0f5b5a); font-weight: 700; text-decoration: none; }
+#resultats-recherche .rech-prop:hover,#resultats-recherche .rech-prop:focus{ background: #c9ebe7; }
+#resultats-recherche .rech-urgence{ background: #fde7df; border-radius: 8px; padding: .5rem .6rem; color: #7a2416; font-weight: 600; }
+#resultats-recherche .rech-compte{ font-size: .82rem; color: var(--ink-soft, #4b5b5b); }
+#resultats-recherche{ max-height: min(300px, 50vh) !important; font-size: .92rem; padding: .3rem .75rem !important; }
+#resultats-recherche li{ padding: .35rem 0 !important; }
+#resultats-recherche .note-pieds{ display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; margin: .15rem 0 0 !important; font-size: .84rem; }
+#resultats-recherche .rech-props{ font-size: .86rem; }
+@media (max-width: 760px){#resultats-recherche{ max-height: 45vh !important; }}
+/* Recherche réduite sur mobile : loupe qui ouvre le champ */
+.rech-ouvrir{ display: none; }
+@media (max-width: 760px){.rech-ouvrir{ display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 12px; border: 0; background: var(--teal-dark, #0f5b5a); color: #fff; cursor: pointer; flex: 0 0 auto; }
+.recherche-bar:not(.ouverte){ flex: 0 0 auto; order: 2; }
+.recherche-bar:not(.ouverte) .wrap-rech{ display: none; }}
+/* Surlignage des mots recherchés dans la page */
+mark.surl{ background: #ffe38a; color: inherit; border-radius: 3px; padding: 0 .1em; }
+.surl-barre{ display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; margin: .6rem 0; padding: .45rem .7rem; background: #fff6d6; border: 1px solid #f0dca8; border-radius: 10px; font-size: .9rem; color: #4a3300; }
+.surl-barre button{ font: inherit; font-size: .85rem; background: #fff; border: 1px solid #d9c27a; border-radius: 999px; padding: .2rem .65rem; cursor: pointer; color: #4a3300; }
 </style>
 </head>
 <body>
@@ -2188,7 +2081,7 @@ article.recette .nutri span{background:#fff;border-radius:999px;padding:.15rem .
         <h3>Vos données</h3>
         <ul>
           <li>Aucun compte, aucun formulaire envoyé, aucun cookie de suivi, aucun traceur, aucune publicité.</li>
-          <li>Le questionnaire d’orientation et le chatbot fonctionnent dans votre navigateur : leurs réponses ne sont ni envoyées ni enregistrées.</li>
+          <li>Le questionnaire d’orientation fonctionne dans votre navigateur : ses réponses ne sont ni envoyées ni enregistrées.</li>
           <li>Les liens vers d’autres sites ne s’ouvrent que si vous cliquez dessus.</li>
         </ul>
       </div>
@@ -2198,7 +2091,7 @@ article.recette .nutri span{background:#fff;border-radius:999px;padding:.15rem .
     <ol class="o-journal">
       <li><time datetime="2026-10-10">10 octobre 2026</time> : valeurs nutritionnelles par portion pour les 25 recettes (Table Ciqual 2020) ; outils imprimables (journal de symptômes, planificateur, décryptage d’une publication) ; sections Pour les proches et Pour les professionnels ; date de mise à jour par rubrique ; avatar et illustrations allégés ; cinq illustrations ajoutées ; repères PNNS vérifiés sur mangerbouger.fr et les avis du HCSP (seuil de sel retiré faute de source officielle vérifiée).</li>
       <li><time datetime="2026-10-10">10 octobre 2026</time> : drainage lymphatique : formulation précisée (utile pour certaines personnes, non universel, pas d’effet volumétrique important démontré, non recommandé en routine pour le lipœdème seul selon la S2k via l’ILA, à réaliser par un praticien formé).</li>
-      <li><time datetime="2026-10-10">10 octobre 2026</time> : chatbot : règles de réponse testées sur 107 questions types (rédigées par nos soins) ; urgences traitées en priorité ; réponses fondées sur des mots-clés, sans envoi de données.</li>
+      <li><time datetime="2026-10-10">10 octobre 2026</time> : chatbot retiré du site ; la recherche par mots-clés, en haut de page, reste disponible.</li>
     </ol>
 
     <h3>Éditeur et contact</h3>
@@ -2527,25 +2420,8 @@ article.recette .nutri span{background:#fff;border-radius:999px;padding:.15rem .
 
 <button type="button" class="btn retour" id="retour-haut" aria-label="Revenir en haut de la page">↑ Haut de page</button>
 
-<button type="button" class="chat-fab" id="chat-fab" aria-expanded="false" aria-controls="chat-panel">
-  <span class="avatar-wrap"><img class="avatar" src="data:image/webp;base64,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" width="192" height="192" alt=""></span><span class="lab">Une question ?</span><span class="sr-only">Ouvrir l’assistant du guide</span>
-</button>
-<section class="chat-panel" id="chat-panel" aria-labelledby="chat-titre" hidden>
-  <div class="chat-head">
-    <img class="avatar" src="data:image/webp;base64,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" width="192" height="192" alt="">
-    <div class="titre"><strong id="chat-titre">Assistant du guide</strong><small>Automatique · sans diagnostic</small></div>
-    <button type="button" id="chat-reduire" aria-expanded="true" aria-controls="chat-panel" aria-label="Réduire l’assistant">Réduire</button>
-    <button type="button" id="chat-fermer" aria-label="Fermer l’assistant">Fermer</button>
-  </div>
-  <details class="chat-note-d" open><summary class="chat-note-sum">Assistant automatique · sans diagnostic · urgence : 15 ou 112</summary><p class="chat-note">Assistant automatique : il répond à partir de règles simples et renvoie vers le guide. Il ne pose pas de diagnostic, ne donne pas de conseil personnalisé et n’enregistre pas vos messages. En cas d’urgence : 15 ou 112.</p></details>
-  <div id="chat-log" role="log" aria-live="polite" aria-label="Conversation"></div>
-  <div class="chat-suggest" id="chat-suggest"></div>
-  <form id="chat-form" autocomplete="off">
-    <label for="chat-input" class="sr-only">Votre question</label>
-    <input type="text" id="chat-input" maxlength="300" placeholder="Ex. : par où commencer ?">
-    <button type="submit" class="btn">Envoyer</button>
-  </form>
-</section>
+
+
 
 <script>
 (function () {
@@ -3187,213 +3063,7 @@ article.recette .nutri span{background:#fff;border-radius:999px;padding:.15rem .
   });
 })();
 </script>
-<script>
-(function () {
-  'use strict';
-  /* Assistant local : règles de mots-clés, sans API, sans requête réseau,
-     sans stockage (ni cookies, ni localStorage, ni sessionStorage). Les messages
-     restent seulement dans la page et disparaissent au rechargement.
-     Il ne pose pas de diagnostic et ne donne pas de conseil personnalisé. */
 
-  function norm(s) {
-    return (s || '').toLowerCase()
-      .replace(/œ/g, 'oe').replace(/æ/g, 'ae')
-      .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
-      .replace(/[’']/g, ' ').replace(/[-]/g, ' ')
-      .replace(/\s+/g, ' ');
-  }
-  var VIDE_CHAT = ['le', 'la', 'les', 'des', 'du', 'de', 'et', 'ou', 'un', 'une', 'est', 'en', 'pour', 'que', 'qui', 'quoi', 'comment', 'mon', 'ma', 'mes', 'je', 'tu', 'il', 'elle', 'on', 'ai', 'suis', 'ce', 'sur', 'par', 'avec', 'dans'];
-  function levChat(a, b) {
-    var i, j, d = [];
-    for (i = 0; i <= a.length; i++) { d[i] = [i]; }
-    for (j = 0; j <= b.length; j++) { d[0][j] = j; }
-    for (i = 1; i <= a.length; i++) {
-      for (j = 1; j <= b.length; j++) {
-        d[i][j] = Math.min(d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
-      }
-    }
-    return d[a.length][b.length];
-  }
-  // Correspondance au niveau des mots : mot exact, mot partiel tapé (4 lettres ou plus), mot plus long
-  // qui commence par le mot-clé, ou faute de frappe d'une lettre (mots-clés de 6 lettres ou plus).
-  function estDans(texte, mots, prefixeMin) {
-    var minP = prefixeMin || 4;
-    var t = ' ' + texte.replace(/[^a-z0-9]+/g, ' ').trim() + ' ';
-    var toks = t.trim().split(' ').filter(function (w) { return w && VIDE_CHAT.indexOf(w) < 0; });
-    return mots.some(function (m) {
-      var k = norm(m).replace(/[^a-z0-9]+/g, ' ').trim();
-      if (!k) { return false; }
-      if (k.indexOf(' ') >= 0) { return t.indexOf(' ' + k) >= 0; }
-      return toks.some(function (tok) {
-        if (tok === k) { return true; }
-        if (k.indexOf(tok) === 0 && tok.length >= minP) { return true; }
-        if (tok.indexOf(k) === 0 && k.length >= 3) { return true; }
-        return k.length >= 6 && Math.abs(tok.length - k.length) <= 1 && levChat(tok, k) <= 1;
-      });
-    });
-  }
-
-  var URGENCE_PHYSIQUE = ['douleur dans la poitrine', 'douleur thoracique', 'poitrine serree', 'essoufflement', 'essouffle', 'malaise', 'perte de connaissance', 'saignement', 'paralysie', 'paralyse', 'embolie', 'phlebite', 'thrombose', 'jambe rouge', 'jambe chaude', 'caillot', 'embolie pulmonaire'];
-  var URGENCE_PSY = ['suicide', 'suicidaire', 'me tuer', 'envie de mourir', 'pas envie de vivre', 'idees noires', 'me faire du mal', 'automutilation', 'veux mourir', 'vouloir mourir', 'je veux mourir', 'mettre fin a mes jours', 'en finir avec la vie', 'me suicider'];
-
-  var REGLES = [
-    { mots: ['urgence', 'urgent'], texte: 'En cas de symptôme brutal ou inquiétant (douleur dans la poitrine, essoufflement, jambe rouge, chaude et gonflée, fièvre, saignement abondant), appelez le 15 ou le 112. En cas de détresse psychique : appelez le 3114. Ce guide ne remplace pas les services d’urgence.', liens: [] },
-    { mots: ['lymphoedeme', 'lymphedeme', 'lipolymphoedeme'], texte: 'Le lymphœdème est un gonflement lié à une altération du drainage de la lymphe. Le lipœdème est une répartition anormale du tissu adipeux. Les deux peuvent coexister, et un professionnel doit les distinguer par l’examen clinique.', liens: [['#glossaire', 'Glossaire'], ['#diagnostic', 'Diagnostic']] },
-    { mots: ['questionnaire', 'orientation', 'quiz'], texte: 'Le questionnaire d’orientation aide à préparer une discussion avec un professionnel. Il ne diagnostique pas le lipœdème. Vos réponses ne sont ni envoyées ni enregistrées, et le bouton « Effacer mes réponses » les supprime.', liens: [['#questionnaire', 'Questionnaire d’orientation']] },
-    { mots: ['diagnostic', 'ai je un', 'ai je une', 'suis je', 'suis atteinte', 'mon cas', 'ce que j ai', 'est ce que j', 'dois je consulter', 'est ce du', 'est ce un', 'comment savoir', 'savoir si', 'je pense avoir', 'prise de sang', 'bilan', 'examen', 'examens', 'echographie', 'irm', 'rendez vous', 'criteres'], texte: 'Je ne peux pas poser de diagnostic, et aucun outil en ligne ne le peut, y compris le questionnaire. Le diagnostic repose sur un examen clinique, par un professionnel de santé. Le guide décrit les critères, les examens possibles et comment préparer le rendez-vous.', liens: [['#diagnostic', 'Diagnostic et parcours de soins'], ['#questionnaire', 'Questionnaire']] },
-    { mots: ['medecin', 'docteur', 'ne me croit pas', 'cellulite', 'errance', 'second avis', 'pas reconnu', 'specialiste', 'consulter'], texte: 'Beaucoup de personnes rapportent une errance diagnostique. Vous pouvez demander une évaluation ou un second avis, et préparer le rendez-vous avec la fiche de préparation et les questions à poser.', liens: [['#diagnostic', 'Fiche de préparation']] },
-    { mots: ['association', 'asso ', 'soutien', 'entraide'], texte: 'Des associations de patients et des groupes de soutien existent en France et à l’étranger. Le guide les liste et indique ce qu’elles proposent, sans les présenter comme des autorités médicales.', liens: [['#associations', 'Associations et liens']] },
-    { mots: ['drainage', 'dlm', 'lymphatique'], texte: 'Le drainage lymphatique manuel est utile pour certaines personnes, pas pour toutes. Il peut soulager la douleur et la lourdeur, selon des témoignages et de petites études. Aucun effet volumétrique important n’est démontré. Les recommandations S2k 2024 (via l’ILA) ne le recommandent pas en routine pour le lipœdème seul. Il doit être réalisé par un praticien formé.', liens: [['#traitements', 'Traitements']] },
-    { mots: ['compression', 'bas de contention', 'collant', 'contention'], texte: 'La compression est l’une des approches les plus recommandées (S2k 2024 ; ameli). Elle est utile contre l’œdème et la douleur, pas contre le tissu lipœdémateux lui-même. Le choix et le port se discutent avec un professionnel.', liens: [['#traitements', 'Traitements non chirurgicaux']] },
-    { mots: ['chirurgie', 'operation', 'opere', 'liposuccion', 'lipoaspiration', 'bariatrique', 'bypass', 'sleeve'], texte: 'La chirurgie peut être envisagée dans certaines situations, après au moins un an de mesures conservatrices selon ameli. Ses résultats sont très variables, elle comporte des risques, et elle n’est pas prise en charge selon ameli (16 juin 2025). Le guide propose des questions à poser avant toute décision.', liens: [['#chirurgie', 'Chirurgie'], ['#eviter', 'Ce qu’il faut éviter']] },
-    { mots: ['recette', 'recettes', 'menu', 'semaine type', 'petit dejeuner', 'dejeuner', 'diner', 'vegan', 'vegetarien', 'halal', 'casher', 'kasher'], texte: 'Le guide propose 25 recettes anti-inflammatoires, sans porc et sans alcool, avec des variantes végétariennes, vegan, halal et casher, et des semaines types complètes. Utilisez les filtres pour trouver ce qui vous correspond.', liens: [['#alimentation', 'Recettes et semaines types']] },
-    { mots: ['regime', 'cetogene', 'keto', 'jeune', 'alimentation', 'manger', 'anti inflammatoire', 'vegan', 'vegetarien', 'halal', 'sucre', 'gluten', 'aliment', 'aliments', 'lactose', 'produits laitiers'], texte: 'Aucun régime ne guérit le lipœdème. Les données sur le régime cétogène ou le jeûne sont petites et hétérogènes, et aucune stratégie alimentaire optimale n’est démontrée. Le guide donne des repères généraux et des recettes adaptées à différents régimes.', liens: [['#alimentation', 'Alimentation et recettes']] },
-    { mots: ['sport', 'la marche', 'marcher', 'marche a pied', 'randonnee', 'natation', 'nage', 'exercice', 'activite physique', 'velo', 'yoga', 'musculation', 'fitness', 'pilates'], texte: 'L’activité physique adaptée est recommandée (S2k 2024 ; ameli). L’exercice dans l’eau est l’un des mieux étayés. Les exercices et précautions sont détaillés zone par zone.', liens: [['#sport', 'Sport par zone']] },
-    { mots: ['remboursement', 'rembourse', 'cpam', 'ameli', 'prise en charge', 'droits', 'cout', 'mutuelle', 'mdph', 'handicap', 'invalidite', 'arret de travail'], texte: 'Selon ameli (16 juin 2025) : la compression sur prescription peut être prise en charge ; le drainage pour un lipœdème seul ne l’est pas ; la chirurgie n’est pas prise en charge. Ces règles évoluent. Ce n’est pas un avis juridique : vérifiez votre situation auprès de votre caisse.', liens: [['#france', 'Législation et prise en charge']] },
-    { mots: ['glp', 'mounjaro', 'semaglutide', 'ozempic', 'tirzepatide', 'medicament'], texte: 'Certaines personnes rapportent un effet des traitements de type GLP-1. Ces témoignages sont isolés, et aucune étude spécifique au lipœdème n’a été identifiée à ce jour. La décision se prend avec un médecin.', liens: [['#traitements', 'Traitements']] },
-    { mots: ['amphetamine', 'coupe faim', 'dissolution', 'brule graisse', 'pilule', 'pilules', 'cryolipolyse', 'fat burner'], texte: 'Ces produits ou méthodes ne sont pas sourcés pour le lipœdème, et le guide les classe parmi ce qu’il faut éviter. Les pilules « drainantes » et les diurétiques ne sont pas recommandés.', liens: [['#eviter', 'Ce qu’il faut éviter']] },
-    { mots: ['guerir', 'gueri', 'guerison', 'remede', 'miracle', 'cure'], texte: 'Il n’existe pas de traitement qui guérisse le lipœdème à ce jour (ameli, 16 juin 2025). Les soins visent à réduire les symptômes et à limiter la progression.', liens: [['#mythes', 'Mythes et faits']] },
-    { mots: ['stade', 'stades', 'evolution', 'evolue', 'progress', 'aggrav'], texte: 'Le guide décrit les stades avec prudence : ce sont des repères, pas une prédiction de l’évolution d’une personne. Les points de vue divergent sur la progression.', liens: [['#signes', 'Signes et stades']] },
-    { mots: ['symptome', 'douleur', 'douloureu', 'lourdeur', 'bleu', 'hematome', 'fatigue', 'gonfl', 'lourd'], texte: 'Les symptômes décrits sont la douleur, la sensibilité, la lourdeur et les bleus faciles. Ils doivent être évalués par un professionnel, surtout s’ils s’aggravent ou changent vite.', liens: [['#signes', 'Signes et symptômes']] },
-    { mots: ['temoignage', 'tiktok', 'instagram', 'facebook', 'reseau', 'reddit', 'groupe', 'video', 'influenceu'], texte: 'Les témoignages sont des expériences personnelles : utiles pour se sentir moins seul·e, mais non représentatifs. Sur les réseaux, les conseils ne sont pas toujours vérifiés, et certains groupes contiennent de la publicité. Le guide étiquette chaque témoignage.', liens: [['#communautes', 'Ce qui circule'], ['#temoignages', 'Témoignages']] },
-    { mots: ['signaler', 'erreur', 'faux', 'verifier', 'source'], texte: 'Pour signaler une information à vérifier, utilisez le bouton « Signaler une information à vérifier » dans la rubrique Sources. Rien n’est envoyé automatiquement : le texte est seulement copié.', liens: [['#sources', 'Sources et vérification']] },
-    { id: 'definition', mots: ['lipoedeme', 'lipoedema', 'qu est ce que', 'c est quoi', 'definition', 'heredit', 'genetique', 'obesite', 'difference', 'grossesse', 'puberte', 'menopause', 'contagieu', 'causes', 'cause du', 'pourquoi', 'homme', 'hommes', 'adolescen', 'enfant'], texte: 'Le lipœdème est une maladie du tissu adipeux, qui touche presque exclusivement les femmes et se manifeste par une répartition anormale de la graisse, le plus souvent aux jambes et aux hanches, avec une sensibilité ou une douleur. Il est distinct de l’obésité, même si les deux peuvent coexister. Sa cause exacte n’est pas connue ; une composante familiale est fréquemment rapportée. Les rubriques Comprendre et Mythes et faits détaillent ce qui est établi.', liens: [['#comprendre', 'Comprendre le lipœdème'], ['#mythes', 'Mythes et faits']] },
-    { mots: ['commencer', 'parcours', 'par ou', 'quoi lire', 'quoi faire', 'ou aller', 'aide moi'], texte: 'Pour commencer : lisez « Comprendre le lipœdème », préparez votre rendez-vous avec la fiche de préparation, puis vérifiez vos droits en France.', liens: [['#comprendre', 'Comprendre'], ['#diagnostic', 'Diagnostic'], ['#france', 'Droits']] }
-  ];
-
-  var DEFAUT = { texte: 'Je n’ai pas trouvé de réponse précise à cette question. Essayez un mot-clé (compression, drainage, chirurgie, CPAM, sport, alimentation, témoignages) ou utilisez la recherche du guide. Pour votre situation personnelle, parlez-en à un professionnel de santé.', liens: [['#comprendre', 'Comprendre'], ['#faq', 'FAQ']] };
-  var BONJOUR = { texte: 'Bonjour. Je peux vous orienter dans le guide, répondre à des questions générales et indiquer la bonne rubrique. Je ne pose pas de diagnostic et je ne donne pas de conseil personnalisé. Que cherchez-vous ?', liens: [['#comprendre', 'Comprendre le lipœdème'], ['#questionnaire', 'Questionnaire']] };
-  var URGENCE = 'Ce que vous décrivez peut être urgent. Ne restez pas seul·e avec ce symptôme.\n• Appelez le 15 (SAMU) ou le 112 maintenant.\n• En cas de pensées suicidaires ou de détresse psychique : appelez le 3114, numéro national de prévention du suicide, 24 h/24 et 7 j/7.\nCe guide ne peut pas évaluer votre situation.';
-
-  function repondre(question) {
-    var t = norm(question);
-    if (!t) { return { texte: 'Écrivez votre question, par exemple : « par où commencer ? »', liens: [] }; }
-    if (estDans(t, URGENCE_PSY) || estDans(t, URGENCE_PHYSIQUE) || (estDans(t, ['fievre']) && estDans(t, ['jambe', 'rouge', 'chaud', 'chaude']))) {
-      return { urgence: true, texte: URGENCE, liens: [] };
-    }
-    if (estDans(t, ['bonjour', 'bonsoir', 'salut', 'hello', 'coucou'])) { return BONJOUR; }
-    for (var i = 0; i < REGLES.length; i++) {
-      if (estDans(t, REGLES[i].mots, 3)) { return REGLES[i]; }
-    }
-    return aideRecherche(question) || DEFAUT;
-  }
-
-  function aideRecherche(question) {
-    var LR = (typeof window !== 'undefined') ? window.LipoRech : null;
-    if (!LR) { return null; }
-    var r = LR.rechercher(question);
-    var liens = [];
-    r.props.slice(0, 2).forEach(function (p) { liens.push(['#' + p.cible, p.label]); });
-    r.resultats.slice(0, 3).forEach(function (x) {
-      if (!liens.some(function (l) { return l[0] === '#' + x.id; })) { liens.push(['#' + x.id, x.titre]); }
-    });
-    if (!liens.length) { return null; }
-    return {
-      texte: 'Je n’ai pas de réponse directe à cette question. Ces rubriques correspondent à vos mots : ' +
-        liens.slice(0, 4).map(function (l) { return l[1]; }).join(', ') + '. Vous pouvez aussi utiliser la recherche en haut de page.',
-      liens: liens.slice(0, 5)
-    };
-  }
-
-  var bouton = document.getElementById('chat-fab');
-  var panel = document.getElementById('chat-panel');
-  var fermer = document.getElementById('chat-fermer');
-  var log = document.getElementById('chat-log');
-  var form = document.getElementById('chat-form');
-  var input = document.getElementById('chat-input');
-  var suggest = document.getElementById('chat-suggest');
-  var dejaSalue = false;
-
-  function ajouter(role, texte, liens, urgent) {
-    var div = document.createElement('div');
-    div.className = 'msg ' + (role === 'moi' ? 'moi' : 'bot') + (urgent ? ' urgence' : '');
-    div.appendChild(document.createTextNode(texte));
-    if (role !== 'moi') {
-      var nb = document.createElement('span');
-      nb.className = 'nb';
-      nb.textContent = 'Assistant automatique : réponse générale, non personnalisée.';
-      div.appendChild(nb);
-    }
-    if (liens && liens.length) {
-      var wrap = document.createElement('div');
-      wrap.className = 'liens-msg';
-      liens.forEach(function (l) {
-        var a = document.createElement('a');
-        a.href = l[0];
-        a.textContent = l[1];
-        a.addEventListener('click', function () {
-          if (window.innerWidth <= 760) { fermerPanel(false); }
-        });
-        wrap.appendChild(a);
-      });
-      div.appendChild(wrap);
-    }
-    log.appendChild(div);
-    log.scrollTop = log.scrollHeight;
-  }
-
-  function envoyer(q) {
-    ajouter('moi', q, null, false);
-    var r = repondre(q);
-    ajouter('bot', r.texte, r.liens, !!r.urgence);
-  }
-
-  function ouvrir() {
-    panel.hidden = false;
-    bouton.setAttribute('aria-expanded', 'true');
-    if (!dejaSalue) {
-      dejaSalue = true;
-      ajouter('bot', 'Bonjour, je suis l’assistant automatique de ce guide. Je peux vous orienter vers la bonne rubrique et répondre à des questions générales. Je ne pose pas de diagnostic. Vos messages ne sont ni enregistrés ni envoyés.', [['#comprendre', 'Par où commencer']], false);
-    }
-    input.focus();
-  }
-  function fermerPanel(rendreFocus) {
-    panel.hidden = true;
-    bouton.setAttribute('aria-expanded', 'false');
-    if (rendreFocus) { bouton.focus(); }
-  }
-
-  bouton.addEventListener('click', function () {
-    if (panel.hidden) { ouvrir(); } else { fermerPanel(true); }
-  });
-  fermer.addEventListener('click', function () { fermerPanel(true); });
-  var noteD = panel.querySelector('.chat-note-d');
-  if (noteD && window.matchMedia && window.matchMedia('(max-width: 760px)').matches) { noteD.open = false; }
-  var reduire = document.getElementById('chat-reduire');
-  reduire.addEventListener('click', function () {
-    var r = panel.classList.toggle('reduit');
-    reduire.textContent = r ? 'Agrandir' : 'Réduire';
-    reduire.setAttribute('aria-expanded', String(!r));
-    reduire.setAttribute('aria-label', r ? 'Agrandir l’assistant' : 'Réduire l’assistant');
-  });
-
-  function soumettre() {
-    var v = input.value.trim();
-    if (!v) { return; }
-    envoyer(v.slice(0, 300));
-    input.value = '';
-  }
-  // Envoi explicite : Entrée et bouton. Ne dépend pas de l'événement submit,
-  // que certains navigateurs ou aperçus sandboxés (sans allow-forms) ne déclenchent pas.
-  input.addEventListener('keydown', function (e) {
-    if (e.key === 'Enter' && !e.isComposing) { e.preventDefault(); soumettre(); }
-  });
-  form.addEventListener('submit', function (e) { e.preventDefault(); soumettre(); });
-  form.querySelector('button[type="submit"]').addEventListener('click', function (e) { e.preventDefault(); soumettre(); });
-
-  [['Par où commencer ?'], ['Compression et drainage'], ['Chirurgie : questions à poser'], ['Droits en France'], ['Une urgence ?']].forEach(function (c) {
-    var b = document.createElement('button');
-    b.type = 'button';
-    b.textContent = c[0];
-    b.addEventListener('click', function () { envoyer(c[0]); });
-    suggest.appendChild(b);
-  });
-
-  document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape' && !panel.hidden) { fermerPanel(true); }
-  });
-})();
-</script>
 <script>
 (function () {
   'use strict';
@@ -3495,5 +3165,5 @@ article.recette .nutri span{background:#fff;border-radius:999px;padding:.15rem .
   });
 })();
 </script>
-<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a48701c39d1f9ed8',t:'MTc5MTY0OTc5Nw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</body>
 </html>
