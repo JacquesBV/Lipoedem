@@ -1,0 +1,1953 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Informations générales, approfondies et sourcées sur le lipœdème : signes, parcours de soins, traitements, chirurgie, droits en France, alimentation, activité physique, questions fréquentes et ressources. Ne remplace pas une consultation médicale.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Site d'information sur le lipœdème">
+<meta name="date" content="2026-10-10">
+<title>Lipœdème : informations sourcées, droits, soins et vie quotidienne</title>
+<style>
+:root{
+  --bg:#faf7f2;
+  --ink:#1e2b35;
+  --ink-soft:#3d4f5c;
+  --brand:#15605f;
+  --brand-dark:#0e4645;
+  --brand-soft:#e4f1ef;
+  --blue-soft:#e6eef9;
+  --warm-soft:#fbeee3;
+  --lav-soft:#f1ecf7;
+  --warn-bg:#fff3cf;
+  --warn-border:#8a5a00;
+  --line:#d8d2c7;
+  --focus:#ffb000;
+  --radius:14px;
+  --max:1080px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:120px}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-size:1.0625rem;line-height:1.65;color:var(--ink);background:var(--bg)}
+img,svg{max-width:100%;height:auto}
+a{color:var(--brand-dark);text-underline-offset:3px}
+a:hover{color:var(--ink)}
+a[target="_blank"]::after{content:" (nouvel onglet)";font-size:.85em;color:var(--ink-soft)}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:4px}
+.skip{position:absolute;left:-9999px;top:0;background:#fff;color:var(--ink);padding:.6rem 1rem;z-index:1000;border:2px solid var(--ink)}
+.skip:focus{left:1rem;top:1rem}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 1.1rem}
+header.site{background:var(--brand-dark);color:#fff;padding:1.2rem 0 .4rem}
+header.site h1{font-size:clamp(1.35rem,3.2vw,2rem);margin:0 0 .3rem;line-height:1.25}
+header.site p.sous{margin:0 0 .8rem;color:#e3f0ee;font-size:.98rem}
+nav.menu{background:var(--brand);position:sticky;top:0;z-index:50;box-shadow:0 2px 8px rgba(0,0,0,.18)}
+nav.menu ul{list-style:none;margin:0;padding:.45rem 0;display:flex;gap:.4rem;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:thin}
+nav.menu li{flex:0 0 auto}
+nav.menu a{display:inline-block;color:#fff;text-decoration:none;padding:.45rem .7rem;border-radius:999px;font-size:.92rem;white-space:nowrap;border:1px solid transparent}
+nav.menu a:hover,nav.menu a:focus-visible{background:#fff;color:var(--brand-dark)}
+nav.menu a[aria-current="true"]{background:#fff;color:var(--brand-dark);font-weight:700}
+.recherche{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin:.4rem 0 .2rem}
+.recherche label{font-weight:600;color:#fff}
+.recherche input[type="search"]{flex:1 1 220px;max-width:460px;padding:.55rem .75rem;border-radius:10px;border:2px solid #fff;font:inherit;color:var(--ink);background:#fff}
+#resultats-recherche{background:#fff;color:var(--ink);border-radius:10px;margin:.4rem 0 0;padding:.4rem .8rem;list-style:none;max-height:260px;overflow:auto}
+#resultats-recherche:empty{display:none}
+#resultats-recherche li{padding:.4rem 0;border-bottom:1px solid var(--line)}
+#resultats-recherche li:last-child{border-bottom:0}
+.avertissement{margin:1.2rem 0 .5rem;background:var(--warn-bg);border:2px solid var(--warn-border);border-radius:var(--radius);padding:1rem 1.2rem;color:#2b1d00}
+.avertissement h2{margin:0 0 .4rem;font-size:1.15rem;color:#2b1d00}
+.avertissement p{margin:.4rem 0}
+.meta-verif{font-size:.95rem;color:var(--ink-soft);margin:.3rem 0 1rem}
+main{padding-bottom:3rem}
+section.rubrique{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:1.2rem 1.3rem;margin:1.3rem 0;scroll-margin-top:120px}
+section.rubrique>h2{font-size:1.55rem;margin:.1rem 0 .7rem;color:var(--brand-dark);line-height:1.25;border-bottom:3px solid var(--brand-soft);padding-bottom:.4rem}
+section.rubrique h3{font-size:1.2rem;margin:1.4rem 0 .4rem;color:var(--ink)}
+section.rubrique h4{font-size:1.02rem;margin:1rem 0 .3rem;color:var(--brand-dark)}
+section.rubrique p,section.rubrique li{max-width:78ch}
+.encadre{border-radius:var(--radius);padding:.9rem 1.1rem;margin:1rem 0;border-left:6px solid}
+.encadre h3,.encadre h4{margin:.1rem 0 .4rem;font-size:1.05rem}
+.encadre p:last-child,.encadre ul:last-child{margin-bottom:0}
+.a-retenir{background:var(--brand-soft);border-color:var(--brand)}
+.ce-sait{background:var(--blue-soft);border-color:#3566a8}
+.incertain{background:var(--warm-soft);border-color:#b25e1b}
+.a-discuter{background:var(--lav-soft);border-color:#6b3d8f}
+.source{font-size:.9rem;color:var(--ink-soft);border-top:1px dashed var(--line);margin-top:.9rem;padding-top:.5rem}
+.source a{word-break:break-word}
+.tableau-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:.8rem 0;border:1px solid var(--line);border-radius:10px}
+table{border-collapse:collapse;width:100%;background:#fff;font-size:.95rem}
+caption{caption-side:top;text-align:left;font-weight:700;padding:.6rem .7rem;color:var(--brand-dark)}
+th,td{border-bottom:1px solid var(--line);padding:.55rem .6rem;text-align:left;vertical-align:top}
+thead th{background:var(--brand-soft);color:var(--ink)}
+tbody th{background:#f7f5f0;font-weight:700;min-width:8rem}
+.btn{display:inline-block;font:inherit;font-weight:600;padding:.6rem 1rem;border-radius:10px;border:2px solid var(--brand);background:var(--brand);color:#fff;cursor:pointer;text-decoration:none;margin:.25rem .25rem .25rem 0}
+.btn:hover{background:var(--brand-dark);color:#fff}
+.btn.secondaire{background:#fff;color:var(--brand-dark)}
+.btn.secondaire:hover{background:var(--brand-soft);color:var(--brand-dark)}
+.btn.danger{background:#fff;color:#8a1c1c;border-color:#8a1c1c}
+.btn.danger:hover{background:#fbe9e9;color:#8a1c1c}
+.grille{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.carte{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:1rem}
+.carte h3,.carte h4{margin-top:0}
+figure{margin:1.2rem 0;background:#fdfcf9;border:1px solid var(--line);border-radius:12px;padding:.8rem}
+figure svg{display:block;margin:0 auto;width:100%;max-width:640px;height:auto}
+figcaption{font-size:.92rem;color:var(--ink-soft);margin-top:.5rem;text-align:center}
+details{background:#fbfaf7;border:1px solid var(--line);border-radius:10px;padding:.6rem .9rem;margin:.6rem 0}
+details summary{cursor:pointer;font-weight:700;color:var(--brand-dark);padding:.2rem 0}
+details[open] summary{margin-bottom:.4rem}
+fieldset.q{border:1px solid var(--line);border-radius:12px;padding:.8rem 1rem;margin:.9rem 0;background:#fff}
+fieldset.q legend{font-weight:700;padding:0 .4rem;color:var(--ink)}
+fieldset.q p.aide{margin:.2rem 0 .5rem;color:var(--ink-soft);font-size:.95rem}
+.choix{display:flex;flex-wrap:wrap;gap:.45rem .5rem;margin:.4rem 0}
+.choix label{display:inline-flex;align-items:center;gap:.4rem;border:1px solid var(--line);border-radius:999px;padding:.35rem .75rem;background:#fdfdfb;cursor:pointer}
+.choix label:has(input:checked){background:var(--brand-soft);border-color:var(--brand)}
+.choix input{accent-color:var(--brand);width:1.05rem;height:1.05rem}
+textarea,input.texte{width:100%;font:inherit;padding:.55rem .7rem;border:1px solid #8a8f94;border-radius:10px;background:#fff;color:var(--ink)}
+textarea{min-height:90px}
+#fiche{margin-top:1.2rem;background:#fff;border:2px solid var(--brand);border-radius:var(--radius);padding:1rem 1.2rem}
+#fiche ul{padding-left:1.1rem}
+#fiche li{margin:.3rem 0}
+.alerte{background:#fdecec;border:2px solid #8a1c1c;color:#4a0c0c;border-radius:var(--radius);padding:.9rem 1.1rem;margin:1rem 0}
+.alerte[hidden]{display:none}
+.tr-ok{background:#f1faf4}
+.liste-cochee{list-style:none;padding-left:0}
+.liste-cochee li::before{content:"\2713\00a0";color:var(--brand);font-weight:700}
+.note-pieds{font-size:.9rem;color:var(--ink-soft)}
+.pictogramme{font-size:1.3rem;margin-right:.3rem}
+.stades{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:.9rem}
+.stades>div{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:.8rem}
+.checklist li{margin:.3rem 0}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.retour{position:fixed;right:1rem;bottom:1rem;z-index:60;display:none}
+.retour.visible{display:inline-block}
+footer.site{background:#1b2a31;color:#e7eef0;padding:1.5rem 0 2rem;font-size:.95rem}
+footer.site a{color:#bfe3de}
+footer.site h2{font-size:1.1rem;color:#fff}
+@media (max-width:640px){
+  .wrap{padding:0 .85rem}
+  section.rubrique{padding:1rem .95rem}
+  section.rubrique>h2{font-size:1.3rem}
+  .tableau-wrap table thead{display:none}
+  .tableau-wrap table,.tableau-wrap tbody,.tableau-wrap tr,.tableau-wrap td,.tableau-wrap th{display:block;width:100%}
+  .tableau-wrap tr{border-bottom:2px solid var(--line);padding:.4rem 0}
+  .tableau-wrap td{border:0;padding:.25rem .6rem}
+  .tableau-wrap td::before{content:attr(data-label);display:block;font-weight:700;color:var(--brand-dark);font-size:.88rem}
+  .tableau-wrap tbody th{min-width:0}
+  .btn{width:100%;text-align:center}
+  .retour{left:1rem;right:auto;text-align:center}
+}
+@media print{
+  nav.menu,.retour,.recherche,.no-print,footer.site{display:none!important}
+  body{background:#fff}
+  section.rubrique{border:0;box-shadow:none;break-inside:auto}
+  a[target="_blank"]::after{content:""}
+  header.site{background:#fff;color:#000}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<a class="skip" href="#contenu">Aller directement au contenu</a>
+
+<header class="site">
+  <div class="wrap">
+    <h1>Lipœdème : informations générales, sourcées et accessibles</h1>
+    <p class="sous">Pour les personnes concernées, leurs proches et les professionnels qui souhaitent mieux comprendre la maladie.</p>
+    <div class="recherche" role="search">
+      <label for="recherche-site">Rechercher dans le site</label>
+      <input type="search" id="recherche-site" placeholder="Ex. : compression, sport, FAQ, CPAM" autocomplete="off" aria-describedby="aide-recherche">
+      <span id="aide-recherche" class="note-pieds" style="color:#e3f0ee">Tapez un mot-clé : la liste des rubriques correspondantes apparaît.</span>
+    </div>
+    <ul id="resultats-recherche" aria-live="polite"></ul>
+  </div>
+  <nav class="menu" aria-label="Menu principal">
+    <div class="wrap">
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#signes">Signes et évolution</a></li>
+        <li><a href="#questionnaire">Questionnaire</a></li>
+        <li><a href="#diagnostic">Diagnostic et parcours</a></li>
+        <li><a href="#traitements">Traitements</a></li>
+        <li><a href="#chirurgie">Chirurgie</a></li>
+        <li><a href="#france">Droits en France</a></li>
+        <li><a href="#alimentation">Alimentation</a></li>
+        <li><a href="#sport">Activité physique</a></li>
+        <li><a href="#vie">Vie quotidienne</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#associations">Associations et liens</a></li>
+        <li><a href="#glossaire">Glossaire et sources</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main id="contenu">
+<div class="wrap">
+
+  <section class="avertissement" role="note" aria-labelledby="titre-avertissement">
+    <h2 id="titre-avertissement">Avertissement médical important</h2>
+    <p>Ce site fournit des informations générales sur le lipœdème. Il ne remplace pas une consultation, un diagnostic, un traitement ni un avis d’un professionnel de santé. Un questionnaire en ligne ne permet pas de diagnostiquer le lipœdème. En cas de symptôme inquiétant ou d’aggravation rapide, demandez un avis médical. En cas d’urgence, contactez les services d’urgence de votre pays.</p>
+    <p>En France, les numéros d’urgence sont le <strong>15</strong> (SAMU) et le <strong>112</strong> (numéro d’urgence européen).</p>
+    <p>Le lipœdème peut coexister avec d’autres problèmes de santé (surpoids ou obésité, lymphœdème, insuffisance veineuse, douleurs articulaires, etc.). Un professionnel de santé doit évaluer les symptômes et les diagnostics possibles, car plusieurs causes peuvent produire des signes proches.</p>
+  </section>
+
+  <p class="meta-verif">
+    <strong>Date de création :</strong> 10 octobre 2026 · <strong>Dernière vérification des sources :</strong> 10 octobre 2026.
+    Les règles, remboursements, tarifs et recommandations peuvent évoluer : vérifiez toujours auprès des organismes officiels (<a href="https://www.ameli.fr/" target="_blank" rel="noopener noreferrer">ameli.fr</a>, <a href="https://www.has-sante.fr/" target="_blank" rel="noopener noreferrer">has-sante.fr</a>, <a href="https://www.service-public.fr/" target="_blank" rel="noopener noreferrer">service-public.fr</a>).
+    Les points que je n’ai pas pu vérifier sont signalés comme tels dans le texte et dans la rubrique « Sources et mises à jour ».
+  </p>
+
+  <!-- ==================== ACCUEIL ==================== -->
+  <section id="accueil" class="rubrique" aria-labelledby="t-accueil">
+    <h2 id="t-accueil">1. Accueil : comprendre rapidement</h2>
+
+    <h3>Définition du lipœdème</h3>
+    <p>Le lipœdème est une affection chronique du tissu graisseux situé sous la peau. Il se traduit par une <strong>répartition anormale de la graisse</strong>, le plus souvent <strong>symétrique</strong>, principalement aux membres inférieurs : de la hanche jusqu’à la cheville, en épargnant en général le pied. Les bras peuvent aussi être concernés. Il s’accompagne souvent de douleurs à la pression, d’une sensibilité au toucher, d’une sensation de lourdeur et d’ecchymoses (bleus) faciles.</p>
+    <p>Pour les personnes concernées, le point important est le suivant : le lipœdème n’est pas simplement un « surpoids localisé ». Il ne disparaît pas avec un régime seul. Cette différence est d’ailleurs reprise par les autorités : la réponse ministérielle du 1<sup>er</sup> juillet 2025 indique que le lipœdème « ne doit pas être confondu avec le lymphœdème » et décrit une répartition anormale du tissu adipeux « allant des hanches jusqu’aux chevilles en épargnant le pied ».</p>
+    <div class="source">Sources : <a href="https://questions.assemblee-nationale.fr/q17/17-6704QE.htm" target="_blank" rel="noopener noreferrer">Assemblée nationale, question écrite n° 6704 et réponse publiée au Journal officiel le 1<sup>er</sup> juillet 2025</a> ; <a href="https://www.ameli.fr/assure/sante/themes/lipoedeme/lipoedeme-traitement" target="_blank" rel="noopener noreferrer">Assurance Maladie, « Traitement du lipœdème », page datée du 16 juin 2025</a>.</div>
+
+    <figure role="img" aria-labelledby="fig-zones-titre fig-zones-desc">
+      <svg viewBox="0 0 520 380" xmlns="http://www.w3.org/2000/svg">
+        <title id="fig-zones-titre">Schéma des zones le plus souvent décrites dans le lipœdème</title>
+        <desc id="fig-zones-desc">Silhouette schématique montrant les zones des membres inférieurs souvent décrites : hanches, cuisses, genoux, mollets et chevilles. Les pieds sont généralement épargnés. Les bras peuvent aussi être concernés.</desc>
+        <rect x="0" y="0" width="520" height="380" fill="#fdfcf9"/>
+        <!-- silhouette -->
+        <g fill="#cfd9dc" stroke="#5e7079" stroke-width="2">
+          <circle cx="260" cy="48" r="26"/>
+          <path d="M226 84 Q260 74 294 84 L304 178 Q260 190 216 178 Z"/>
+          <path d="M226 90 Q206 96 194 170 L182 230 Q186 236 194 232 L210 178 Z"/>
+          <path d="M294 90 Q314 96 326 170 L338 230 Q334 236 326 232 L310 178 Z"/>
+          <path d="M218 178 Q260 192 302 178 L312 232 Q300 240 286 236 L264 214 L238 236 Q224 240 208 232 Z"/>
+          <path d="M210 232 Q230 236 240 236 L236 330 Q232 352 220 352 L214 352 Q202 350 204 326 Z"/>
+          <path d="M310 232 Q290 236 280 236 L284 330 Q288 352 300 352 L306 352 Q318 350 316 326 Z"/>
+          <path d="M204 352 L220 352 L222 368 L196 368 Z M300 352 L316 352 L320 368 L294 368 Z" fill="#e7ecee"/>
+        </g>
+        <!-- zones surlignées -->
+        <g fill="#15605f" fill-opacity=".28" stroke="#15605f" stroke-width="1.5" stroke-dasharray="4 3">
+          <ellipse cx="230" cy="200" rx="30" ry="18"/>
+          <ellipse cx="290" cy="200" rx="30" ry="18"/>
+          <ellipse cx="222" cy="262" rx="20" ry="26"/>
+          <ellipse cx="298" cy="262" rx="20" ry="26"/>
+          <ellipse cx="222" cy="312" rx="16" ry="14"/>
+          <ellipse cx="298" cy="312" rx="16" ry="14"/>
+          <ellipse cx="206" cy="112" rx="11" ry="34" transform="rotate(12 206 112)"/>
+          <ellipse cx="314" cy="112" rx="11" ry="34" transform="rotate(-12 314 112)"/>
+        </g>
+        <!-- légendes -->
+        <g font-family="system-ui,Arial,sans-serif" font-size="14" fill="#1e2b35">
+          <line x1="150" y1="200" x2="200" y2="200" stroke="#5e7079"/><text x="20" y="205">Hanches</text>
+          <line x1="370" y1="200" x2="330" y2="200" stroke="#5e7079"/><text x="380" y="205">Hanches</text>
+          <line x1="150" y1="262" x2="196" y2="262" stroke="#5e7079"/><text x="20" y="267">Cuisses</text>
+          <line x1="370" y1="262" x2="318" y2="262" stroke="#5e7079"/><text x="380" y="267">Cuisses</text>
+          <line x1="150" y1="312" x2="202" y2="312" stroke="#5e7079"/><text x="20" y="317">Genoux, mollets</text>
+          <line x1="370" y1="312" x2="314" y2="312" stroke="#5e7079"/><text x="380" y="317">Genoux, mollets</text>
+          <line x1="150" y1="112" x2="196" y2="112" stroke="#5e7079"/><text x="20" y="117">Bras (possible)</text>
+          <line x1="370" y1="112" x2="324" y2="112" stroke="#5e7079"/><text x="380" y="117">Bras (possible)</text>
+          <text x="20" y="372" fill="#5e7079">Pieds : en général épargnés</text>
+        </g>
+      </svg>
+      <figcaption>Schéma indicatif et non anatomique : il montre les zones souvent décrites, mais il ne sert ni à établir un diagnostic ni à évaluer un stade.</figcaption>
+    </figure>
+
+    <h3>Ce que l’on sait</h3>
+    <div class="encadre ce-sait">
+      <h4>Ce que l’on sait</h4>
+      <ul>
+        <li>Le lipœdème est décrit comme une accumulation <strong>anormale et symétrique</strong> de tissu adipeux, principalement aux jambes, avec épargne habituelle des pieds (<a href="https://questions.assemblee-nationale.fr/q17/17-6704QE.htm" target="_blank" rel="noopener noreferrer">réponse ministérielle, 1<sup>er</sup> juillet 2025</a>).</li>
+        <li>Il est décrit <strong>très majoritairement chez les femmes</strong>, et souvent à des moments de transition hormonale (puberté, grossesse, ménopause), selon des articles de vulgarisation scientifique (voir la rubrique FAQ). Les chiffres de fréquence varient selon les études : je n’ai pas pu établir de prévalence fiable pour la France.</li>
+        <li>Les traitements conservateurs (compression, activité physique, prise en charge de la douleur) peuvent <strong>réduire les symptômes</strong>, mais ne le guérissent pas. L’Assurance Maladie indique qu’ils ont peu d’action sur l’esthétique des membres : une réduction de volume « minime », de l’ordre de 5 à 10 %, selon sa page dédiée.</li>
+        <li>La liposuccion est décrite par les sources médicales comme une option chirurgicale possible en cas d’échec des mesures conservatrices, avec des risques (rubrique Chirurgie).</li>
+      </ul>
+      <div class="source">Sources : <a href="https://www.ameli.fr/assure/sante/themes/lipoedeme/lipoedeme-traitement" target="_blank" rel="noopener noreferrer">Assurance Maladie, « Traitement du lipœdème »</a> ; <a href="https://www.inesss.qc.ca/fileadmin/doc/INESSS/Rapports/Traitement/Lipoedeme_EC_INESSS.pdf" target="_blank" rel="noopener noreferrer">INESSS (Québec), « Le lipœdème. État des connaissances », septembre 2025</a>.</div>
+    </div>
+
+    <h3>Ce qui reste incertain</h3>
+    <div class="encadre incertain">
+      <h4>Ce qui reste incertain</h4>
+      <ul>
+        <li><strong>Les causes exactes</strong> ne sont pas établies. Des chercheurs évoquent une composante génétique et hormonale, ainsi que des anomalies des vaisseaux, mais aucun gène responsable n’a été identifié à ce jour (selon <a href="https://www.nationalgeographic.fr/sante/lipoedeme-pourquoi-cette-maladie-reste-si-mal-comprise-graisse-sous-cutanee" target="_blank" rel="noopener noreferrer">National Geographic France, article de septembre 2026</a>, qui cite des chercheurs).</li>
+        <li><strong>Il n’existe pas de test sanguin ni d’imagerie</strong> permettant de confirmer le diagnostic à lui seul : le diagnostic repose sur l’examen clinique et l’interrogatoire, d’après les mêmes sources et le rapport québécois de 2025.</li>
+        <li><strong>Maladie ou syndrome ?</strong> La question n’est pas tranchée. La réponse ministérielle française évoque plutôt un syndrome, et indique qu’« il n’est pas possible de parler de traitement pour le lipœdème » au sens d’un traitement curatif.</li>
+        <li><strong>Évolution</strong> : la progression varie selon les personnes. Les données sur l’évolution à long terme sont limitées.</li>
+      </ul>
+      <div class="source">Sources : <a href="https://questions.assemblee-nationale.fr/q17/17-6704QE.htm" target="_blank" rel="noopener noreferrer">réponse ministérielle n° 6704</a> ; <a href="https://www.inesss.qc.ca/fileadmin/doc/INESSS/Rapports/Traitement/Lipoedeme_EC_INESSS.pdf" target="_blank" rel="noopener noreferrer">INESSS, septembre 2025</a>.</div>
+    </div>
+
+    <h3>Signes fréquemment décrits et diversité des situations</h3>
+    <p>Les signes décrits sont détaillés dans la rubrique « Signes, symptômes et évolution ». En bref : graisse localisée et symétrique, douleurs à la pression, sensation de jambes lourdes, ecchymoses faciles, gêne à la marche ou aux déplacements. <strong>Les personnes concernées ne présentent pas toutes les mêmes signes</strong>, et leur intensité varie beaucoup.</p>
+
+    <h3>Lipœdème, lymphœdème, obésité, insuffisance veineuse : quelles différences ?</h3>
+    <p>Ces situations peuvent se ressembler à première vue, et elles peuvent aussi coexister. Le tableau suivant donne des repères généraux ; seul un professionnel de santé peut les distinguer par l’examen clinique.</p>
+    <div class="tableau-wrap">
+      <table>
+        <caption>Repères pour distinguer des situations proches (repères généraux, non diagnostiques)</caption>
+        <thead>
+          <tr><th scope="col">Situation</th><th scope="col">Ce qui la caractérise souvent</th><th scope="col">Points à retenir</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Lipœdème</th>
+            <td data-label="Ce qui la caractérise souvent">Graisse anormalement répartie, généralement symétrique, des hanches aux chevilles en épargnant le pied ; douleur à la pression, ecchymoses (source : réponse ministérielle de 2025).</td>
+            <td data-label="Points à retenir">Affection distincte du lymphœdème. Peut se compliquer d’une composante lymphatique (« lipolymphœdème »), selon l’Assurance Maladie.</td>
+          </tr>
+          <tr>
+            <th scope="row">Lymphœdème</th>
+            <td data-label="Ce qui la caractérise souvent">Gonflement lié à une altération du drainage de la lymphe. Il est décrit comme différent du lipœdème dans les sources officielles.</td>
+            <td data-label="Points à retenir">Les drainages lymphatiques sont pris en charge par l’Assurance Maladie en cas de lymphœdème diagnostiqué (selon ameli.fr).</td>
+          </tr>
+          <tr>
+            <th scope="row">Obésité</th>
+            <td data-label="Ce qui la caractérise souvent">Excès de masse grasse, généralement réparti sur l’ensemble du corps.</td>
+            <td data-label="Points à retenir">L’obésité est un facteur qui peut aggraver le lipœdème ; elle doit être prise en charge dans toutes ses dimensions si elle est associée (ameli.fr).</td>
+          </tr>
+          <tr>
+            <th scope="row">Insuffisance veineuse</th>
+            <td data-label="Ce qui la caractérise souvent">Jambes lourdes, varices, gonflements qui augmentent en fin de journée, parfois crampes.</td>
+            <td data-label="Points à retenir">Elle peut coexister avec un lipœdème et nécessite son propre bilan. Le diagnostic appartient au médecin.</td>
+          </tr>
+          <tr>
+            <th scope="row">Autres causes</th>
+            <td data-label="Ce qui la caractérise souvent">Gonflements liés au cœur, aux reins, à certains médicaments, à une maladie inflammatoire, à une maladie de la thyroïde, à une infection, à une tumeur ou à un traumatisme, entre autres.</td>
+            <td data-label="Points à retenir">Ces causes doivent être recherchées par un médecin, en particulier si le gonflement est soudain, asymétrique, douloureux ou accompagné de fièvre.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="source">Sources : <a href="https://questions.assemblee-nationale.fr/q17/17-6704QE.htm" target="_blank" rel="noopener noreferrer">réponse ministérielle n° 6704 (1<sup>er</sup> juillet 2025)</a> ; <a href="https://www.ameli.fr/assure/sante/themes/lipoedeme/lipoedeme-traitement" target="_blank" rel="noopener noreferrer">ameli.fr, « Traitement du lipœdème » (16 juin 2025)</a>. Les « autres causes » sont présentées comme une liste indicative de situations à évaluer par un médecin ; elles ne sont pas détaillées ici faute de source spécifique consultée.</div>
+
+    <h3>Message clair</h3>
+    <div class="encadre a-retenir">
+      <h4>À retenir</h4>
+      <ul>
+        <li>Une <strong>apparence corporelle</strong> ou un <strong>symptôme isolé</strong> ne suffit pas à établir un diagnostic.</li>
+        <li>Le lipœdème peut coexister avec d’autres problèmes de santé. Un professionnel doit évaluer les symptômes et les diagnostics possibles.</li>
+        <li>Aucun questionnaire en ligne, y compris celui de ce site, ne permet de confirmer ou d’écarter un lipœdème.</li>
+      </ul>
+    </div>
+
+    <figure role="img" aria-labelledby="fig-demarche-titre fig-demarche-desc">
+      <svg viewBox="0 0 640 230" xmlns="http://www.w3.org/2000/svg">
+        <title id="fig-demarche-titre">Schéma de la démarche : de l’observation à la consultation</title>
+        <desc id="fig-demarche-desc">Quatre étapes : noter ses observations, consulter un médecin, faire évaluer par un professionnel, décider ensemble du suivi.</desc>
+        <rect width="640" height="230" fill="#fdfcf9"/>
+        <g font-family="system-ui,Arial,sans-serif" font-size="14" text-anchor="middle">
+          <rect x="16" y="60" width="130" height="110" rx="14" fill="#e4f1ef" stroke="#15605f" stroke-width="2"/>
+          <text x="81" y="100" font-weight="700" fill="#0e4645">1. Observer</text>
+          <text x="81" y="124" fill="#1e2b35">Noter symptômes</text>
+          <text x="81" y="142" fill="#1e2b35">et dates</text>
+          <rect x="170" y="60" width="130" height="110" rx="14" fill="#e6eef9" stroke="#3566a8" stroke-width="2"/>
+          <text x="235" y="100" font-weight="700" fill="#1f3f6e">2. Consulter</text>
+          <text x="235" y="124" fill="#1e2b35">Médecin traitant</text>
+          <text x="235" y="142" fill="#1e2b35">ou spécialiste</text>
+          <rect x="324" y="60" width="130" height="110" rx="14" fill="#f1ecf7" stroke="#6b3d8f" stroke-width="2"/>
+          <text x="389" y="100" font-weight="700" fill="#4a2766">3. Évaluer</text>
+          <text x="389" y="124" fill="#1e2b35">Examen clinique</text>
+          <text x="389" y="142" fill="#1e2b35">et autres causes</text>
+          <rect x="478" y="60" width="146" height="110" rx="14" fill="#fbeee3" stroke="#b25e1b" stroke-width="2"/>
+          <text x="551" y="100" font-weight="700" fill="#6b3206">4. Décider</text>
+          <text x="551" y="124" fill="#1e2b35">Suivi et options</text>
+          <text x="551" y="142" fill="#1e2b35">à discuter</text>
+        </g>
+        <g stroke="#5e7079" stroke-width="2.5" fill="#5e7079">
+          <line x1="150" y1="115" x2="166" y2="115"/><polygon points="166,109 176,115 166,121"/>
+          <line x1="304" y1="115" x2="320" y2="115"/><polygon points="320,109 330,115 320,121"/>
+          <line x1="458" y1="115" x2="474" y2="115"/><polygon points="474,109 484,115 474,121"/>
+        </g>
+        <text x="320" y="205" text-anchor="middle" font-family="system-ui,Arial,sans-serif" font-size="13" fill="#3d4f5c">Cette démarche ne remplace pas la consultation : elle aide à préparer le rendez-vous.</text>
+      </svg>
+      <figcaption>Schéma explicatif de la démarche générale.</figcaption>
+    </figure>
+
+    <h3>Liens rapides</h3>
+    <div class="grille">
+      <div class="carte">
+        <h4>Questionnaire d’orientation</h4>
+        <p>Pour organiser vos observations avant une consultation, sans diagnostic.</p>
+        <a class="btn secondaire" href="#questionnaire">Ouvrir le questionnaire</a>
+      </div>
+      <div class="carte">
+        <h4>Parcours de diagnostic</h4>
+        <p>Préparer la consultation, les professionnels possibles, les questions à poser.</p>
+        <a class="btn secondaire" href="#diagnostic">Voir le parcours</a>
+      </div>
+      <div class="carte">
+        <h4>Traitements</h4>
+        <p>Approches non chirurgicales et chirurgicales, avec leurs limites.</p>
+        <a class="btn secondaire" href="#traitements">Voir les traitements</a>
+      </div>
+      <div class="carte">
+        <h4>Droits en France</h4>
+        <p>Remboursements, ALD, aides de la CPAM, recours, statut des démarches.</p>
+        <a class="btn secondaire" href="#france">Voir les droits</a>
+      </div>
+      <div class="carte">
+        <h4>Ressources d’aide</h4>
+        <p>Associations, organismes officiels et sources vérifiées.</p>
+        <a class="btn secondaire" href="#associations">Voir les ressources</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SIGNES ==================== -->
+  <section id="signes" class="rubrique" aria-labelledby="t-signes">
+    <h2 id="t-signes">2. Signes, symptômes et évolution</h2>
+    <p>Cette rubrique décrit les signes rapportés dans la littérature et par les professionnels. Elle ne sert pas à vous auto-diagnostiquer. Les symptômes <strong>varient</strong>, ne sont <strong>pas tous présents</strong> chez chaque personne et <strong>peuvent avoir d’autres causes</strong>.</p>
+
+    <h3>Répartition du tissu adipeux</h3>
+    <p>La caractéristique la plus souvent décrite est une graisse répartie de façon disproportionnée sur les hanches, les fesses, les cuisses, les genoux, les mollets et les chevilles, les pieds étant en général épargnés. La graisse peut être plus marquée sur les jambes que sur le haut du corps, ce qui peut donner une silhouette décrite comme « en colonnes ». Les bras peuvent aussi être concernés. Une répartition de ce type <strong>ne suffit pas</strong> à établir un diagnostic : il faut un examen clinique.</p>
+
+    <h3>Symétrie éventuelle</h3>
+    <p>La symétrie (les deux côtés du corps sont touchés de façon comparable) est l’une des caractéristiques décrites dans les sources. Une <strong>asymétrie</strong> n’exclut pas un lipœdème, mais elle doit être signalée à un médecin, car elle oriente vers d’autres causes possibles à rechercher.</p>
+
+    <h3>Douleurs, sensibilité, lourdeur</h3>
+    <p>Les sources décrivent des douleurs spontanées, une douleur à la pression ou au pincement, une sensibilité au toucher, une sensation de jambes lourdes ou tendues. Ces symptômes peuvent être <strong>variables d’un jour à l’autre</strong>. Certaines personnes rapportent une aggravation en fin de journée, par la chaleur ou après une station debout prolongée ; ce point relève surtout de témoignages et d’articles de vulgarisation, non d’études contrôlées. L’INESSS décrit les douleurs spontanées et les symptômes sensoriels comme des éléments fréquents.</p>
+
+    <h3>Ecchymoses et évolution</h3>
+    <p>Des ecchymoses (bleus) faciles et fréquentes sont décrites, parfois sans choc important. Leur fréquence et leur aspect doivent être notés et discutés avec un médecin. Des bleus importants, <strong>spontanés</strong> ou accompagnés d’autres signes, justifient une consultation.</p>
+
+    <h3>Mobilité et retentissement fonctionnel</h3>
+    <p>Certaines personnes rapportent une gêne à la marche, à la montée des escaliers, au port de charges ou à la pratique sportive. Le <strong>retentissement fonctionnel</strong> (ce qu’on ne peut plus faire ou ce qu’on fait avec difficulté) est un élément important à décrire au médecin, car il oriente le suivi.</p>
+
+    <h3>Retentissement psychologique</h3>
+    <p>Le lipœdème peut avoir un impact sur l’image de soi, la vie sociale, la sexualité, le travail ou l’humeur. L’Assurance Maladie indique qu’un suivi psychologique peut être nécessaire, notamment en cas de rapport perturbé à l’alimentation, et qu’il peut être proposé par le médecin. Ce retentissement est réel et doit être pris en compte, sans culpabilisation.</p>
+
+    <div class="encadre ce-sait">
+      <h4>Ce que l’on sait</h4>
+      <p>Les symptômes douloureux, la sensation de lourdeur et la sensibilité au toucher sont régulièrement rapportés. Les traitements conservateurs visent surtout à soulager ces symptômes et à prévenir les complications cutanées (selon ameli.fr).</p>
+    </div>
+    <div class="encadre incertain">
+      <h4>Ce qui reste incertain</h4>
+      <p>La fréquence exacte de chaque signe, leur ordre d’apparition et leur évolution à long terme ne sont pas bien documentés. Les études disponibles sont souvent petites, rétrospectives ou fondées sur des questionnaires remplis par les patients (INESSS, 2025).</p>
+    </div>
+
+    <h3>Les stades morphologiques</h3>
+    <p>Des classifications décrivent des <strong>stades</strong> selon l’aspect de la peau et du tissu graisseux. Elles sont utiles pour décrire une situation, mais elles <strong>varient selon les auteurs</strong> et leur interprétation n’est pas uniforme. Je n’ai pas pu consulter le détail de chaque classification : les descriptions ci-dessous sont donc schématiques.</p>
+    <div class="stades">
+      <div>
+        <h4>Stade 1 (aspect décrit)</h4>
+        <p>Peau d’aspect lisse, augmentation du volume du tissu graisseux sous la peau.</p>
+      </div>
+      <div>
+        <h4>Stade 2 (aspect décrit)</h4>
+        <p>Surface plus irrégulière, nodules ou creux, aspect « capitonné » plus marqué.</p>
+      </div>
+      <div>
+        <h4>Stade 3 (aspect décrit)</h4>
+        <p>Volume plus important, bourrelets ou replis cutanés, parfois une fibrose (tissu moins souple) selon les descriptions chirurgicales.</p>
+      </div>
+    </div>
+    <figure role="img" aria-labelledby="fig-stades-titre fig-stades-desc">
+      <svg viewBox="0 0 640 230" xmlns="http://www.w3.org/2000/svg">
+        <title id="fig-stades-titre">Schéma pédagogique de trois aspects de surface de la peau</title>
+        <desc id="fig-stades-desc">Trois panneaux montrant une surface lisse, une surface avec de petits nodules, puis une surface avec des lobules et des replis. Schéma indicatif.</desc>
+        <rect width="640" height="230" fill="#fdfcf9"/>
+        <rect x="20" y="20" width="190" height="150" rx="12" fill="#f4efe8" stroke="#8a8f94"/>
+        <path d="M30 120 Q105 100 200 120" fill="none" stroke="#c9b9a3" stroke-width="2"/>
+        <rect x="225" y="20" width="190" height="150" rx="12" fill="#f4efe8" stroke="#8a8f94"/>
+        <g fill="#dccbb4" stroke="#b59b78" stroke-width="1">
+          <circle cx="260" cy="60" r="10"/><circle cx="300" cy="90" r="12"/><circle cx="345" cy="58" r="10"/>
+          <circle cx="280" cy="125" r="11"/><circle cx="330" cy="140" r="12"/><circle cx="375" cy="112" r="10"/>
+          <circle cx="250" cy="150" r="9"/><circle cx="395" cy="150" r="9"/><circle cx="310" cy="50" r="8"/>
+        </g>
+        <rect x="430" y="20" width="190" height="150" rx="12" fill="#f4efe8" stroke="#8a8f94"/>
+        <g fill="#d0b89a" stroke="#9b7d59" stroke-width="2">
+          <ellipse cx="480" cy="70" rx="30" ry="22"/><ellipse cx="545" cy="66" rx="32" ry="24"/>
+          <ellipse cx="490" cy="130" rx="32" ry="20"/><ellipse cx="560" cy="125" rx="30" ry="22"/>
+        </g>
+        <g font-family="system-ui,Arial,sans-serif" font-size="14" text-anchor="middle" fill="#1e2b35">
+          <text x="115" y="200">Surface lisse</text>
+          <text x="320" y="200">Petits nodules</text>
+          <text x="525" y="200">Lobules et replis</text>
+          <text x="320" y="224" font-size="12" fill="#3d4f5c">Schéma pédagogique : l’évaluation du stade revient à un professionnel de santé.</text>
+        </g>
+      </svg>
+      <figcaption>Trois aspects de surface schématisés. Ce ne sont pas des photographies et ils ne permettent pas, à eux seuls, de déterminer un stade.</figcaption>
+    </figure>
+
+    <div class="encadre incertain">
+      <h4>Important : stade et ressenti sont deux choses différentes</h4>
+      <ul>
+        <li>Le <strong>stade</strong> décrit l’<strong>aspect morphologique</strong>. Il ne dit pas, à lui seul, le niveau de douleur, de handicap ou de gravité.</li>
+        <li>Deux personnes au même stade peuvent avoir des douleurs, une mobilité et une qualité de vie très différentes.</li>
+        <li>Seul un professionnel de santé peut évaluer la situation. <strong>Le stade ne peut pas être déterminé de façon fiable par un questionnaire en ligne.</strong></li>
+      </ul>
+    </div>
+
+    <div class="encadre a-discuter">
+      <h4>À discuter avec un professionnel de santé</h4>
+      <ul>
+        <li>Quelle évaluation est nécessaire pour vos symptômes, et quelles autres causes doivent être recherchées ?</li>
+        <li>Votre situation justifie-t-elle un suivi régulier, et à quel rythme ?</li>
+        <li>Quels symptômes doivent vous faire consulter rapidement ?</li>
+      </ul>
+    </div>
+    <div class="source">Sources : <a href="https://www.ameli.fr/assure/sante/themes/lipoedeme/lipoedeme-traitement" target="_blank" rel="noopener noreferrer">ameli.fr, « Traitement du lipœdème » (16 juin 2025)</a> ; <a href="https://www.inesss.qc.ca/fileadmin/doc/INESSS/Rapports/Traitement/Lipoedeme_EC_INESSS.pdf" target="_blank" rel="noopener noreferrer">INESSS, « Le lipœdème. État des connaissances » (septembre 2025)</a> ; <a href="https://questions.assemblee-nationale.fr/q17/17-6704QE.htm" target="_blank" rel="noopener noreferrer">réponse ministérielle n° 6704 (1<sup>er</sup> juillet 2025)</a>. Les descriptions de stades reprennent des éléments communs de la littérature ; les classifications détaillées (dont les références citées dans les sources ameli, comme le consensus espagnol de 2018) n’ont pas été reprises mot à mot.</div>
+  </section>
+
+  <!-- ==================== QUESTIONNAIRE ==================== -->
+  <section id="questionnaire" class="rubrique" aria-labelledby="t-questionnaire">
+    <h2 id="t-questionnaire">3. Questionnaire d’orientation (sans diagnostic)</h2>
+
+    <div class="encadre a-retenir">
+      <h3>Ce questionnaire sert à organiser vos observations</h3>
+      <ul class="checklist">
+        <li><strong>Il ne diagnostique rien.</strong> Il ne dit ni « vous êtes atteinte », ni « vous n’êtes pas atteinte ». Il ne donne ni pourcentage, ni score, ni stade, ni conseil de traitement.</li>
+        <li><strong>Les réponses restent sur votre appareil.</strong> Ce site ne les envoie à aucun serveur et ne les enregistre pas (aucun stockage local, aucun cookie). Elles disparaissent lorsque vous quittez ou rechargez la page.</li>
+        <li><strong>Vous pouvez laisser une question sans réponse</strong>, ou choisir « Je préfère ne pas répondre ».</li>
+        <li><strong>Ce questionnaire n’est pas validé comme outil diagnostique.</strong> Il ne permet ni de confirmer ni d’écarter un lipœdème.</li>
+      </ul>
+    </div>
+
+    <noscript><p class="alerte">Le questionnaire nécessite JavaScript, activé dans votre navigateur. Vous pouvez aussi utiliser la rubrique « Préparer la consultation » ci-dessous pour noter vos observations.</p></noscript>
+
+    <form id="questionnaire-form" class="questionnaire" action="#" onsubmit="return false;" aria-describedby="aide-questionnaire">
+      <p id="aide-questionnaire" class="note-pieds">Répondez seulement aux questions que vous souhaitez. Toutes les réponses sont facultatives. La rubrique H est entièrement facultative.</p>
+      <div id="questions"></div>
+
+      <div class="alerte" id="alerte-urgence" role="alert" hidden>
+        <p><strong>Si l’un de ces signes est présent maintenant, appelez le 15 (SAMU) ou le 112 sans attendre.</strong></p>
+        <p>Ne restez pas seul(e) avec ces signes en attendant un rendez-vous. Ce message ne signifie pas que vous avez une maladie précise : il rappelle seulement qu’une évaluation rapide est nécessaire.</p>
+      </div>
+      <div class="alerte" id="alerte-consult" role="status" hidden style="background:#fff7e6;border-color:#8a5a00;color:#2b1d00">
+        <p><strong>Un gonflement soudain, asymétrique, chaud ou douloureux doit faire l’objet d’une consultation rapide</strong> (médecin traitant, ou service d’urgence si l’état est grave). D’autres causes doivent être recherchées.</p>
+      </div>
+
+      <div class="choix" style="margin-top:1rem">
+        <button type="button" class="btn" id="btn-fiche">Générer ma fiche d’observations</button>
+        <button type="button" class="btn danger" id="btn-effacer">Effacer mes réponses</button>
+      </div>
+    </form>
+
+    <div id="fiche" aria-live="polite" tabindex="-1"></div>
+    <div class="choix" id="actions-fiche" hidden>
+      <button type="button" class="btn secondaire" id="btn-imprimer">Imprimer la fiche</button>
+    </div>
+
+    <div class="encadre a-discuter" style="margin-top:1.2rem">
+      <h3>Orientation prudente</h3>
+      <ul>
+        <li>Certaines réponses peuvent justifier d’en parler à un médecin.</li>
+        <li>Ce questionnaire ne permet ni de confirmer ni d’écarter un lipœdème.</li>
+        <li>Les symptômes peuvent être dus à plusieurs causes, et plusieurs situations peuvent coexister.</li>
+        <li>Vous pouvez apporter vos réponses à votre consultation.</li>
+      </ul>
+    </div>
+    <div class="source">Le questionnaire a été rédigé à partir des signes décrits par l’Assurance Maladie (ameli.fr, 16 juin 2025), la réponse ministérielle n° 6704 (1<sup>er</sup> juillet 2025) et le rapport de l’INESSS (septembre 2025). Il n’a pas fait l’objet d’une validation scientifique.</div>
+  </section>
+
+  <!-- ==================== DIAGNOSTIC ==================== -->
+  <section id="diagnostic" class="rubrique" aria-labelledby="t-diagnostic">
+    <h2 id="t-diagnostic">4. Diagnostic et parcours de soins</h2>
+
+    <h3>Préparer une consultation</h3>
+    <p>Une bonne préparation permet de gagner du temps et d’éviter d’oublier des éléments importants. Notez, dans les semaines qui précèdent :</p>
+    <ul>
+      <li>les zones concernées, leur aspect, et si elles vous semblent symétriques ;</li>
+      <li>les douleurs, la sensibilité, la sensation de lourdeur, leur moment d’apparition et leur intensité (sur une échelle que vous choisissez) ;</li>
+      <li>la fréquence des ecchymoses et des gonflements ;</li>
+      <li>les périodes où les symptômes changent (puberté, grossesse, ménopause, chaleur, fin de journée) ;</li>
+      <li>ce qui vous gêne au quotidien : marche, escaliers, vêtements, sport, travail, sommeil, moral ;</li>
+      <li>les traitements déjà essayés (compression, drainage, sport, régime, médicaments) et leur effet réel ;</li>
+      <li>vos médicaments actuels, vos antécédents médicaux et, si vous le souhaitez, ceux de votre famille ;</li>
+      <li>les examens déjà réalisés, avec leurs dates et, si possible, les comptes rendus.</li>
+    </ul>
+
+    <h3>Qui peut vous accompagner ?</h3>
+    <p>Le point d’entrée est généralement le <strong>médecin traitant</strong>, qui peut évaluer la situation, coordonner le parcours et orienter vers un spécialiste si besoin. Selon l’organisation locale des soins et la disponibilité des professionnels, un <strong>angiologue ou phlébologue</strong> (spécialistes des veines et de la circulation), un <strong>dermatologue</strong>, un <strong>médecin de médecine physique et de réadaptation</strong>, un <strong>chirurgien</strong> ou un <strong>kinésithérapeute</strong> peuvent intervenir. Les intitulés et compétences varient : vérifiez l’expérience de la personne consultée sur le lipœdème et ses compétences.</p>
+    <p>L’Assurance Maladie indique que la prise en charge est confiée au médecin traitant ou à un médecin spécialiste, et que le médecin peut proposer un suivi psychologique si nécessaire (ameli.fr).</p>
+    <div class="source">Sources : <a href="https://www.ameli.fr/assure/sante/themes/lipoedeme/lipoedeme-traitement" target="_blank" rel="noopener noreferrer">ameli.fr, « Traitement du lipœdème »</a>. La liste des professionnels est indicative et non exhaustive.</div>
+
+    <h3>Ce que comprend l’examen clinique</h3>
+    <p>Le diagnostic repose d’abord sur un <strong>ensemble d’éléments</strong> : l’histoire de la personne, ses symptômes, l’examen de la répartition de la graisse et de la peau, la palpation (consistance des tissus, douleur à la pression), et l’évaluation de l’impact sur la vie quotidienne. Le rapport de l’INESSS recommande une évaluation globale qui inclut l’histoire médicale, l’examen clinique et un examen psychosocial mesurant le retentissement sur la qualité de vie.</p>
+    <div class="encadre incertain">
+      <h4>Imagerie et examens : des limites à connaître</h4>
+      <ul>
+        <li>Selon l’INESSS, les imageries de routine ne sont pas jugées nécessaires pour le lipœdème ; certaines peuvent être utiles en cas de doute ou pour éliminer un autre diagnostic.</li>
+        <li>Aucun examen sanguin ni aucune IRM ne permet, à lui seul, de confirmer le diagnostic (selon <a href="https://www.nationalgeographic.fr/sante/lipoedeme-pourquoi-cette-maladie-reste-si-mal-comprise-graisse-sous-cutanee" target="_blank" rel="noopener noreferrer">National Geographic France, 2026</a>).</li>
+        <li>Une seule consultation ou un seul examen ne suffit pas toujours. Le professionnel peut rechercher une insuffisance veineuse, un lymphœdème, une obésité ou une autre affection, qui peuvent coexister avec le lipœdème.</li>
+      </ul>
+    </div>
+    <div class="source">Sources : <a href="https://www.inesss.qc.ca/fileadmin/doc/INESSS/Rapports/Traitement/Lipoedeme_EC_INESSS.pdf" target="_blank" rel="noopener noreferrer">INESSS, septembre 2025</a> ; <a href="https://questions.assemblee-nationale.fr/q17/17-6704QE.htm" target="_blank" rel="noopener noreferrer">réponse ministérielle n° 6704</a>.</div>
+
+    <h3>Fiche pratique à apporter au rendez-vous</h3>
+    <p>Imprimez ou recopiez cette fiche. Elle ne contient aucun diagnostic : c’est un aide-mémoire pour vous.</p>
+    <div class="tableau-wrap">
+      <table>
+        <caption>Fiche d’aide-mémoire pour la consultation</caption>
+        <thead><tr><th scope="col">Rubrique</th><th scope="col">Ce que je note</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Zones concernées</th><td data-label="Ce que je note">&nbsp;</td></tr>
+          <tr><th scope="row">Symptômes (douleur, lourdeur, sensibilité, bleus, gonflement)</th><td data-label="Ce que je note">&nbsp;</td></tr>
+          <tr><th scope="row">Depuis quand, évolution, moments où c’est pire</th><td data-label="Ce que je note">&nbsp;</td></tr>
+          <tr><th scope="row">Retentissement (marche, sport, travail, sommeil, moral)</th><td data-label="Ce que je note">&nbsp;</td></tr>
+          <tr><th scope="row">Mesures essayées et effet ressenti</th><td data-label="Ce que je note">&nbsp;</td></tr>
+          <tr><th scope="row">Médicaments actuels (nom, dose, fréquence, tel que noté sur l’ordonnance)</th><td data-label="Ce que je note">&nbsp;</td></tr>
+          <tr><th scope="row">Antécédents personnels et familiaux (facultatif)</th><td data-label="Ce que je note">&nbsp;</td></tr>
+          <tr><th scope="row">Examens déjà faits (date, type, résultat)</th><td data-label="Ce que je note">&nbsp;</td></tr>
+          <tr><th scope="row">Mes questions</th><td data-label="Ce que je note">&nbsp;</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Questions utiles à poser au professionnel</h3>
+    <ol>
+      <li>Mes symptômes sont-ils compatibles avec un lipœdème, et quelles autres causes doit-on rechercher ?</li>
+      <li>Quels examens sont utiles pour moi, et lesquels ne le sont pas à ce stade ?</li>
+      <li>Quelles mesures conservatrices vous paraissent adaptées à ma situation, et pourquoi ?</li>
+      <li>Quels sont les objectifs réalistes d’un traitement, et quelles sont ses limites ?</li>
+      <li>Une compression est-elle indiquée ? Si oui, de quelle classe, avec quelle prise en charge et quel suivi ?</li>
+      <li>Un drainage lymphatique a-t-il un intérêt dans mon cas ? Comment saurons-nous s’il est utile ?</li>
+      <li>Comment suivre l’évolution (par exemple, un carnet de bord) et à quel rythme revoir le suivi ?</li>
+      <li>Quels signes doivent me faire consulter rapidement ?</li>
+      <li>Ma douleur ou mon retentissement justifient-ils un accompagnement psychologique ou un suivi pluridisciplinaire ?</li>
+      <li>Si une chirurgie était envisagée un jour, quelles étapes et quels délais faudrait-il respecter ? (voir la rubrique Chirurgie)</li>
+      <li>Quelles démarches administratives dois-je faire pour mes soins, et qui peut m’aider (CPAM, mutuelle, service social) ?</li>
+    </ol>
+    <div class="encadre a-discuter">
+      <h4>À discuter avec un professionnel de santé</h4>
+      <p>Les réponses à ces questions dépendent de votre situation personnelle. Aucune de ces pistes n’est une prescription.</p>
+    </div>
+
+    <h3>Qu’est-ce qu’un « bon » parcours ?</h3>
+    <p>Un parcours cohérent comprend une évaluation globale, une information claire, un plan de suivi discuté avec vous, la recherche des autres causes possibles, et des points de contrôle réguliers. La Haute Autorité de Santé promeut, de manière générale pour les maladies chroniques, des parcours de soins personnalisés et coordonnés, avec éducation thérapeutique et implication du patient (<a href="https://www.has-sante.fr/jcms/c_1247611/fr/promouvoir-les-parcours-de-soins-personnalises-pour-les-malades-chroniques" target="_blank" rel="noopener noreferrer">HAS, page sur les parcours de soins personnalisés pour les malades chroniques</a> ; cette page est ancienne et sa date doit être vérifiée). Je n’ai pas trouvé, à la date de vérification, de recommandation HAS spécifique au lipœdème publiée sur son site (voir la rubrique Droits en France).</p>
+  </section>
+
+  <!-- ==================== TRAITEMENTS ==================== -->
+  <section id="traitements" class="rubrique" aria-labelledby="t-traitements">
+    <h2 id="t-traitements">5. Traitements et accompagnement</h2>
+    <p>Il n’existe pas de traitement curatif du lipœdème à ce jour. Les approches visent surtout à <strong>réduire les symptômes</strong> (douleur, lourdeur, inconfort), à <strong>prévenir les complications</strong> (notamment cutanées) et à <strong>agir sur les facteurs d’aggravation</strong> (surpoids, lymphœdème, insuffisance veineuse, sédentarité). Les options ci-dessous sont des sujets à discuter avec un professionnel : ce site ne donne aucune prescription, aucune posologie et aucun programme personnalisé.</p>
+
+    <div class="encadre ce-sait">
+      <h4>Ce que disent les sources officielles</h4>
+      <ul>
+        <li>Le traitement des symptômes a « peu d’action sur l’esthétique des membres » et ne permet qu’une réduction minime du volume, de l’ordre de 5 à 10 %. En revanche, il diminue les douleurs et la sensation de jambes lourdes et prévient les complications cutanées (<a href="https://www.ameli.fr/assure/sante/themes/lipoedeme/lipoedeme-traitement" target="_blank" rel="noopener noreferrer">ameli.fr, 16 juin 2025</a>).</li>
+        <li>La réponse ministérielle de juillet 2025 décrit l’action sur les symptômes par la compression, la chirurgie, et des conseils de vie (vêtements adaptés, conseils diététiques, activité physique, notamment aquatique).</li>
+      </ul>
+    </div>
+
+    <h3>5.1 Accompagnement médical et suivi</h3>
+    <p><strong>Objectif :</strong> réduire les symptômes, suivre l’évolution, traiter les problèmes associés (surpoids, insuffisance veineuse, lymphœdème) et adapter les mesures au fil du temps.</p>
+    <p><strong>Limites :</strong> le suivi ne « guérit » pas le lipœdème ; il permet d’ajuster la prise en charge.</p>
+    <p><strong>Niveau de preuve :</strong> les recommandations de la littérature reposent principalement sur des consensus d’experts et des études de faible niveau de preuve (INESSS, 2025).</p>
+
+    <h3>5.2 Activité physique adaptée et mobilité</h3>
+    <p>L’Assurance Maladie indique que l’activité physique, adaptée aux aptitudes de chacun et pratiquée en sécurité, atténue les symptômes, améliore le bien-être et aide à prévenir l’obésité. Les sports en milieu aquatique déchargent les membres du poids du corps et ménagent les articulations ; les exercices qui sollicitent les muscles des jambes (en particulier le mollet, « pompe » veineuse et lymphatique) sont particulièrement recommandés. Des exemples détaillés figurent dans la rubrique « Activité physique ».</p>
+    <p><strong>Limites :</strong> l’activité physique n’est pas présentée par les sources comme un moyen de réduire notablement le volume ; elle est surtout un levier pour la douleur, la mobilité et la santé générale. Dans les stades avancés, la reprise progressive du mouvement au quotidien est le plus adapté, selon l’Assurance Maladie.</p>
+    <div class="source">Source : <a href="https://www.ameli.fr/assure/sante/themes/lipoedeme/lipoedeme-traitement" target="_blank" rel="noopener noreferrer">ameli.fr, « Traitement du lipœdème » (16 juin 2025)</a>.</div>
+
+    <h3>5.3 Compression ou vêtements compressifs (lorsqu’ils sont conseillés)</h3>
+    <p>Selon l’Assurance Maladie, le port d’une contention ou compression adaptée et sur mesure réduit l’inconfort et les douleurs. Pour le lipœdème, elle conseille des <strong>collants de compression à maille plate rectiligne</strong>, réalisés sur mesure, allant de la taille jusqu’à mi-pied. La compression peut être de <strong>classe 2 ou 3</strong>, selon le soulagement des symptômes et la tolérance. Le collant est prescrit par le médecin, et la prise des mesures se fait chez un orthésiste habitué à ce type de confection.</p>
+    <p><strong>Points de vigilance :</strong> les modèles sur mesure peuvent générer des frais importants au-delà de la prise en charge de l’Assurance Maladie ; les tarifs sont variables, et il peut être utile de demander plusieurs devis. Le port doit être adapté à votre tolérance : parlez-en à votre médecin si la compression est douloureuse ou mal supportée.</p>
+    <p><a href="https://www.ameli.fr/assure/sante/bons-gestes/quotidien/utiliser-bas-collants-compression" target="_blank" rel="noopener noreferrer">Comment utiliser vos bas ou collants de contention/compression ? (ameli.fr)</a></p>
+    <div class="source">Source : <a href="https://www.ameli.fr/assure/sante/themes/lipoedeme/lipoedeme-traitement" target="_blank" rel="noopener noreferrer">ameli.fr, « Traitement du lipœdème » (16 juin 2025)</a>.</div>
+
+    <h3>5.4 Drainage lymphatique</h3>
+    <p>Des drainages lymphatiques manuels peuvent soulager, notamment en cas de composante lymphatique (« lipolymphœdème »), et peuvent être associés à des bandages multicouches. Ils <strong>ne peuvent pas prévenir l’évolution</strong> de la maladie. Selon l’Assurance Maladie, s’ils ne soulagent pas les symptômes, il est inutile de continuer. Les séances sont prises en charge en cas de lymphœdème diagnostiqué, mais <strong>pas en cas de lipœdème seul</strong>.</p>
+    <div class="source">Source : <a href="https://www.ameli.fr/assure/sante/themes/lipoedeme/lipoedeme-traitement" target="_blank" rel="noopener noreferrer">ameli.fr (16 juin 2025)</a>.</div>
+
+    <h3>5.5 Prise en charge de la douleur et des symptômes</h3>
+    <p>La douleur peut être importante et mérite d’être évaluée. Les antalgiques et anti-inflammatoires, ou d’autres approches (chaleur, repos, mobilisation douce, vêtements adaptés), doivent être choisis avec un professionnel en fonction de votre état de santé, de vos autres traitements et de vos contre-indications. <strong>Ce site ne donne aucune posologie.</strong> N’arrêtez pas un traitement en cours sans avis médical.</p>
+
+    <h3>5.6 Kinésithérapie et autres soins</h3>
+    <p>Un kinésithérapeute peut proposer des exercices, un travail de mobilité ou une rééducation, notamment après une chirurgie. Les données sur l’effet spécifique de la kinésithérapie sur le lipœdème sont <strong>limitées</strong> à ma connaissance des sources consultées : demandez au professionnel quel est l’objectif précis de chaque séance, combien de temps il est prévu de la poursuivre et comment en mesurer l’intérêt.</p>
+
+    <h3>5.7 Accompagnement psychologique et soutien</h3>
+    <p>Le retentissement psychologique (image de soi, rapport à l’alimentation, anxiété, humeur) est reconnu par l’Assurance Maladie, qui indique qu’un suivi psychologique peut être nécessaire et proposé par le médecin. Demander de l’aide n’est pas un signe de faiblesse, et vous pouvez en parler lors de chaque consultation.</p>
+
+    <h3>5.8 Alimentation et santé générale</h3>
+    <p>L’Assurance Maladie indique que le régime alimentaire n’a <strong>aucun ou peu d’effet</strong> sur le volume des zones atteintes, mais qu’une alimentation équilibrée et diversifiée est importante pour <strong>prévenir l’obésité</strong>, qui est un facteur aggravant. L’INESSS inclut la gestion du poids avec un accompagnement nutritionnel dans la prise en charge conservatrice. Ni un régime particulier ni un « régime anti-inflammatoire » ne sont démontrés comme faisant disparaître le lipœdème. Voir la rubrique « Alimentation et recettes » pour des repères généraux et des recettes adaptées à différents modes de vie.</p>
+
+    <div class="encadre a-discuter">
+      <h4>À discuter avec un professionnel</h4>
+      <ul>
+        <li>Quelle place donner à la compression, au drainage et au sport dans mon cas ?</li>
+        <li>Comment évaluer si un traitement m’aide réellement (douleur, lourdeur, mobilité, qualité de vie) ?</li>
+        <li>Quel suivi est prévu, et quels signes doivent me faire revenir plus tôt ?</li>
+      </ul>
+    </div>
+    <div class="encadre incertain">
+      <h4>Ce qui reste incertain</h4>
+      <p>L’efficacité à long terme de la plupart des traitements conservateurs est mal connue. Les études disponibles sont souvent de petite taille, non randomisées ou fondées sur des données déclaratives (INESSS, 2025).</p>
+    </div>
+    <div class="source">Sources : <a href="https://www.ameli.fr/assure/sante/themes/lipoedeme/lipoedeme-traitement" target="_blank" rel="noopener noreferrer">ameli.fr, « Traitement du lipœdème » (16 juin 2025)</a> ; <a href="https://www.inesss.qc.ca/fileadmin/doc/INESSS/Rapports/Traitement/Lipoedeme_EC_INESSS.pdf" target="_blank" rel="noopener noreferrer">INESSS, « Le lipœdème. État des connaissances » (septembre 2025)</a> ; <a href="https://questions.assemblee-nationale.fr/q17/17-6704QE.htm" target="_blank" rel="noopener noreferrer">réponse ministérielle n° 6704 (1<sup>er</sup> juillet 2025)</a>.</div>
+  </section>
+
+  <!-- ==================== CHIRURGIE ==================== -->
+  <section id="chirurgie" class="rubrique" aria-labelledby="t-chirurgie">
+    <h2 id="t-chirurgie">6. Chirurgie : informations approfondies et internationales</h2>
+    <p>La chirurgie est une option réfléchie <strong>au cas par cas</strong>, lorsque les mesures conservatrices ne suffisent plus et que le lipœdème est important. Elle ne guérit pas la maladie. Cette rubrique présente les éléments à connaître pour en discuter avec une équipe médicale ; elle ne recommande ni un chirurgien, ni une clinique, ni une technique.</p>
+
+    <h3>Les termes employés</h3>
+    <div class="tableau-wrap">
+      <table>
+        <caption>Vocabulaire chirurgical</caption>
+        <thead><tr><th scope="col">Terme</th><th scope="col">Signification</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Liposuccion ou lipoaspiration</th><td data-label="Signification">Aspiration de la graisse à travers de petites incisions, à l’aide de canules. Elle laisse en principe une couche de graisse sous la peau, afin de limiter les irrégularités.</td></tr>
+          <tr><th scope="row">Liposuccion tumescente</th><td data-label="Signification">Technique dans laquelle une solution est infiltrée dans le tissu avant l’aspiration. L’Assurance Maladie la décrit comme la « technique de référence » en chirurgie du lipœdème, avec des mouvements parallèles aux vaisseaux lymphatiques pour les préserver.</td></tr>
+          <tr><th scope="row">Liposuccion assistée (PAL, WAL, laser, radiofréquence)</th><td data-label="Signification">Variantes d’assistance : par vibrations (PAL), par jet d’eau (WAL), ou par laser ou radiofréquence. L’efficacité comparée de ces variantes n’est pas bien établie.</td></tr>
+          <tr><th scope="row">Dermolipectomie</th><td data-label="Signification">Intervention qui enlève des excès de peau et de graisse. Elle est réservée, selon l’Assurance Maladie, aux stades avancés où la fibrose des tissus ne permet pas la lipoaspiration.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="source">Source : <a href="https://www.ameli.fr/assure/sante/themes/lipoedeme/lipoedeme-traitement" target="_blank" rel="noopener noreferrer">ameli.fr, « Traitement du lipœdème » (16 juin 2025)</a>. Les comparaisons détaillées entre techniques ne sont pas tranchées (voir « incertitudes » ci-dessous).</div>
+
+    <h3>Objectifs possibles et limites</h3>
+    <p>Selon l’Assurance Maladie, la lipoaspiration peut <strong>diminuer la douleur et la tension tissulaire</strong>, ce qui peut améliorer la qualité de vie. Elle peut diminuer la formation d’hématomes et, sur le plan esthétique, réduire objectivement la circonférence des membres. Elle permet un <strong>retour à un état antérieur</strong>, et non une guérison : la maladie peut persister.</p>
+
+    <h3>Critères et décision médicale individuelle</h3>
+    <ul>
+      <li><strong>Échec des mesures conservatrices :</strong> l’Assurance Maladie indique qu’un traitement chirurgical peut être envisagé en cas d’échec de ces mesures à moyen terme (au moins un an).</li>
+      <li><strong>Exclure une autre cause :</strong> selon la réponse ministérielle de juillet 2025, l’indication chirurgicale ne peut être posée qu’après examen permettant d’éliminer une pathologie lymphatique sous-jacente, car la chirurgie présente un risque de lésion des vaisseaux lymphatiques et peut entraîner un lymphœdème.</li>
+      <li><strong>Obésité :</strong> si le lipœdème est associé à une obésité, sa prise en charge doit être envisagée dans toutes ses dimensions (physique et psychologique) avant le projet chirurgical.</li>
+      <li><strong>Tabac :</strong> arrêter de fumer 6 à 8 semaines avant l’intervention permet de réduire les risques de complications (ameli.fr).</li>
+      <li><strong>Stade et fibrose :</strong> certaines formes avancées, avec fibrose, relèvent d’autres gestes ; l’évaluation revient au chirurgien.</li>
+    </ul>
+
+    <h3>Examens, consultations et préparation</h3>
+    <p>Le bilan préopératoire est propre à chaque personne : consultations chirurgicale et anesthésique, examens demandés par l’équipe (selon l’âge, les antécédents, les traitements et les risques), évaluation du risque thrombo-embolique, et préparation (arrêt du tabac, gestion du poids, adaptation de certains traitements). Le détail dépend de l’équipe : demandez la liste écrite des examens et des consignes.</p>
+
+    <h3>Questions à poser au chirurgien</h3>
+    <ol>
+      <li>Quelle est mon indication précise, et quelle autre cause a été éliminée ?</li>
+      <li>Quelle technique proposez-vous, et pourquoi pour moi ? Quelles sont les alternatives ?</li>
+      <li>Combien d’interventions prévoyez-vous, et dans quel ordre ? Quelle partie de mon corps sera traitée à chaque séance ?</li>
+      <li>Quels sont les risques, les complications possibles, leur fréquence connue et la façon dont elles sont prises en charge ?</li>
+      <li>Qui assurera le suivi après l’intervention, et comment joindre l’équipe en cas de problème ?</li>
+      <li>Quel est le plan de compression et de drainage après l’opération, et pour combien de temps ?</li>
+      <li>Quel est le devis détaillé (honoraires, anesthésie, établissement, matériel, compression) et quels montants sont pris en charge par l’Assurance Maladie et la mutuelle ?</li>
+      <li>Quelles sont vos qualifications et votre expérience spécifique du lipœdème ? Quel est votre taux de réintervention ou de complications, si vous le suivez ?</li>
+    </ol>
+    <h4>Questions à poser à l’équipe d’anesthésie</h4>
+    <ol>
+      <li>Quel type d’anesthésie est prévu (locorégionale ou générale) et pourquoi ?</li>
+      <li>Quels sont mes facteurs de risque personnels (antécédents, traitements, tabac, poids, apnée du sommeil) ?</li>
+      <li>Quelle surveillance est prévue après l’anesthésie, et où ?</li>
+      <li>Que dois-je faire et ne pas faire avant l’intervention, notamment pour mes médicaments ?</li>
+    </ol>
+
+    <h3>Parcours postopératoire</h3>
+    <p>Selon l’Assurance Maladie : la marche est possible et conseillée dès que cela est possible et sécurisé ; un drainage lymphatique pluri-hebdomadaire est prescrit pour les premières semaines ; le port de vêtements de compression est indispensable pendant plusieurs semaines pour aider à la résorption de l’œdème post-opératoire ; une surveillance des incisions est nécessaire. <strong>Je n’ai pas trouvé de source officielle permettant de donner un calendrier universel</strong> (arrêt de travail, reprise du sport, date de disparition des hématomes) : ces délais dépendent de l’intervention, de la personne et de l’équipe.</p>
+
+    <div class="encadre incertain">
+      <h4>Risques et complications (sources médicales)</h4>
+      <ul>
+        <li><strong>Complications thrombo-emboliques</strong> (phlébite, embolie pulmonaire) : les plus graves, selon l’Assurance Maladie. Leur prévention fait partie de la préparation et du suivi.</li>
+        <li><strong>Hématomes</strong> et <strong>écoulement lymphatique</strong> au niveau des incisions.</li>
+        <li><strong>Infection</strong> de la peau, <strong>retards de cicatrisation</strong>, <strong>cicatrices</strong> possibles.</li>
+        <li><strong>Fatigue</strong> et <strong>troubles du métabolisme</strong> possibles lors d’une lipoaspiration très importante.</li>
+        <li><strong>Lymphœdème</strong> : la réponse ministérielle de juillet 2025 indique que la chirurgie présente le risque de détruire des vaisseaux lymphatiques, ce qui peut entraîner un lymphœdème.</li>
+        <li>Tout acte chirurgical comporte les risques généraux liés à l’anesthésie et à l’intervention.</li>
+      </ul>
+    </div>
+    <div class="source">Sources : <a href="https://www.ameli.fr/assure/sante/themes/lipoedeme/lipoedeme-traitement" target="_blank" rel="noopener noreferrer">ameli.fr (16 juin 2025)</a> ; <a href="https://questions.assemblee-nationale.fr/q17/17-6704QE.htm" target="_blank" rel="noopener noreferrer">réponse ministérielle n° 6704 (1<sup>er</sup> juillet 2025)</a>.</div>
+
+    <h3>Incertitudes sur les résultats à long terme et la comparaison des techniques</h3>
+    <div class="encadre incertain">
+      <ul>
+        <li>Selon le rapport de l’INESSS (septembre 2025), la liposuccion est décrite comme généralement sûre et bien tolérée, mais les données d’efficacité reposent surtout sur des études <strong>avant-après, non randomisées et non contrôlées</strong>, ainsi que sur des questionnaires remplis par les patients.</li>
+        <li>La <strong>comparaison entre techniques</strong> reste difficile : les études sont hétérogènes, et les résultats dépendent du chirurgien, de la zone traitée et du stade.</li>
+        <li>Les <strong>résultats à long terme</strong> (douleur, mobilité, qualité de vie, besoin de nouvelles interventions) sont mal connus.</li>
+        <li>Certains symptômes peuvent <strong>persister</strong> après l’intervention, et un suivi régulier est souvent nécessaire.</li>
+      </ul>
+    </div>
+
+    <h3>Conséquences possibles sur la douleur, la mobilité et la qualité de vie</h3>
+    <p>Un bénéfice sur la douleur, la mobilité ou la qualité de vie est rapporté par certaines personnes, mais il n’est pas garanti et doit être discuté avec l’équipe. Une chirurgie ne dispense pas du suivi, de la compression et de l’activité physique adaptée.</p>
+
+    <h3>Tourisme médical : points de vigilance</h3>
+    <div class="encadre a-discuter">
+      <ul>
+        <li>Un prix annoncé n’est <strong>ni un devis, ni une garantie de remboursement</strong>.</li>
+        <li>Vérifiez les <strong>qualifications</strong> (inscription au tableau de l’Ordre des médecins, pour un médecin exerçant en France ; équivalents dans les autres pays) et l’<strong>expérience</strong> sur le lipœdème.</li>
+        <li>Demandez qui assurera le <strong>suivi</strong>, la <strong>gestion des complications</strong> et la <strong>continuité des soins</strong> à votre retour, y compris la nuit et le week-end.</li>
+        <li>Les pages commerciales des cliniques ne sont pas une preuve médicale. Les tarifs qu’elles affichent sont des tarifs déclarés par l’établissement, non standardisés et non représentatifs de tous les patients.</li>
+        <li>Ce site ne classe pas les chirurgiens et ne recommande aucune clinique.</li>
+      </ul>
+    </div>
+    <div class="source">Référence pour vérifier une inscription : <a href="https://www.conseil-national.medecin.fr/" target="_blank" rel="noopener noreferrer">Conseil national de l’Ordre des médecins</a>.</div>
+
+    <h3>Tableau comparatif international</h3>
+    <p>Ce tableau ne contient que les pays pour lesquels j’ai pu consulter une source officielle ou une publication vérifiable à la date de création du site. <strong>Aucun prix moyen mondial n’est proposé.</strong> Je n’ai trouvé, pour aucun de ces pays, de source officielle fiable donnant des fourchettes de prix : les sites commerciaux publient des chiffres non sourcés ou contradictoires, que je n’ai pas repris. Ne comparez donc pas les coûts à partir de ce site.</p>
+    <div class="tableau-wrap">
+      <table>
+        <caption>Situation du lipœdème et de la chirurgie, par pays (données vérifiées à la date du 10 octobre 2026)</caption>
+        <thead>
+          <tr>
+            <th scope="col">Pays</th>
+            <th scope="col">Situation réglementaire et médicale</th>
+            <th scope="col">Prise en charge publique (conditions et date)</th>
+            <th scope="col">Prix</th>
+            <th scope="col">Limites de comparaison</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">France</th>
+            <td data-label="Situation réglementaire et médicale">Recommandations : pas de recommandation HAS spécifique au lipœdème trouvée sur le site de la HAS à la date de vérification. Règle : le lipœdème ne figure pas, à ma connaissance, sur la liste des ALD (réponse ministérielle du 1<sup>er</sup> juillet 2025). Les interventions de lipoaspiration sont qualifiées par l’Assurance Maladie d’« actes à caractère esthétique ».</td>
+            <td data-label="Prise en charge publique">Compression : sur prescription, classe 2 ou 3, sur mesure, avec reste à charge possible. Drainage : non pris en charge pour un lipœdème seul. Chirurgie : non prise en charge selon ameli.fr (16 juin 2025). Aide financière individuelle de la CPAM possible, sous conditions, sans droit automatique. Vérifié : 16 juin 2025 (ameli) et 1<sup>er</sup> juillet 2025 (réponse ministérielle).</td>
+            <td data-label="Prix">Aucun prix vérifié dans une source officielle. Les dépassements d’honoraires et les frais de compression sur mesure sont variables selon les professionnels (ameli.fr).</td>
+            <td data-label="Limites de comparaison">Les règles françaises reposent sur la nomenclature des actes (CCAM) et la notion d’entente préalable : elles ne se transposent pas à d’autres pays.</td>
+          </tr>
+          <tr>
+            <th scope="row">Allemagne</th>
+            <td data-label="Situation réglementaire et médicale">Règle : le G-BA a décidé, le 17 juillet 2025, d’inscrire la liposuction du lipœdème, indépendamment du stade, dans la liste des méthodes de l’assurance, sous certaines conditions. Décision entrée en vigueur le 9 octobre 2025, selon le document de l’Assurance maladie allemande (Bewertungsausschuss) publié par la KBV.</td>
+            <td data-label="Prise en charge publique">Selon le document de la KBV : une règle transitoire pour le stade III a été prolongée jusqu’au 30 juin 2026, avec effet au 1<sup>er</sup> janvier 2026. <strong>Je n’ai pas pu vérifier la règle applicable après le 30 juin 2026</strong>, ni le texte complet des conditions : consultez g-ba.de et kbv.de. Les conditions détaillées dépendent de l’assurance (publique ou privée).</td>
+            <td data-label="Prix">Aucun prix vérifié dans une source officielle.</td>
+            <td data-label="Limites de comparaison">Système d’assurance différent (assurance maladie légale, assurance privée). Les conditions évoluent vite ; ne transposez pas ces règles à la France.</td>
+          </tr>
+          <tr>
+            <th scope="row">Québec (Canada)</th>
+            <td data-label="Situation réglementaire et médicale">Recommandation : rapport de l’INESSS, « Le lipœdème. État des connaissances » (septembre 2025). Il conclut que la prise en charge conservatrice inclut compression, drainage, gestion du poids avec accompagnement nutritionnel, activité physique et soutien psychosocial. Pour la chirurgie, il indique qu’elle est généralement sûre et bien tolérée, mais que les données d’efficacité restent limitées. À ce stade, aucune recommandation à l’intention des cliniciens ou des décideurs n’a été formulée.</td>
+            <td data-label="Prise en charge publique">Non vérifiée : je n’ai pas consulté les règles publiques du Québec pour ce soin.</td>
+            <td data-label="Prix">Aucun prix vérifié dans une source officielle.</td>
+            <td data-label="Limites de comparaison">Rapport d’état des connaissances, pas une recommandation clinique ni une règle d’assurance. Données d’efficacité limitées.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="source">Sources : <a href="https://www.ameli.fr/assure/sante/themes/lipoedeme/lipoedeme-traitement" target="_blank" rel="noopener noreferrer">ameli.fr (16 juin 2025)</a> ; <a href="https://questions.assemblee-nationale.fr/q17/17-6704QE.htm" target="_blank" rel="noopener noreferrer">réponse ministérielle n° 6704 (1<sup>er</sup> juillet 2025)</a> ; <a href="https://www.inesss.qc.ca/fileadmin/doc/INESSS/Rapports/Traitement/Lipoedeme_EC_INESSS.pdf" target="_blank" rel="noopener noreferrer">INESSS (septembre 2025)</a> ; <a href="https://www.kbv.de/documents/infothek/rechtsquellen/bewertungsausschuss/ebm/2026/ba-818-liposuktion.pdf" target="_blank" rel="noopener noreferrer">KBV, décision du Bewertungsausschuss, 818e séance</a>. Un consensus espagnol (2018), cité par l’Assurance Maladie, n’a pas été inclus au tableau faute de vérification suffisante de ses recommandations.</div>
+  </section>
+
+  <!-- ==================== FRANCE ==================== -->
+  <section id="france" class="rubrique" aria-labelledby="t-france">
+    <h2 id="t-france">7. Législation et prise en charge en France</h2>
+    <div class="encadre incertain">
+      <h3>Cette rubrique n’est pas un avis juridique</h3>
+      <p>Elle résume les informations publiques vérifiées à la date du 10 octobre 2026, en distinguant les règles officielles, les décisions individuelles, les pratiques, les témoignages et les projets. Pour votre situation personnelle, adressez-vous à votre CPAM, à votre mutuelle ou à votre service social.</p>
+    </div>
+
+    <h3>7.1 Reconnaissance dans les classifications et dispositifs</h3>
+    <p>Dans la réponse ministérielle publiée le 1<sup>er</sup> juillet 2025, le lipœdème est présenté comme une situation à distinguer du lymphœdème, et il est dit qu’« il n’est pas possible de parler de traitement pour le lipœdème » au sens curatif. <strong>Je n’ai pas pu vérifier dans la classification officielle des maladies utilisée en France (CIM) le code exact associé au lipœdème</strong> : vérifiez-le auprès de votre médecin ou dans la base officielle correspondante. Ne vous fiez pas aux sites qui affirment une reconnaissance « officielle » sans en indiquer le texte.</p>
+
+    <h3>7.2 Affection de longue durée (ALD)</h3>
+    <p>Je n’ai trouvé aucun texte officiel indiquant une inscription du lipœdème sur la liste des affections de longue durée. La question écrite n° 6704 indique que le lipœdème « ne figure pas dans la liste des ALD » ; la réponse publiée le 1<sup>er</sup> juillet 2025 ne l’annonce pas. Une ALD peut en principe être accordée soit parce que la maladie figure sur la liste officielle, soit, pour une maladie qui n’y figure pas, à titre individuel par le médecin-conseil de l’Assurance Maladie, selon la gravité et la durée des soins. Je n’ai pas vérifié les critères actuels de cette procédure : votre médecin et votre caisse peuvent vous informer.</p>
+    <p><a href="https://www.ameli.fr/" target="_blank" rel="noopener noreferrer">Rubrique ALD sur ameli.fr</a> — à consulter pour les critères actuels.</p>
+
+    <h3>7.3 Soins remboursables selon leur nature</h3>
+    <ul>
+      <li><strong>Compression</strong> : collants de compression sur mesure, sur prescription médicale, selon l’Assurance Maladie (classe 2 ou 3, maille plate rectiligne). Les montants remboursés, le reste à charge et les conditions de prise en charge doivent être vérifiés auprès de votre caisse et de l’orthésiste, car ils dépendent du produit, de la prescription et de la nomenclature.</li>
+      <li><strong>Drainage lymphatique</strong> : pris en charge en cas de lymphœdème diagnostiqué, mais <strong>pas en cas de lipœdème seul</strong> (ameli.fr, 16 juin 2025).</li>
+      <li><strong>Consultations, examens et soins courants</strong> : pris en charge selon le droit commun de l’Assurance Maladie, dans les conditions habituelles. Je n’ai pas vérifié les montants actuels : consultez <a href="https://www.ameli.fr/" target="_blank" rel="noopener noreferrer">ameli.fr</a>.</li>
+      <li><strong>Kinésithérapie, soutien psychologique, diététique</strong> : leur prise en charge dépend du type de soin, de la prescription et de l’exercice du professionnel. Je n’ai pas trouvé de règle spécifique au lipœdème ; vérifiez avant le soin.</li>
+    </ul>
+
+    <h3>7.4 Liposuccion et gestes associés</h3>
+    <div class="encadre incertain">
+      <h4>Ce que dit l’Assurance Maladie (ameli.fr, 16 juin 2025)</h4>
+      <p>La lipoaspiration et la dermolipectomie sont présentées comme des interventions « à caractère esthétique » qui ne sont pas prises en charge par l’Assurance Maladie. La même page indique ailleurs que la lipoaspiration permet de diminuer la douleur et la tension tissulaire.</p>
+      <p>Une association de patientes, l’Association Maladie Lipœdème France (AMLF), a écrit en septembre 2026 à la direction de la CNAM pour demander que cette distinction entre chirurgie esthétique et chirurgie à visée thérapeutique soit mieux reflétée dans l’information donnée (<a href="https://www.lipoedemeassociation.fr/post/lip%C5%93d%C3%A8me-l-amlf-interpelle-l-assurance-maladie-sur-la-chirurgie" target="_blank" rel="noopener noreferrer">page de l’AMLF</a>). Il s’agit d’une démarche associative : je n’ai pas trouvé de réponse officielle à la date de vérification.</p>
+    </div>
+    <p><strong>Acte esthétique, acte médical, acte inscrit ou non à la nomenclature.</strong> Un acte est remboursable lorsqu’il est inscrit dans la nomenclature (la Classification commune des actes médicaux, CCAM) et qu’il répond aux conditions de prise en charge. Un acte peut être médical sans être remboursé, ou être pris en charge dans certaines situations seulement. Une « entente préalable » (demande d’accord préalable à la CPAM) peut être nécessaire avant certains actes. Sur le forum officiel d’ameli, un agent indique que si l’acte est référencé à la CCAM, sa base de remboursement peut être consultée, et qu’il faut se renseigner auprès du professionnel qui pratique l’acte et de la CPAM (<a href="https://forum-assures.ameli.fr/questions/1917152-chirurgie-medicale-cause-lipoedeme" target="_blank" rel="noopener noreferrer">forum ameli, 2019</a>). Un devis détaillé permet de vérifier ce qui est pris en charge.</p>
+    <div class="encadre a-retenir">
+      <h4>Des sites affirment qu’il existe des exceptions de remboursement</h4>
+      <p>Certains sites (non officiels) évoquent des cas de liposuccion remboursés pour d’autres indications (par exemple un lipomatose de Launois-Bensaude, une abdominoplastie réparatrice, une reconstruction après accident). <strong>Je n’ai pas pu vérifier ces affirmations sur des sources officielles</strong> : ne les tenez pas pour acquises, et demandez à votre CPAM ou à votre médecin conseil si une entente préalable est possible dans votre cas.</p>
+    </div>
+
+    <h3>7.5 Rôle des acteurs</h3>
+    <ul>
+      <li><strong>Assurance Maladie</strong> : prend en charge les soins selon les règles de la nomenclature ; accorde, après examen, les ententes préalables lorsqu’elles sont requises.</li>
+      <li><strong>Médecin</strong> : établit l’indication et les prescriptions (par exemple la compression et, si nécessaire, des examens), et contribue au protocole de soins. Il peut être sollicité pour évaluer la nécessité d’une prise en charge.</li>
+      <li><strong>CPAM (caisse primaire d’assurance maladie)</strong> : caisse de rattachement, service social, décisions sur les demandes d’entente préalable et d’aide financière.</li>
+      <li><strong>Mutuelle ou complémentaire santé</strong> : prend en charge une partie des frais non remboursés par l’Assurance Maladie, selon votre contrat. Vérifiez votre garantie avant de faire un devis.</li>
+      <li><strong>Action sanitaire et sociale</strong> : aides complémentaires, individuelles et facultatives, décrites ci-dessous.</li>
+      <li><strong>MDPH (maison départementale des personnes handicapées)</strong> : la réponse ministérielle indique qu’il est possible de déposer un dossier auprès d’une MDPH. L’évaluation d’une reconnaissance de handicap est individuelle (informations sur <a href="https://www.cnsa.fr/" target="_blank" rel="noopener noreferrer">cnsa.fr</a>).</li>
+    </ul>
+
+    <h3>7.6 Aide financière exceptionnelle de la CPAM</h3>
+    <p>La réponse ministérielle du 1<sup>er</sup> juillet 2025 indique que les personnes atteintes de lipœdème peuvent faire une demande d’aide financière individuelle auprès de leur CPAM. Une page régionale d’ameli précise que l’octroi d’une aide présente un <strong>caractère exceptionnel</strong>, qu’elle est attribuée par une commission d’action sanitaire et sociale en fonction des ressources, et qu’elle est liée à une dépense de santé. <strong>Ce n’est pas un droit automatique, et l’accord n’est pas garanti.</strong> Le formulaire et les pièces à fournir sont délivrés par la CPAM.</p>
+    <div class="source">Sources : <a href="https://questions.assemblee-nationale.fr/q17/17-6704QE.htm" target="_blank" rel="noopener noreferrer">réponse ministérielle n° 6704 (1<sup>er</sup> juillet 2025)</a> ; <a href="https://ameli.fr/haute-garonne/assure/droits-demarches/difficultes-acces-droits-soins/aides-financieres-individuelles" target="_blank" rel="noopener noreferrer">ameli, « Aides financières individuelles » (page régionale, Haute-Garonne)</a>. Les conditions de ressources et les barèmes sont fixés chaque année par chaque caisse : vérifiez-les auprès de la vôtre.</div>
+
+    <h3>7.7 Refus de remboursement : quelles démarches ?</h3>
+    <p>Si une demande est refusée ou si vous contestez une décision, vous pouvez en général demander une <strong>décision écrite et motivée</strong> à votre caisse. En cas de désaccord, les voies de recours (recours amiable devant la commission de recours amiable de la CPAM, puis, le cas échéant, contentieux) et leurs délais sont fixés par le code de la sécurité sociale. <strong>Je n’ai pas vérifié les délais exacts dans les textes ou sur la page officielle</strong> : consultez <a href="https://www.service-public.fr/" target="_blank" rel="noopener noreferrer">service-public.fr</a> et ameli.fr avant d’engager une démarche, car un délai peut être court. Pour les aides financières individuelles, la page régionale d’ameli consultée indique que la décision de rejet est notifiée et « n’est pas susceptible de recours » : vérifiez ce point auprès de votre CPAM.</p>
+    <div class="encadre a-discuter">
+      <h4>Pour une aide ou un recours, vous pouvez vous faire accompagner</h4>
+      <ul>
+        <li>Le service social de votre CPAM peut vous aider à rechercher des solutions adaptées (ameli.fr).</li>
+        <li>Une association de patients peut vous orienter sur les démarches (voir la rubrique Associations).</li>
+        <li>Un professionnel du droit peut vous conseiller sur votre situation personnelle.</li>
+      </ul>
+    </div>
+
+    <h3>7.8 Difficultés rapportées en France par les personnes concernées</h3>
+    <p>Les difficultés suivantes sont rapportées par des personnes concernées, des associations et des témoignages publics. <strong>Ce sont des constats et des revendications, pas des règles de droit.</strong></p>
+    <ul>
+      <li>Des témoignages sur le forum officiel d’ameli décrivent des demandes d’entente préalable sans réponse rapide, et une incompréhension face à l’absence de prise en charge de la chirurgie (<a href="https://forum-assures.ameli.fr/questions/1686751-liposuccion-cause-lipoedeme-remboursee" target="_blank" rel="noopener noreferrer">forum ameli</a>). Ces témoignages ne sont pas représentatifs.</li>
+      <li>L’AMLF (septembre 2026) conteste la formulation « à caractère esthétique » appliquée à la chirurgie du lipœdème.</li>
+      <li>Un article de presse de mai 2026 décrit une errance diagnostique et des soins non remboursés, avec le témoignage d’un angiologue (<a href="https://www.20minutes.fr/sante/4221817-20260508-lip-deme-comme-caresses-cactus-longue-errance-medicale-victimes-maladie-meconnue" target="_blank" rel="noopener noreferrer">20 Minutes, 8 mai 2026</a>).</li>
+      <li>Le coût des soins non remboursés (compression sur mesure, drainage, dépassements) est un point de difficulté souvent évoqué.</li>
+    </ul>
+
+    <h3>7.9 Propositions, questions et évolutions : statut exact</h3>
+    <div class="tableau-wrap">
+      <table>
+        <caption>Statut des démarches publiques connues à la date de vérification</caption>
+        <thead><tr><th scope="col">Démarche</th><th scope="col">Date</th><th scope="col">Statut exact</th></tr></thead>
+        <tbody>
+          <tr>
+            <th scope="row">Question écrite n° 6704 à l’Assemblée nationale</th>
+            <td data-label="Date">Publiée le 20 mai 2025 ; réponse publiée le 1<sup>er</sup> juillet 2025</td>
+            <td data-label="Statut exact">Question écrite et <strong>réponse ministérielle</strong>. Ce n’est pas un texte adopté, ni une règle de droit nouvelle.</td>
+          </tr>
+          <tr>
+            <th scope="row">Saisine de la HAS sur la prise en charge chirurgicale</th>
+            <td data-label="Date">Mai 2026 (selon la presse)</td>
+            <td data-label="Statut exact">Démarche rapportée par la presse : un dossier aurait été déposé auprès de la HAS. <strong>Je n’ai pas pu confirmer ce dépôt ni son état sur has-sante.fr</strong>. Ce n’est pas une recommandation.</td>
+          </tr>
+          <tr>
+            <th scope="row">Courrier de l’AMLF à la CNAM</th>
+            <td data-label="Date">Septembre 2026</td>
+            <td data-label="Statut exact">Démarche associative. Pas de réponse officielle connue à la date de vérification.</td>
+          </tr>
+          <tr>
+            <th scope="row">Inscription en ALD, nouvelle règle de remboursement</th>
+            <td data-label="Date">—</td>
+            <td data-label="Statut exact">Aucun texte officiel trouvé à la date de vérification. Ne pas considérer comme acquis.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="source">Sources : <a href="https://questions.assemblee-nationale.fr/q17/17-6704QE.htm" target="_blank" rel="noopener noreferrer">Assemblée nationale</a> ; <a href="https://www.20minutes.fr/sante/4221817-20260508-lip-deme-comme-caresses-cactus-longue-errance-medicale-victimes-maladie-meconnue" target="_blank" rel="noopener noreferrer">20 Minutes (mai 2026)</a> ; <a href="https://www.lipoedemeassociation.fr/post/lip%C5%93d%C3%A8me-l-amlf-interpelle-l-assurance-maladie-sur-la-chirurgie" target="_blank" rel="noopener noreferrer">AMLF (septembre 2026)</a>. Recherche des textes sur <a href="https://www.legifrance.gouv.fr/" target="_blank" rel="noopener noreferrer">Légifrance</a> : je n’ai pas trouvé de texte législatif ou réglementaire spécifique au lipœdème à la date de vérification.</div>
+  </section>
+
+  <!-- ==================== ALIMENTATION ==================== -->
+  <section id="alimentation" class="rubrique" aria-labelledby="t-alimentation">
+    <h2 id="t-alimentation">8. Alimentation : repères, régimes adaptés et recettes</h2>
+
+    <div class="encadre incertain">
+      <h3>Ce que cette rubrique peut et ne peut pas promettre</h3>
+      <ul>
+        <li><strong>Aucun régime ne fait disparaître le lipœdème.</strong> L’Assurance Maladie indique que le régime alimentaire a peu ou pas d’effet sur le volume des zones atteintes.</li>
+        <li>En revanche, une alimentation équilibrée et diversifiée est importante pour <strong>prévenir l’obésité</strong>, qui est un facteur d’aggravation lorsqu’il existe. Selon l’Assurance Maladie, l’alimentation agit donc surtout indirectement, à travers le poids.</li>
+        <li>Le terme « anti-inflammatoire » désigne ici une <strong>tendance générale</strong> (plus de végétaux, de légumineuses, de poissons, d’huile d’olive, moins d’aliments ultratransformés). <strong>Il n’est pas démontré qu’un régime anti-inflammatoire freine l’évolution du lipœdème.</strong> Certains articles de vulgarisation évoquent des données préliminaires ; je n’ai pas pu les vérifier dans des essais solides.</li>
+        <li>Les recettes ci-dessous sont des <strong>repas équilibrés</strong> pour une alimentation générale. Elles ne sont ni un programme personnalisé, ni une prescription.</li>
+      </ul>
+    </div>
+
+    <h3>Les repères généraux</h3>
+    <ul>
+      <li>Des <strong>légumes et fruits variés</strong> à chaque repas, de saison si possible.</li>
+      <li>Des <strong>légumineuses</strong> (lentilles, pois chiches, haricots), des <strong>céréales complètes</strong> (riz complet, quinoa, avoine, sarrasin, boulgour).</li>
+      <li>Des <strong>protéines variées</strong> : poisson (y compris poissons gras comme le saumon, riches en oméga-3), volaille, œufs, produits laitiers ou alternatives végétales.</li>
+      <li>Des <strong>matières grasses de qualité</strong> : huile d’olive, huile de colza, noix, graines.</li>
+      <li>Limiter les <strong>boissons sucrées</strong>, les <strong>aliments ultratransformés</strong> et les <strong>sucres ajoutés</strong>. Limiter l’alcool.</li>
+      <li>Boire régulièrement de l’eau.</li>
+    </ul>
+    <div class="encadre a-discuter">
+      <h4>Avant de changer d’alimentation : à discuter</h4>
+      <ul>
+        <li>Si vous avez un diabète, une maladie rénale, une maladie digestive, une allergie, si vous prenez des médicaments, ou si vous êtes enceinte, parlez-en à votre médecin ou à un diététicien avant tout changement.</li>
+        <li>Si vous avez eu des troubles du comportement alimentaire, un accompagnement adapté est préférable à un régime strict. L’Assurance Maladie rappelle l’importance d’un suivi psychologique dans ce cas.</li>
+        <li><strong>Évitez les régimes très restrictifs, les jeûnes prolongés, les « cures de détox » et les compléments présentés comme « anti-lipœdème »</strong> : ils n’ont pas de preuve solide dans cette maladie.</li>
+      </ul>
+    </div>
+
+    <h3>Adapter son alimentation selon ses convictions ou ses besoins</h3>
+    <div class="grille">
+      <div class="carte">
+        <h4>Végétarien</h4>
+        <p>Pas de viande ni de poisson. Les œufs et les produits laitiers peuvent être consommés selon le choix de la personne. Les sources de protéines (légumineuses, tofu, tempeh, œufs, produits laitiers) et de fer (lentilles, pois chiches, graines) doivent être variées ; le poisson gras peut être remplacé par des graines de lin ou de chia, mais la question des apports en oméga-3 peut être discutée avec un professionnel.</p>
+      </div>
+      <div class="carte">
+        <h4>Végane</h4>
+        <p>Aucun produit animal. Il est recommandé d’associer des sources variées de protéines, de fer, de calcium et d’iode, et de discuter avec un professionnel de santé de la <strong>supplémentation en vitamine B12</strong>, indispensable sans source fiable d’origine animale ou enrichie.</p>
+      </div>
+      <div class="carte">
+        <h4>Musulmane (halal)</h4>
+        <p>Pas de porc ni de produits dérivés, pas d’alcool, y compris dans les préparations culinaires. Pour les viandes, privilégiez une <strong>certification halal</strong>. Vérifiez les ingrédients : gélatine (origine), arômes, extraits (certains contiennent de l’alcool), bouillons du commerce. Pendant le jeûne du ramadan, parlez-en à votre médecin pour adapter les repas, l’hydratation et vos médicaments.</p>
+      </div>
+      <div class="carte">
+        <h4>Sans gluten</h4>
+        <p>Si vous devez éviter le gluten pour une raison médicale, vérifiez les étiquettes et les mentions « sans gluten ». L’avoine doit être certifiée. Le sarrasin, le quinoa et le riz sont naturellement sans gluten, mais une contamination croisée reste possible.</p>
+      </div>
+    </div>
+
+    <h3>Recettes</h3>
+    <p class="note-pieds">Les quantités sont données pour 4 personnes sauf indication. Adaptez les épices à votre goût. Les repères de conservation sont indicatifs : suivez les consignes de votre réfrigérateur.</p>
+
+    <article class="recette" aria-labelledby="r1">
+      <h3 id="r1">Recette 1 : Dal de lentilles corail, curcuma et épinards</h3>
+      <p><strong>Adapté à :</strong> végétarien, végane, halal, sans gluten (vérifier le bouillon). <strong>Préparation :</strong> 10 min · <strong>Cuisson :</strong> 20 min.</p>
+      <h4>Ingrédients</h4>
+      <ul>
+        <li>250 g de lentilles corail</li>
+        <li>1 oignon, 2 gousses d’ail</li>
+        <li>2 cm de gingembre frais</li>
+        <li>2 c. à soupe d’huile d’olive</li>
+        <li>1 c. à café de curcuma, 1 c. à café de cumin moulu, ½ c. à café de coriandre moulue</li>
+        <li>400 g de tomates concassées en boîte</li>
+        <li>50 cl de bouillon de légumes</li>
+        <li>150 g de jeunes pousses d’épinards</li>
+        <li>Le jus d’un demi-citron, sel, poivre, coriandre fraîche</li>
+      </ul>
+      <h4>Préparation</h4>
+      <ol>
+        <li>Rincez les lentilles à l’eau froide jusqu’à ce que l’eau soit presque claire.</li>
+        <li>Émincez l’oignon et faites-le revenir dans l’huile d’olive 5 min à feu moyen. Ajoutez l’ail et le gingembre râpés, 1 min.</li>
+        <li>Ajoutez le curcuma, le cumin et la coriandre, et remuez 30 secondes.</li>
+        <li>Ajoutez les tomates, les lentilles égouttées et le bouillon. Portez à ébullition, puis baissez le feu.</li>
+        <li>Laissez cuire 15 à 20 min à couvert, en remuant de temps en temps, jusqu’à ce que les lentilles soient tendres. Ajoutez un peu d’eau si la préparation épaissit trop.</li>
+        <li>Hors du feu, incorporez les épinards, couvrez 2 min, puis mélangez. Assaisonnez, ajoutez le citron et la coriandre.</li>
+      </ol>
+      <p>Servez avec du riz complet ou du quinoa. Se conserve 3 jours au réfrigérateur dans un récipient fermé.</p>
+    </article>
+
+    <article class="recette" aria-labelledby="r2">
+      <h3 id="r2">Recette 2 : Bowl de quinoa, pois chiches rôtis et légumes, sauce tahini-citron</h3>
+      <p><strong>Adapté à :</strong> végane, halal, sans gluten. <strong>Préparation :</strong> 15 min · <strong>Cuisson :</strong> 25 min (en parallèle).</p>
+      <h4>Ingrédients</h4>
+      <ul>
+        <li>200 g de quinoa rincé</li>
+        <li>1 boîte (400 g) de pois chiches, égouttés et séchés</li>
+        <li>1 poivron rouge, 1 courgette, 150 g de chou rouge émincé</li>
+        <li>3 c. à soupe d’huile d’olive</li>
+        <li>1 c. à café de paprika fumé, sel, poivre</li>
+        <li>30 g de graines de courge</li>
+        <li><em>Sauce :</em> 3 c. à soupe de tahini, le jus d’un citron, 1 petite gousse d’ail râpée, 3 à 4 c. à soupe d’eau, sel</li>
+      </ul>
+      <h4>Préparation</h4>
+      <ol>
+        <li>Préchauffez le four à 200 °C (180 °C en chaleur tournante). Cuisez le quinoa dans deux fois son volume d’eau salée, 12 à 15 min à couvert. Laissez reposer 5 min hors du feu, puis égrenez.</li>
+        <li>Mélangez les pois chiches avec 1 c. à soupe d’huile, le paprika et le sel. Étalez-les sur une plaque et enfournez 20 min, en remuant à mi-cuisson.</li>
+        <li>Coupez le poivron et la courgette en morceaux, mélangez-les avec 1 c. à soupe d’huile, sel et poivre, et rôtissez-les sur une autre plaque 20 min.</li>
+        <li>Faites griller les graines de courge à sec dans une poêle 3 à 4 min.</li>
+        <li>Pour la sauce, mélangez le tahini, le jus de citron, l’ail et le sel. Ajoutez l’eau petit à petit jusqu’à une texture nappante.</li>
+        <li>Dressez : quinoa, chou émincé, légumes rôtis, pois chiches, graines, puis sauce.</li>
+      </ol>
+    </article>
+
+    <article class="recette" aria-labelledby="r3">
+      <h3 id="r3">Recette 3 : Curry de pois chiches et épinards au lait de coco</h3>
+      <p><strong>Adapté à :</strong> végane, halal, sans gluten. <strong>Préparation :</strong> 10 min · <strong>Cuisson :</strong> 25 min.</p>
+      <h4>Ingrédients</h4>
+      <ul>
+        <li>2 c. à soupe d’huile d’olive ou de tournesol</li>
+        <li>1 oignon, 2 gousses d’ail, 1 c. à soupe de gingembre râpé</li>
+        <li>1 c. à café de cumin, 1 c. à café de garam masala, ½ c. à café de curcuma, ½ c. à café de piment (facultatif)</li>
+        <li>400 g de tomates concassées</li>
+        <li>1 boîte (400 g) de pois chiches, égouttés</li>
+        <li>20 cl de lait de coco</li>
+        <li>200 g d’épinards frais</li>
+        <li>Sel, coriandre fraîche, riz complet pour servir</li>
+      </ul>
+      <h4>Préparation</h4>
+      <ol>
+        <li>Faites revenir l’oignon émincé dans l’huile 5 à 6 min.</li>
+        <li>Ajoutez l’ail et le gingembre, 1 min, puis les épices, 30 secondes.</li>
+        <li>Ajoutez les tomates et laissez cuire 8 à 10 min.</li>
+        <li>Ajoutez les pois chiches et un demi-verre d’eau. Laissez mijoter 10 min à feu doux.</li>
+        <li>Versez le lait de coco, mélangez, et laissez mijoter 5 min.</li>
+        <li>Ajoutez les épinards 2 min avant la fin. Salez, parsemez de coriandre, servez avec le riz.</li>
+      </ol>
+    </article>
+
+    <article class="recette" aria-labelledby="r4">
+      <h3 id="r4">Recette 4 : Galettes de sarrasin garnies aux épinards et champignons</h3>
+      <p><strong>Adapté à :</strong> végétarien (fromage de chèvre facultatif), halal (vérifier le fromage et les ingrédients), sans gluten si le sarrasin est pur et non contaminé. <strong>Repos :</strong> 30 min · <strong>Cuisson :</strong> 25 min. Pour 8 galettes environ.</p>
+      <h4>Ingrédients</h4>
+      <ul>
+        <li><em>Pâte :</em> 125 g de farine de sarrasin, 1 œuf, 30 cl d’eau ou de boisson végétale, 1 pincée de sel, 1 c. à soupe d’huile pour la poêle</li>
+        <li><em>Garniture :</em> 250 g de champignons, 1 oignon, 150 g d’épinards, 1 c. à soupe d’huile d’olive, thym, sel, poivre</li>
+        <li>100 g de fromage de chèvre frais (facultatif)</li>
+      </ul>
+      <h4>Préparation</h4>
+      <ol>
+        <li>Mélangez la farine, le sel et l’œuf. Ajoutez l’eau petit à petit pour obtenir une pâte lisse, fluide comme une crème. Laissez reposer 30 min.</li>
+        <li>Pour la garniture, faites revenir l’oignon émincé 5 min, ajoutez les champignons en lamelles 8 min, puis les épinards 2 min. Salez, poivrez, ajoutez le thym.</li>
+        <li>Chauffez une poêle huilée à feu moyen-vif. Versez une louche de pâte et étalez-la en cercle. Cuisez 2 min, retournez et cuisez encore 1 à 2 min.</li>
+        <li>Garnissez la moitié de chaque galette, ajoutez le fromage si vous le souhaitez, puis repliez.</li>
+      </ol>
+      <p><strong>Variante végane :</strong> remplacez l’œuf par 1 c. à soupe de graines de lin moulues mélangées à 3 c. à soupe d’eau (laissez gonfler 5 min), utilisez une boisson végétale et omettez le fromage.</p>
+    </article>
+
+    <article class="recette" aria-labelledby="r5">
+      <h3 id="r5">Recette 5 : Porridge d’avoine, graines de chia, fruits rouges et noix</h3>
+      <p><strong>Adapté à :</strong> végane (avec boisson végétale), halal, sans gluten si l’avoine est certifiée. <strong>Pour :</strong> 1 personne · <strong>Préparation :</strong> 5 min · <strong>Cuisson :</strong> 5 min.</p>
+      <h4>Ingrédients</h4>
+      <ul>
+        <li>60 g de flocons d’avoine</li>
+        <li>25 cl de boisson végétale enrichie en calcium</li>
+        <li>1 c. à soupe de graines de chia, ½ c. à café de cannelle</li>
+        <li>100 g de fruits rouges (frais ou surgelés)</li>
+        <li>1 c. à soupe de noix hachées, 1 c. à café de sirop d’érable (facultatif)</li>
+      </ul>
+      <h4>Préparation</h4>
+      <ol>
+        <li>Faites cuire les flocons avec la boisson végétale 4 à 5 min à feu doux, en remuant.</li>
+        <li>Ajoutez les graines de chia et la cannelle, puis laissez gonfler 5 min.</li>
+        <li>Garnissez de fruits rouges, de noix et de sirop si vous le souhaitez.</li>
+      </ol>
+    </article>
+
+    <article class="recette" aria-labelledby="r6">
+      <h3 id="r6">Recette 6 : Tajine de poulet aux abricots et aux olives, sans alcool</h3>
+      <p><strong>Adapté à :</strong> halal (poulet halal certifié, bouillon halal), sans gluten. <strong>Préparation :</strong> 15 min, plus 30 min de marinade (facultatif) · <strong>Cuisson :</strong> 50 min.</p>
+      <h4>Ingrédients</h4>
+      <ul>
+        <li>4 cuisses de poulet halal, désossées et dégraissées</li>
+        <li>1 oignon, 2 gousses d’ail écrasées</li>
+        <li>1 c. à café de cumin, 1 c. à café de cannelle, ½ c. à café de gingembre moulu, 1 c. à café de paprika doux, 1 pincée de safran (facultatif)</li>
+        <li>2 c. à soupe d’huile d’olive, sel, poivre</li>
+        <li>40 cl de bouillon de volaille halal</li>
+        <li>150 g d’abricots secs, 100 g d’olives vertes dénoyautées</li>
+        <li>Coriandre ou persil frais</li>
+      </ul>
+      <h4>Préparation</h4>
+      <ol>
+        <li>Mélangez les épices, l’ail, l’huile, le sel et le poivre. Enrobez le poulet et réservez au frais 30 min.</li>
+        <li>Dans une cocotte, faites dorer le poulet 3 min par face, puis réservez.</li>
+        <li>Faites revenir l’oignon émincé 5 min dans la même cocotte.</li>
+        <li>Remettez le poulet, ajoutez le bouillon et le safran. Couvrez et laissez mijoter à feu doux 30 min.</li>
+        <li>Ajoutez les abricots et les olives, puis cuisez 10 min à découvert. Parsemez de coriandre.</li>
+      </ol>
+      <p>Servez avec de la semoule complète ou des légumes rôtis.</p>
+    </article>
+
+    <article class="recette" aria-labelledby="r7">
+      <h3 id="r7">Recette 7 : Pavés de poisson au four, légumes rôtis, citron et herbes</h3>
+      <p><strong>Adapté à :</strong> sans gluten, et halal selon votre pratique (vérifiez le type de poisson et les ingrédients). <strong>Préparation :</strong> 15 min · <strong>Cuisson :</strong> 25 min.</p>
+      <h4>Ingrédients</h4>
+      <ul>
+        <li>4 pavés de saumon (ou un autre poisson, selon vos goûts et votre budget), 120 g chacun</li>
+        <li>2 courgettes, 2 poivrons, 1 oignon rouge</li>
+        <li>3 c. à soupe d’huile d’olive</li>
+        <li>1 citron (zeste et jus), 1 gousse d’ail, aneth ou persil frais</li>
+        <li>Sel, poivre, paprika doux</li>
+      </ul>
+      <h4>Préparation</h4>
+      <ol>
+        <li>Préchauffez le four à 200 °C.</li>
+        <li>Coupez les légumes en morceaux, mélangez-les avec 2 c. à soupe d’huile, le sel, le poivre et l’ail écrasé. Rôtissez 15 min.</li>
+        <li>Posez les pavés de poisson sur les légumes. Arrosez d’huile, ajoutez le zeste, le jus de citron, les herbes et le paprika.</li>
+        <li>Enfournez 12 à 15 min selon l’épaisseur. Le poisson est cuit quand il se défait facilement à la fourchette.</li>
+      </ol>
+    </article>
+
+    <div class="source">Sources et limites : ces repères reprennent les messages généraux de l’Assurance Maladie (ameli.fr, 16 juin 2025) et de l’INESSS (septembre 2025) sur l’alimentation équilibrée et la prévention de l’obésité. Je n’ai pas trouvé de recommandation officielle propre au lipœdème concernant un régime précis. Les recettes sont des propositions générales, non testées sur le plan nutritionnel pour une personne donnée.</div>
+  </section>
+
+  <!-- ==================== ACTIVITÉ PHYSIQUE ==================== -->
+  <section id="sport" class="rubrique" aria-labelledby="t-sport">
+    <h2 id="t-sport">9. Activité physique adaptée, zone par zone</h2>
+
+    <div class="encadre a-retenir">
+      <h3>Principes à respecter avant tout</h3>
+      <ul>
+        <li><strong>L’activité physique soulage</strong> : elle atténue les symptômes, améliore le bien-être et aide à prévenir l’obésité. Elle est recommandée à toutes les personnes concernées, à un niveau adapté (Assurance Maladie, ameli.fr).</li>
+        <li><strong>Elle ne réduit pas de façon importante le volume</strong> : son intérêt principal est la douleur, la lourdeur, la mobilité et la santé générale.</li>
+        <li><strong>Commencez doucement</strong> : quelques minutes, peu d’intensité, puis augmentez une seule variable à la fois (durée, puis nombre de répétitions, puis résistance).</li>
+        <li><strong>Avis préalable</strong> : parlez-en à votre médecin ou à un professionnel (kinésithérapeute, enseignant en activité physique adaptée) avant de commencer ou d’augmenter l’intensité, surtout en cas de douleur, d’antécédents cardiaques, veineux ou articulaires, ou après une chirurgie.</li>
+        <li><strong>Compression</strong> : demandez à votre professionnel si vos collants de compression doivent être portés pendant l’effort.</li>
+      </ul>
+    </div>
+
+    <div class="encadre ce-sait">
+      <h4>Ce que disent les sources</h4>
+      <ul>
+        <li>L’Assurance Maladie cite les sports aquatiques (qui déchargent les membres du poids du corps et ménagent les articulations) et les exercices qui sollicitent les muscles des jambes (marche, golf, ski de fond, natation, gymnastique, danse, vélo d’extérieur ou d’appartement). Le mollet est décrit comme une « pompe » veineuse et lymphatique.</li>
+        <li>La réponse ministérielle de juillet 2025 mentionne l’activité physique, « notamment aquatique », qui peut contribuer à diminuer les douleurs superficielles.</li>
+        <li>Lors d’un entretien rapporté par 20 Minutes (mai 2026), un angiologue recommande de faire environ 30 minutes de marche ou de vélo par jour, du renforcement musculaire régulier, et une pratique des sports aquatiques chaque semaine. Il s’agit d’un avis professionnel individuel, non d’une recommandation officielle.</li>
+      </ul>
+      <div class="source">Sources : <a href="https://www.ameli.fr/assure/sante/themes/lipoedeme/lipoedeme-traitement" target="_blank" rel="noopener noreferrer">ameli.fr (16 juin 2025)</a> ; <a href="https://questions.assemblee-nationale.fr/q17/17-6704QE.htm" target="_blank" rel="noopener noreferrer">réponse ministérielle n° 6704</a> ; <a href="https://www.20minutes.fr/sante/4221817-20260508-lip-deme-comme-caresses-cactus-longue-errance-medicale-victimes-maladie-meconnue" target="_blank" rel="noopener noreferrer">20 Minutes (8 mai 2026)</a>.</div>
+    </div>
+
+    <h3>9.1 Hanches et fessiers</h3>
+    <p><strong>Pourquoi :</strong> stabiliser le bassin, soutenir la marche et les déplacements. <strong>Comment :</strong> les exercices ci-dessous sont à faire lentement, sans douleur vive, en contrôlant la respiration (expirer à l’effort).</p>
+    <ul>
+      <li><strong>Pont fessier</strong> : allongée sur le dos, genoux pliés, pieds à plat. Montez le bassin en serrant les fessiers, tenez quelques secondes, puis redescendez lentement vertèbre par vertèbre. Adaptez si vous avez une douleur lombaire.</li>
+      <li><strong>Coquillage</strong> : allongée sur le côté, genoux pliés, talons collés. Ouvrez le genou du dessus sans bouger le bassin, puis revenez.</li>
+      <li><strong>Abduction debout</strong> : debout, une main sur un appui stable. Éloignez une jambe tendue sur le côté, puis revenez, sans pencher le buste.</li>
+      <li><strong>Marche active</strong> : marchez à rythme régulier, en balançant bien les bras, sur sol plat puis en légère pente si cela est confortable.</li>
+    </ul>
+
+    <figure role="img" aria-labelledby="fig-pont-titre fig-pont-desc">
+      <svg viewBox="0 0 640 220" xmlns="http://www.w3.org/2000/svg">
+        <title id="fig-pont-titre">Schéma du pont fessier</title>
+        <desc id="fig-pont-desc">Silhouette allongée sur le dos, bassin soulevé, genoux pliés, pieds au sol. Schéma simplifié.</desc>
+        <rect width="640" height="220" fill="#fdfcf9"/>
+        <line x1="40" y1="180" x2="600" y2="180" stroke="#8a8f94" stroke-width="2"/>
+        <g stroke="#1e2b35" stroke-width="7" stroke-linecap="round" fill="none">
+          <line x1="120" y1="150" x2="250" y2="92"/>
+          <line x1="250" y1="92" x2="320" y2="130"/>
+          <line x1="320" y1="130" x2="340" y2="172"/>
+          <line x1="120" y1="150" x2="110" y2="170"/>
+        </g>
+        <circle cx="96" cy="136" r="16" fill="#1e2b35"/>
+        <path d="M330 150 L355 165" stroke="#15605f" stroke-width="5" stroke-linecap="round"/>
+        <path d="M250 80 Q250 60 262 60" fill="none" stroke="#15605f" stroke-width="3" stroke-dasharray="4 3"/>
+        <path d="M430 110 L470 110" stroke="#b25e1b" stroke-width="3"/>
+        <polygon points="470,104 480,110 470,116" fill="#b25e1b"/>
+        <text x="430" y="98" font-family="system-ui,Arial,sans-serif" font-size="14" fill="#6b3206">Monter le bassin</text>
+        <text x="430" y="130" font-family="system-ui,Arial,sans-serif" font-size="13" fill="#3d4f5c">Tenir, puis redescendre</text>
+        <text x="430" y="150" font-family="system-ui,Arial,sans-serif" font-size="13" fill="#3d4f5c">lentement.</text>
+      </svg>
+      <figcaption>Pont fessier : schéma simplifié. Demandez à un professionnel de vérifier votre position.</figcaption>
+    </figure>
+
+    <h3>9.2 Cuisses (quadriceps et ischio-jambiers)</h3>
+    <p><strong>Pourquoi :</strong> renforcer les muscles qui soutiennent les genoux et facilitent les déplacements.</p>
+    <ul>
+      <li><strong>Squat assisté sur chaise</strong> : asseyez-vous et relevez-vous d’une chaise stable, en gardant le dos droit et les genoux dans l’axe des pieds. Utilisez les mains sur les accoudoirs si nécessaire.</li>
+      <li><strong>Extension de genou assise</strong> : assise, dos calé, levez une jambe tendue jusqu’à l’horizontale, tenez, puis redescendez lentement.</li>
+      <li><strong>Montée de marche</strong> : sur une marche basse, montez une jambe puis l’autre, en contrôlant la descente.</li>
+      <li><strong>Vélo d’appartement</strong> à résistance légère, pédalage fluide, pour l’échauffement et l’endurance.</li>
+      <li><strong>Exercices en salle</strong> (presse à cuisses, par exemple) : seulement avec un encadrement qui règle la charge.</li>
+    </ul>
+
+    <h3>9.3 Mollets et chevilles : la « pompe » musculaire</h3>
+    <p><strong>Pourquoi :</strong> les muscles du mollet favorisent le retour veineux et lymphatique (ameli.fr). Les exercices ci-dessous visent le mouvement et la mobilité des chevilles.</p>
+    <ul>
+      <li><strong>Montée sur pointes</strong> : debout, une main sur un appui, montez lentement sur la pointe des pieds, tenez 1 à 2 secondes, redescendez en contrôle.</li>
+      <li><strong>Pompage des chevilles</strong> : assise ou allongée, jambe surélevée si confortable, faites des flexions-extensions du pied (pointe puis talon) de façon régulière.</li>
+      <li><strong>Marche talons-pointes</strong> : marchez quelques pas sur les talons puis sur la pointe des pieds, sur sol plat.</li>
+      <li><strong>Mobilisation des pieds</strong> : écartez et serrez les orteils, roulez une balle sous la plante du pied. Les pieds sont en général épargnés par le lipœdème, mais leur mobilité reste utile.</li>
+    </ul>
+
+    <figure role="img" aria-labelledby="fig-pointes-titre fig-pointes-desc">
+      <svg viewBox="0 0 640 260" xmlns="http://www.w3.org/2000/svg">
+        <title id="fig-pointes-titre">Schéma de la montée sur pointes</title>
+        <desc id="fig-pointes-desc">Silhouette debout de profil, une main sur un appui, montée sur la pointe des pieds, flèche indiquant le mouvement. Schéma simplifié.</desc>
+        <rect width="640" height="260" fill="#fdfcf9"/>
+        <line x1="60" y1="235" x2="400" y2="235" stroke="#8a8f94" stroke-width="2"/>
+        <rect x="40" y="60" width="16" height="170" fill="#c9d4d7" stroke="#8a8f94"/>
+        <g stroke="#1e2b35" stroke-width="7" stroke-linecap="round" fill="none">
+          <line x1="200" y1="78" x2="200" y2="150"/>
+          <line x1="200" y1="150" x2="206" y2="200"/>
+          <line x1="206" y1="200" x2="200" y2="225"/>
+          <line x1="200" y1="225" x2="226" y2="222"/>
+          <line x1="200" y1="110" x2="150" y2="120"/>
+          <line x1="200" y1="110" x2="180" y2="160"/>
+        </g>
+        <circle cx="200" cy="58" r="20" fill="#1e2b35"/>
+        <path d="M300 225 L300 170" stroke="#b25e1b" stroke-width="3" fill="none"/>
+        <polygon points="294,176 300,164 306,176" fill="#b25e1b"/>
+        <text x="330" y="150" font-family="system-ui,Arial,sans-serif" font-size="14" fill="#6b3206">Monter sur les pointes</text>
+        <text x="330" y="172" font-family="system-ui,Arial,sans-serif" font-size="13" fill="#3d4f5c">Tenir 1 à 2 secondes,</text>
+        <text x="330" y="190" font-family="system-ui,Arial,sans-serif" font-size="13" fill="#3d4f5c">puis redescendre en contrôle.</text>
+        <text x="330" y="222" font-family="system-ui,Arial,sans-serif" font-size="12" fill="#3d4f5c">Une main sur un appui stable.</text>
+      </svg>
+      <figcaption>Montée sur pointes : schéma simplifié à titre d’illustration. Le mouvement doit rester confortable.</figcaption>
+    </figure>
+
+    <h3>9.4 Genoux</h3>
+    <p><strong>Pourquoi :</strong> préserver la mobilité et la stabilité, en particulier si la graisse et la douleur gênent la marche. Les genoux sont souvent sollicités indirectement par la charge des jambes.</p>
+    <ul>
+      <li>Privilégiez les activités sans impact : <strong>vélo, natation, marche sur sol plat, aquagym</strong>.</li>
+      <li>Évitez les sauts et les mouvements en torsion si la douleur est présente.</li>
+      <li>Si un genou est douloureux, consultez avant de poursuivre les renforcements (une douleur articulaire peut avoir une autre cause).</li>
+    </ul>
+
+    <h3>9.5 Bras et épaules (si les bras sont concernés)</h3>
+    <p><strong>Pourquoi :</strong> maintenir la mobilité des épaules et le tonus musculaire, sans surcharger les zones douloureuses.</p>
+    <ul>
+      <li><strong>Mouvements de bras</strong> : assise, bras le long du corps, levez-les lentement vers l’avant puis vers le haut, sans douleur.</li>
+      <li><strong>Élévations latérales légères</strong> : avec une bouteille d’eau ou un petit poids, levez les bras sur le côté jusqu’à l’horizontale.</li>
+      <li><strong>Pompes murales</strong> : debout face à un mur, mains à hauteur d’épaules, pliez les coudes et repoussez-vous.</li>
+      <li><strong>Aquagym</strong> : les mouvements de bras dans l’eau sont souvent bien tolérés.</li>
+      <li>Demandez à votre professionnel comment adapter ces exercices, notamment si vous portez une compression au bras.</li>
+    </ul>
+
+    <h3>9.6 Tronc et ventre (si le tronc est concerné)</h3>
+    <ul>
+      <li><strong>Respiration diaphragmatique</strong> : allongée ou assise, une main sur le ventre, gonflez le ventre en inspirant, puis relâchez en expirant. Elle aide à se relaxer et à mobiliser le tronc.</li>
+      <li><strong>Gainage léger</strong> : à genoux, en appui sur les avant-bras, tenez quelques secondes en gardant le dos plat. Arrêtez à la moindre douleur lombaire.</li>
+      <li><strong>Mobilité du dos</strong> : enroulements doux, rotations assises, étirements lents.</li>
+    </ul>
+
+    <h3>9.7 Activités aquatiques</h3>
+    <p>Les activités en eau sont celles que l’Assurance Maladie cite spécifiquement : elles déchargent les membres du poids du corps et ménagent les articulations. Vous pouvez choisir selon votre niveau et votre confort :</p>
+    <ul>
+      <li><strong>Marche dans l’eau</strong> (eau à hauteur de poitrine), à rythme régulier, avec mouvements de bras.</li>
+      <li><strong>Aquagym</strong> : mouvements de jambes et de bras, sans sauts.</li>
+      <li><strong>Natation douce</strong> : nage choisie selon votre confort, avec pauses.</li>
+      <li><strong>Aqua-jogging</strong> avec une ceinture de flottaison, si l’encadrement le permet.</li>
+    </ul>
+
+    <h3>9.8 Un exemple de progression, à valider avec un professionnel</h3>
+    <div class="tableau-wrap">
+      <table>
+        <caption>Principe de progression générale (à adapter, et à faire valider par un professionnel)</caption>
+        <thead><tr><th scope="col">Étape</th><th scope="col">Ce qui change</th><th scope="col">Points de vigilance</th></tr></thead>
+        <tbody>
+          <tr>
+            <th scope="row">Début</th>
+            <td data-label="Ce qui change">Séances courtes, mouvements lents, échauffement de quelques minutes (marche, pompage des chevilles, respiration). Priorité à la régularité, pas à l’intensité.</td>
+            <td data-label="Points de vigilance">Arrêtez à la moindre douleur vive. Le lendemain, une légère courbature est acceptable, une douleur persistante ne l’est pas.</td>
+          </tr>
+          <tr>
+            <th scope="row">Progression</th>
+            <td data-label="Ce qui change">Allongez la durée ou ajoutez des répétitions, puis une résistance légère, une seule variable à la fois.</td>
+            <td data-label="Points de vigilance">Si les symptômes augmentent, revenez à l’étape précédente et parlez-en à votre professionnel.</td>
+          </tr>
+          <tr>
+            <th scope="row">Entretien</th>
+            <td data-label="Ce qui change">Alternez marche, activités aquatiques et renforcement musculaire, sur la semaine.</td>
+            <td data-label="Points de vigilance">Hydratez-vous, évitez les efforts intenses par forte chaleur et adaptez l’horaire si la chaleur aggrave la lourdeur.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="encadre alerte" style="background:#fdecec;border-color:#8a1c1c">
+      <h3 style="color:#4a0c0c">Arrêtez l’activité et consultez si</h3>
+      <ul>
+        <li>une douleur vive, une douleur dans le mollet ou une douleur thoracique apparaît ;</li>
+        <li>un gonflement soudain, une rougeur ou une chaleur apparaît sur un membre ;</li>
+        <li>vous êtes essoufflée anormalement, avez des vertiges ou une sensation de malaise.</li>
+      </ul>
+      <p>En cas de douleur thoracique, d’essoufflement important ou de malaise, appelez le <strong>15</strong> ou le <strong>112</strong>.</p>
+    </div>
+
+    <div class="encadre incertain">
+      <h4>Ce qui reste incertain</h4>
+      <p>Je n’ai pas trouvé d’essai de haut niveau comparant précisément différents programmes sportifs dans le lipœdème, ni de durée ou d’intensité validée. Les exercices proposés sont des principes généraux issus des sources officielles et de la pratique usuelle, à personnaliser.</p>
+    </div>
+    <div class="source">Sources : <a href="https://www.ameli.fr/assure/sante/themes/lipoedeme/lipoedeme-traitement" target="_blank" rel="noopener noreferrer">ameli.fr, « Traitement du lipœdème » (16 juin 2025)</a> ; <a href="https://questions.assemblee-nationale.fr/q17/17-6704QE.htm" target="_blank" rel="noopener noreferrer">réponse ministérielle n° 6704 (1<sup>er</sup> juillet 2025)</a> ; <a href="https://www.inesss.qc.ca/fileadmin/doc/INESSS/Rapports/Traitement/Lipoedeme_EC_INESSS.pdf" target="_blank" rel="noopener noreferrer">INESSS (septembre 2025)</a>.</div>
+  </section>
+
+  <!-- ==================== VIE QUOTIDIENNE ==================== -->
+  <section id="vie" class="rubrique" aria-labelledby="t-vie">
+    <h2 id="t-vie">10. Vie quotidienne et qualité de vie</h2>
+    <p>Vivre avec un lipœdème ne se résume pas aux soins. La douleur, la fatigue, l’image du corps, le moral, la vie sociale et le travail comptent autant. Les conseils suivants sont <strong>généraux et prudents</strong> : discutez-les avec votre médecin si vous avez un doute.</p>
+
+    <h3>Organiser la journée</h3>
+    <ul>
+      <li>Répartissez les déplacements et les tâches debout dans la journée, avec des pauses assises ou en marche.</li>
+      <li>Si cela vous soulage et que c’est confortable, vous pouvez surélever les jambes quelques minutes en fin de journée.</li>
+      <li>Adaptez les horaires des activités aux périodes où vous êtes la moins gênée (souvent le matin, selon les personnes).</li>
+      <li>Pour les longs trajets (voiture, train, avion), prévoyez des pauses pour marcher et demandez à votre médecin si la compression doit être portée.</li>
+    </ul>
+
+    <h3>Vêtements et compression</h3>
+    <ul>
+      <li>Choisissez des vêtements souples, qui ne compriment pas la taille, les hanches ou les jambes.</li>
+      <li>Une compression n’est efficace et confortable que si elle est bien adaptée à votre taille. Faites-la vérifier régulièrement, et demandez à l’orthésiste comment la mettre et l’enlever sans vous blesser (ameli.fr, « Comment utiliser vos bas ou collants de contention/compression ? »).</li>
+      <li>Si la compression vous fait mal, laisse une marque prolongée ou vous gêne fortement, signalez-le à votre professionnel.</li>
+    </ul>
+
+    <h3>Chaleur, douleur et fatigue</h3>
+    <ul>
+      <li>Par forte chaleur, certaines personnes ressentent davantage de lourdeur : hydratez-vous, rafraîchissez-vous (douche tiède, eau sur les jambes), et évitez les efforts aux heures les plus chaudes.</li>
+      <li>Tenir un <strong>carnet des symptômes</strong> aide à repérer ce qui aggrave ou soulage, et à préparer les consultations (voir ci-dessous).</li>
+      <li>La fatigue est fréquente lorsque la douleur et le sommeil sont perturbés. Parlez-en au médecin si elle persiste.</li>
+    </ul>
+
+    <h3>Image corporelle et santé mentale</h3>
+    <p>Le lipœdème peut avoir un fort retentissement sur l’image du corps, la sexualité, la confiance en soi et l’humeur. Ce vécu est légitime. L’Assurance Maladie indique qu’un suivi psychologique peut être proposé par le médecin, notamment en cas de rapport perturbé à l’alimentation. N’hésitez pas à en parler dès la première consultation.</p>
+    <p>Quelques pistes, sans obligation : rejoindre un groupe de parole (en ligne ou en présentiel), choisir des vêtements qui vous plaisent, éviter les comparaisons avec les images retouchées des réseaux sociaux, et vous autoriser des moments de repos.</p>
+
+    <h3>Vie sociale, travail et études</h3>
+    <ul>
+      <li>Vous pouvez expliquer à votre entourage ce qui vous gêne, avec les mots que vous choisissez. Vous n’avez pas à justifier chaque refus.</li>
+      <li>Au travail, un médecin peut évaluer les aménagements possibles, et un médecin du travail peut être sollicité pour les adaptations de poste. Les arrêts de travail relèvent de l’appréciation du médecin qui vous suit.</li>
+      <li>Si votre handicap ou vos limitations sont durables, la MDPH peut étudier une demande de droits et de prestations (informations sur <a href="https://www.cnsa.fr/" target="_blank" rel="noopener noreferrer">cnsa.fr</a>).</li>
+    </ul>
+
+    <h3>Soutien et entourage</h3>
+    <p>Demander de l’aide est utile. Pour vos proches : écouter sans minimiser, éviter les remarques sur le poids, proposer de l’aide concrète (accompagner à une consultation, aider pour la compression), et respecter les choix alimentaires et sportifs de la personne. Les associations de patientes (voir la rubrique dédiée) peuvent aussi orienter les proches.</p>
+
+    <h3>Journal des symptômes (facultatif)</h3>
+    <p>Ce journal est <strong>à imprimer ou à recopier sur papier</strong>. Ce site ne le conserve pas et ne le transmet pas. Il ne sert pas à établir un diagnostic.</p>
+    <div class="tableau-wrap">
+      <table>
+        <caption>Modèle de journal à imprimer</caption>
+        <thead><tr><th scope="col">Date et moment</th><th scope="col">Zones concernées</th><th scope="col">Symptômes (douleur, lourdeur, bleus, gonflement)</th><th scope="col">Intensité (selon votre ressenti)</th><th scope="col">Ce qui a aidé ou aggravé</th></tr></thead>
+        <tbody>
+          <tr><td data-label="Date et moment">&nbsp;</td><td data-label="Zones concernées">&nbsp;</td><td data-label="Symptômes">&nbsp;</td><td data-label="Intensité">&nbsp;</td><td data-label="Ce qui a aidé ou aggravé">&nbsp;</td></tr>
+          <tr><td data-label="Date et moment">&nbsp;</td><td data-label="Zones concernées">&nbsp;</td><td data-label="Symptômes">&nbsp;</td><td data-label="Intensité">&nbsp;</td><td data-label="Ce qui a aidé ou aggravé">&nbsp;</td></tr>
+          <tr><td data-label="Date et moment">&nbsp;</td><td data-label="Zones concernées">&nbsp;</td><td data-label="Symptômes">&nbsp;</td><td data-label="Intensité">&nbsp;</td><td data-label="Ce qui a aidé ou aggravé">&nbsp;</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="choix no-print"><button type="button" class="btn secondaire" onclick="window.print()">Imprimer ce journal</button></div>
+
+    <h3>Signaux d’alerte nécessitant un avis médical</h3>
+    <div class="alerte">
+      <p><strong>Appelez le 15 (SAMU) ou le 112 sans attendre</strong> si vous avez : une douleur thoracique, un essoufflement important, une perte de connaissance, une faiblesse soudaine d’un côté du corps, ou un malaise grave.</p>
+    </div>
+    <div class="encadre a-discuter">
+      <h4>Consultez rapidement (médecin traitant ou service d’urgence selon la gravité) si vous avez :</h4>
+      <ul>
+        <li>un membre (jambe ou bras) soudainement gonflé, chaud, rouge et douloureux, surtout d’un seul côté ;</li>
+        <li>de la fièvre avec une zone rouge, chaude et douloureuse sur la peau ;</li>
+        <li>une plaie, une zone ouverte ou infectée qui ne cicatrise pas ;</li>
+        <li>des bleus importants sans cause, ou des saignements inhabituels ;</li>
+        <li>une aggravation rapide de vos symptômes ou une douleur qui ne cède pas ;</li>
+        <li>après une chirurgie : fièvre, douleur ou gonflement qui augmente, saignement, écoulement ou rougeur des incisions.</li>
+      </ul>
+      <p>Ces signes peuvent avoir d’autres causes que le lipœdème. Ne les attribuez pas à votre maladie sans avis médical.</p>
+    </div>
+    <div class="source">Sources : <a href="https://www.ameli.fr/assure/sante/themes/lipoedeme/lipoedeme-traitement" target="_blank" rel="noopener noreferrer">ameli.fr (16 juin 2025)</a> ; <a href="https://www.ameli.fr/assure/sante/bons-gestes/quotidien/utiliser-bas-collants-compression" target="_blank" rel="noopener noreferrer">ameli.fr, bons gestes compression</a> ; <a href="https://www.inesss.qc.ca/fileadmin/doc/INESSS/Rapports/Traitement/Lipoedeme_EC_INESSS.pdf" target="_blank" rel="noopener noreferrer">INESSS (2025)</a>. Les conseils de vie quotidienne (pauses, vêtements, chaleur) sont des pratiques générales, non issues d’essais spécifiques au lipœdème.</div>
+  </section>
+
+  <!-- ==================== FAQ ==================== -->
+  <section id="faq" class="rubrique" aria-labelledby="t-faq">
+    <h2 id="t-faq">11. Questions fréquentes (FAQ)</h2>
+    <p>Chaque réponse indique sa source. Quand une réponse n’est pas établie, je le dis.</p>
+
+    <details>
+      <summary>Le lipœdème est-il la même chose que l’obésité ?</summary>
+      <p>Non. Le lipœdème est une répartition anormale du tissu graisseux, souvent symétrique, qui épargne en général les pieds. L’obésité est un excès de masse grasse, généralement plus diffus. Les deux peuvent coexister, et l’obésité peut aggraver le lipœdème selon l’Assurance Maladie. (<a href="https://questions.assemblee-nationale.fr/q17/17-6704QE.htm" target="_blank" rel="noopener noreferrer">réponse ministérielle n° 6704</a> ; <a href="https://www.ameli.fr/assure/sante/themes/lipoedeme/lipoedeme-traitement" target="_blank" rel="noopener noreferrer">ameli.fr</a>)</p>
+    </details>
+    <details>
+      <summary>Le lipœdème est-il héréditaire ?</summary>
+      <p>Une composante familiale est souvent évoquée, mais <strong>aucun gène responsable n’a été identifié</strong> à ce jour, selon un article de National Geographic France (2026) qui cite des chercheurs. Un antécédent familial ne permet pas à lui seul de poser un diagnostic.</p>
+    </details>
+    <details>
+      <summary>Peut-on guérir du lipœdème ?</summary>
+      <p>Il n’existe pas de traitement curatif. Les traitements visent à réduire les symptômes et à limiter la progression, et la chirurgie permet un retour à un état antérieur, non une guérison (ameli.fr ; <a href="https://www.inesss.qc.ca/fileadmin/doc/INESSS/Rapports/Traitement/Lipoedeme_EC_INESSS.pdf" target="_blank" rel="noopener noreferrer">INESSS, 2025</a>).</p>
+    </details>
+    <details>
+      <summary>Un régime peut-il faire disparaître le lipœdème ?</summary>
+      <p>Non. L’Assurance Maladie indique que le régime alimentaire n’a aucun ou peu d’effet sur le volume des zones atteintes, mais qu’une alimentation équilibrée est importante pour prévenir l’obésité, qui aggrave la situation. Aucun régime « anti-inflammatoire » n’est démontré comme freinant l’évolution de la maladie.</p>
+    </details>
+    <details>
+      <summary>Le sport suffit-il à faire disparaître le lipœdème ?</summary>
+      <p>Non. Le sport atténue les symptômes (douleur, lourdeur, bien-être) mais ne réduit pas de façon importante le volume. Il reste recommandé, adapté à chacun (ameli.fr ; réponse ministérielle n° 6704).</p>
+    </details>
+    <details>
+      <summary>Faut-il porter des collants de compression ?</summary>
+      <p>Ils sont conseillés par les sources officielles lorsque votre professionnel le juge utile. Pour le lipœdème, l’Assurance Maladie évoque des collants à maille plate rectiligne, sur mesure, de classe 2 ou 3, prescrits par le médecin. Leur port doit être adapté à votre tolérance (ameli.fr, 16 juin 2025).</p>
+    </details>
+    <details>
+      <summary>Les séances de drainage lymphatique sont-elles remboursées ?</summary>
+      <p>Selon l’Assurance Maladie, elles sont prises en charge en cas de lymphœdème diagnostiqué, mais <strong>pas en cas de lipœdème seul</strong>. Vérifiez votre situation auprès de votre caisse (ameli.fr, 16 juin 2025).</p>
+    </details>
+    <details>
+      <summary>La liposuccion est-elle remboursée en France ?</summary>
+      <p>D’après la page de l’Assurance Maladie consultée le 10 octobre 2026 (datée du 16 juin 2025), la lipoaspiration et la dermolipectomie sont présentées comme des interventions « à caractère esthétique » non prises en charge. Une association de patientes conteste cette formulation (AMLF, septembre 2026). Des sites non officiels évoquent des exceptions : je n’ai pas pu les vérifier. Demandez un devis détaillé et une vérification écrite à votre caisse.</p>
+    </details>
+    <details>
+      <summary>Et en Allemagne ?</summary>
+      <p>Une décision du G-BA (17 juillet 2025) prévoit la prise en charge de la liposuction du lipœdème par l’assurance maladie légale, sous conditions, indépendamment du stade, selon le document de l’Assurance maladie allemande. La règle transitoire pour le stade III a été prolongée jusqu’au 30 juin 2026. Je n’ai pas pu vérifier la règle en vigueur après cette date. Ne transposez pas ces règles à la France. (<a href="https://www.kbv.de/documents/infothek/rechtsquellen/bewertungsausschuss/ebm/2026/ba-818-liposuktion.pdf" target="_blank" rel="noopener noreferrer">KBV</a>)</p>
+    </details>
+    <details>
+      <summary>Quelle est la différence entre lipœdème et lymphœdème ?</summary>
+      <p>Le lymphœdème est un gonflement lié à une altération du drainage de la lymphe. Le lipœdème est une répartition anormale de la graisse. Les deux peuvent coexister (« lipolymphœdème »), et un professionnel doit les distinguer par l’examen clinique (ameli.fr ; réponse ministérielle n° 6704).</p>
+    </details>
+    <details>
+      <summary>Le questionnaire de ce site peut-il me dire si j’ai un lipœdème ?</summary>
+      <p>Non. Il ne donne ni diagnostic, ni score, ni stade, ni pourcentage. Il ne peut ni confirmer ni écarter un lipœdème, et il n’est pas validé comme outil diagnostique. Il sert à organiser vos observations pour une consultation.</p>
+    </details>
+    <details>
+      <summary>Quel médecin consulter en premier ?</summary>
+      <p>Le médecin traitant est généralement le point d’entrée. Il peut orienter vers un spécialiste selon votre situation et l’organisation locale des soins (ameli.fr). Les intitulés et les compétences varient : demandez l’expérience de la personne consultée sur le lipœdème.</p>
+    </details>
+    <details>
+      <summary>Le lipœdème est-il une affection de longue durée (ALD) ?</summary>
+      <p>Je n’ai trouvé aucun texte officiel l’inscrivant sur la liste des ALD. La réponse ministérielle du 1<sup>er</sup> juillet 2025 ne l’annonce pas. Une ALD peut néanmoins être accordée, à titre individuel, dans certaines conditions : interrogez votre médecin et votre caisse.</p>
+    </details>
+    <details>
+      <summary>Puis-je demander une aide financière à la CPAM ?</summary>
+      <p>Oui, vous pouvez en faire la demande : la réponse ministérielle de juillet 2025 le rappelle. Cette aide est <strong>exceptionnelle et non automatique</strong> : elle dépend de vos ressources et de la décision de la commission d’action sanitaire et sociale de votre caisse (page régionale d’ameli consultée).</p>
+    </details>
+    <details>
+      <summary>Dois-je contacter la MDPH ?</summary>
+      <p>Cela peut être pertinent si vos limitations sont importantes et durables. La réponse ministérielle indique qu’il est possible de déposer un dossier auprès d’une MDPH. L’évaluation est individuelle. Informations sur <a href="https://www.cnsa.fr/" target="_blank" rel="noopener noreferrer">cnsa.fr</a>.</p>
+    </details>
+    <details>
+      <summary>Le lipœdème apparaît-il à certaines périodes de la vie ?</summary>
+      <p>Des articles de vulgarisation rapportent que les symptômes apparaissent souvent lors de transitions hormonales (puberté, grossesse, ménopause), mais le rôle exact des hormones n’est pas établi. (National Geographic France, 2026 ; cité avec prudence.)</p>
+    </details>
+    <details>
+      <summary>Peut-on faire du sport avec un lipœdème ?</summary>
+      <p>Oui, l’activité physique adaptée est recommandée par l’Assurance Maladie, en particulier les activités aquatiques et les exercices qui sollicitent les muscles des jambes. Commencez progressivement et faites valider votre programme (voir la rubrique Activité physique).</p>
+    </details>
+    <details>
+      <summary>Le lipœdème peut-il coexister avec une autre maladie ?</summary>
+      <p>Oui. Le lipœdème peut coexister avec une obésité, un lymphœdème, une insuffisance veineuse ou d’autres problèmes de santé. Un professionnel doit évaluer les symptômes et les diagnostics possibles.</p>
+    </details>
+    <details>
+      <summary>Où trouver du soutien ?</summary>
+      <p>Auprès de votre médecin, du service social de votre CPAM, et d’associations de patients (voir la rubrique « Associations et liens utiles »). Les forums et groupes en ligne peuvent aider, mais leurs informations ne sont pas vérifiées.</p>
+    </details>
+    <details>
+      <summary>Les informations de ce site sont-elles à jour ?</summary>
+      <p>Elles ont été vérifiées à la date indiquée en haut de page (10 octobre 2026), dans les limites décrites dans la rubrique « Sources et mises à jour ». Les règles et les recommandations peuvent évoluer rapidement : vérifiez auprès des organismes officiels.</p>
+    </details>
+    <details>
+      <summary>Ce site collecte-t-il mes réponses ou mes données ?</summary>
+      <p>Non. Le site ne contient ni cookie, ni traceur, ni publicité, ni formulaire d’envoi, ni appel à un serveur. Les réponses au questionnaire restent dans la page et disparaissent quand vous la quittez. Vous pouvez vérifier ce fonctionnement dans le code du fichier.</p>
+    </details>
+  </section>
+
+  <!-- ==================== ASSOCIATIONS ==================== -->
+  <section id="associations" class="rubrique" aria-labelledby="t-associations">
+    <h2 id="t-associations">12. Associations, informations et liens utiles</h2>
+    <p>Liste des sources et organismes utiles. Je ne classe aucun site comme « meilleur » ou « plus consulté », faute de données vérifiables. Les conflits d’intérêts éventuels doivent être recherchés dans les mentions légales de chaque organisme.</p>
+    <div class="tableau-wrap">
+      <table>
+        <caption>Organismes et ressources (statut de vérification indiqué)</caption>
+        <thead><tr><th scope="col">Nom</th><th scope="col">Pays</th><th scope="col">Nature</th><th scope="col">Ce qu’on peut y trouver</th><th scope="col">Vérification</th></tr></thead>
+        <tbody>
+          <tr><th scope="row"><a href="https://www.ameli.fr/" target="_blank" rel="noopener noreferrer">Assurance Maladie (ameli.fr)</a></th><td data-label="Pays">France</td><td data-label="Nature">Organisme public</td><td data-label="Ce qu’on peut y trouver">Dossier lipœdème, remboursements, démarches, aides financières, forum d’aide</td><td data-label="Vérification">Page « Traitement du lipœdème » consultée (datée du 16 juin 2025), le 10 octobre 2026</td></tr>
+          <tr><th scope="row"><a href="https://www.has-sante.fr/" target="_blank" rel="noopener noreferrer">Haute Autorité de santé (has-sante.fr)</a></th><td data-label="Pays">France</td><td data-label="Nature">Autorité publique scientifique</td><td data-label="Ce qu’on peut y trouver">Recommandations, parcours de soins, listes d’actes</td><td data-label="Vérification">Site consulté ; aucune recommandation spécifique au lipœdème trouvée à la date de vérification</td></tr>
+          <tr><th scope="row"><a href="https://www.legifrance.gouv.fr/" target="_blank" rel="noopener noreferrer">Légifrance</a></th><td data-label="Pays">France</td><td data-label="Nature">Service public des textes juridiques</td><td data-label="Ce qu’on peut y trouver">Lois, décrets, textes de référence</td><td data-label="Vérification">Lien vérifié ; aucun texte spécifique au lipœdème trouvé à la date de vérification</td></tr>
+          <tr><th scope="row"><a href="https://www.service-public.fr/" target="_blank" rel="noopener noreferrer">Service-Public.fr</a></th><td data-label="Pays">France</td><td data-label="Nature">Service public d’information</td><td data-label="Ce qu’on peut y trouver">Droits, recours, démarches administratives</td><td data-label="Vérification">Lien référencé ; pages précises (recours, délais) à consulter</td></tr>
+          <tr><th scope="row"><a href="https://sante.gouv.fr/" target="_blank" rel="noopener noreferrer">Ministère de la Santé (sante.gouv.fr)</a></th><td data-label="Pays">France</td><td data-label="Nature">Ministère</td><td data-label="Ce qu’on peut y trouver">Informations de santé publique, plans, actualités</td><td data-label="Vérification">Lien référencé ; non ouvert pour cette version</td></tr>
+          <tr><th scope="row"><a href="https://www.cnsa.fr/" target="_blank" rel="noopener noreferrer">CNSA (cnsa.fr)</a></th><td data-label="Pays">France</td><td data-label="Nature">Agence publique (handicap et perte d’autonomie)</td><td data-label="Ce qu’on peut y trouver">Informations sur les MDPH et les droits liés au handicap</td><td data-label="Vérification">Lien référencé ; non ouvert pour cette version</td></tr>
+          <tr><th scope="row"><a href="https://questions.assemblee-nationale.fr/q17/17-6704QE.htm" target="_blank" rel="noopener noreferrer">Assemblée nationale (question n° 6704)</a></th><td data-label="Pays">France</td><td data-label="Nature">Institution parlementaire</td><td data-label="Ce qu’on peut y trouver">Question écrite et réponse ministérielle sur le lipœdème</td><td data-label="Vérification">Consultée, le 10 octobre 2026</td></tr>
+          <tr><th scope="row"><a href="https://www.inesss.qc.ca/" target="_blank" rel="noopener noreferrer">INESSS (inesss.qc.ca)</a></th><td data-label="Pays">Québec (Canada)</td><td data-label="Nature">Institut public d’évaluation</td><td data-label="Ce qu’on peut y trouver">État des connaissances sur le lipœdème (septembre 2025)</td><td data-label="Vérification">Rapport consulté, le 10 octobre 2026</td></tr>
+          <tr><th scope="row"><a href="https://www.g-ba.de/" target="_blank" rel="noopener noreferrer">G-BA (g-ba.de)</a></th><td data-label="Pays">Allemagne</td><td data-label="Nature">Comité fédéral (décisions d’assurance maladie)</td><td data-label="Ce qu’on peut y trouver">Décisions sur les méthodes de traitement, dont la liposuction du lipœdème</td><td data-label="Vérification">Décision relayée par la KBV ; texte complet non consulté</td></tr>
+          <tr><th scope="row"><a href="https://www.kbv.de/" target="_blank" rel="noopener noreferrer">KBV (kbv.de)</a></th><td data-label="Pays">Allemagne</td><td data-label="Nature">Association nationale des médecins conventionnés</td><td data-label="Ce qu’on peut y trouver">Documents officiels sur l’évolution des règles (EBM)</td><td data-label="Vérification">Décision du Bewertungsausschuss consultée, le 10 octobre 2026</td></tr>
+          <tr><th scope="row"><a href="https://www.lipoedemeassociation.fr/" target="_blank" rel="noopener noreferrer">AMLF, Association Maladie Lipœdème France</a></th><td data-label="Pays">France</td><td data-label="Nature">Association de patients</td><td data-label="Ce qu’on peut y trouver">Informations, actions auprès des institutions, courrier à la CNAM (septembre 2026)</td><td data-label="Vérification">Page consultée ; liens financiers non vérifiés</td></tr>
+          <tr><th scope="row"><a href="https://linktr.ee/lipoedeme" target="_blank" rel="noopener noreferrer">LipoFrance</a></th><td data-label="Pays">France</td><td data-label="Nature">Association de patients</td><td data-label="Ce qu’on peut y trouver">Livret à destination des patientes (cité par ameli.fr)</td><td data-label="Vérification">Lien cité par l’Assurance Maladie ; contenu non vérifié directement</td></tr>
+          <tr><th scope="row"><a href="https://conseil-national.medecin.fr/" target="_blank" rel="noopener noreferrer">Conseil national de l’Ordre des médecins</a></th><td data-label="Pays">France</td><td data-label="Nature">Ordre professionnel</td><td data-label="Ce qu’on peut y trouver">Vérification de l’inscription d’un médecin au tableau de l’Ordre</td><td data-label="Vérification">Lien référencé</td></tr>
+          <tr><th scope="row"><a href="https://lipoedemportal.de/aktuelle-informationen-lipoedem.htm" target="_blank" rel="noopener noreferrer">Lipödem-Portal</a></th><td data-label="Pays">Allemagne</td><td data-label="Nature">Portail d’information (non officiel)</td><td data-label="Ce qu’on peut y trouver">Actualités sur la liposuction et l’assurance maladie allemande</td><td data-label="Vérification">Repéré ; non officiel, à croiser avec les sources officielles</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Sociétés savantes, publications et sites commerciaux</h3>
+    <ul>
+      <li><strong>Sociétés savantes et publications</strong> : je n’ai pas identifié, dans mes sources vérifiées, de société savante française spécifique au lipœdème ni de recommandation française publiée à votre disposition. Les publications citées dans la bibliographie sont à consulter directement.</li>
+      <li><strong>Sites commerciaux</strong> (cliniques, pharmacies, fabricants de vêtements de compression, blogs de vente) : ils peuvent informer sur les produits, mais <strong>ils ne sont pas une preuve médicale</strong>. Leurs chiffres (prix, taux de réussite, pourcentages de patientes concernées) ne sont pas sourcés dans la plupart des cas et n’ont pas été repris ici.</li>
+      <li><strong>Forums et témoignages</strong> : utiles pour se sentir moins seul(e), mais non représentatifs.</li>
+    </ul>
+    <div class="source">Liens vérifiés à la date du 10 octobre 2026 selon le statut indiqué dans le tableau. Les liens non ouverts sont signalés comme « référencés ».</div>
+  </section>
+
+  <!-- ==================== GLOSSAIRE ==================== -->
+  <section id="glossaire" class="rubrique" aria-labelledby="t-glossaire">
+    <h2 id="t-glossaire">13. Glossaire</h2>
+    <dl>
+      <dt><strong>ALD (affection de longue durée)</strong></dt>
+      <dd>Dispositif de prise en charge à 100 % de certains soins pour une maladie grave ou chronique, sous conditions (inscription sur la liste ou décision individuelle du médecin conseil).</dd>
+      <dt><strong>Angiologue, phlébologue</strong></dt>
+      <dd>Médecins spécialistes des vaisseaux (veines, artères, parfois lymphatiques), selon les formations et les pratiques.</dd>
+      <dt><strong>CCAM (Classification commune des actes médicaux)</strong></dt>
+      <dd>Liste des actes médicaux et chirurgicaux utilisée pour leur codage et, pour les actes remboursables, leur prise en charge.</dd>
+      <dt><strong>CPAM (caisse primaire d’assurance maladie)</strong></dt>
+      <dd>Caisse de l’Assurance Maladie de votre département ; elle gère les remboursements et l’action sanitaire et sociale.</dd>
+      <dt><strong>Commission de recours amiable (CRA)</strong></dt>
+      <dd>Instance interne de la caisse qui examine une contestation avant un éventuel recours devant la justice.</dd>
+      <dt><strong>Compression (classe 2, classe 3)</strong></dt>
+      <dd>Niveau de pression exercée par un vêtement médical ; le choix de la classe relève du professionnel.</dd>
+      <dt><strong>Dermolipectomie</strong></dt>
+      <dd>Intervention qui enlève l’excès de peau et de graisse, réservée aux formes avancées selon l’Assurance Maladie.</dd>
+      <dt><strong>Drainage lymphatique manuel</strong></dt>
+      <dd>Massage spécifique réalisé par un professionnel formé, visant à favoriser l’écoulement de la lymphe.</dd>
+      <dt><strong>Ecchymose</strong></dt>
+      <dd>Bleu, tache violacée due à un saignement sous la peau.</dd>
+      <dt><strong>Entente préalable</strong></dt>
+      <dd>Demande d’accord préalable adressée à l’Assurance Maladie avant certains actes ou soins, pour une prise en charge.</dd>
+      <dt><strong>Fibrose</strong></dt>
+      <dd>Tissu cicatriciel moins souple, qui peut rendre certaines techniques chirurgicales impossibles (selon ameli.fr).</dd>
+      <dt><strong>Insuffisance veineuse</strong></dt>
+      <dd>Difficulté des veines des jambes à renvoyer le sang vers le cœur, qui peut causer lourdeur, varices et gonflements.</dd>
+      <dt><strong>Lipœdème</strong></dt>
+      <dd>Affection chronique du tissu graisseux, à répartition anormale et souvent symétrique, principalement aux membres inférieurs.</dd>
+      <dt><strong>Lipolymphœdème</strong></dt>
+      <dd>Lipœdème associé à une composante lymphatique (selon ameli.fr).</dd>
+      <dt><strong>Lipoaspiration ou liposuccion</strong></dt>
+      <dd>Aspiration de graisse à travers de petites incisions, à l’aide de canules.</dd>
+      <dt><strong>Lymphœdème</strong></dt>
+      <dd>Gonflement lié à une altération du drainage de la lymphe.</dd>
+      <dt><strong>MDPH (maison départementale des personnes handicapées)</strong></dt>
+      <dd>Structure qui évalue les droits liés au handicap (aides, prestations, orientation).</dd>
+      <dt><strong>Mutuelle (complémentaire santé)</strong></dt>
+      <dd>Organisme qui peut rembourser une partie des frais restant à votre charge, selon votre contrat.</dd>
+      <dt><strong>Orthésiste</strong></dt>
+      <dd>Professionnel qui réalise et ajuste les dispositifs médicaux, dont les vêtements de compression sur mesure.</dd>
+      <dt><strong>Recours amiable</strong></dt>
+      <dd>Demande de réexamen d’une décision, adressée à la caisse avant toute procédure judiciaire.</dd>
+      <dt><strong>Signe de Stemmer</strong></dt>
+      <dd>Test clinique (pli de peau sur les orteils) utilisé pour distinguer un lymphœdème ; son interprétation relève du médecin.</dd>
+      <dt><strong>Dépassement d’honoraires</strong></dt>
+      <dd>Somme demandée par un professionnel au-delà du tarif conventionné, qui n’est pas prise en charge par l’Assurance Maladie.</dd>
+      <dt><strong>Action sanitaire et sociale (ASS)</strong></dt>
+      <dd>Aides complémentaires et facultatives de la caisse, accordées sous conditions de ressources.</dd>
+    </dl>
+  </section>
+
+  <!-- ==================== SOURCES ==================== -->
+  <section id="sources" class="rubrique" aria-labelledby="t-sources">
+    <h2 id="t-sources">14. Sources, bibliographie et mises à jour</h2>
+
+    <h3>Date de création et de dernière vérification</h3>
+    <p><strong>Date de création : 10 octobre 2026. Dernière vérification des sources : 10 octobre 2026.</strong> Les règles, remboursements, tarifs et recommandations peuvent évoluer rapidement. Vérifiez toujours auprès des organismes officiels avant toute décision.</p>
+
+    <h3>Méthode de vérification</h3>
+    <ol>
+      <li>Consultation directe des sources officielles lorsque c’était possible : pages de l’Assurance Maladie, réponse ministérielle publiée au Journal officiel, décisions allemandes publiées par l’Assurance maladie, rapport de l’INESSS.</li>
+      <li>Recherche de constats et d’actualités (presse, associations) : ils sont attribués à leur source et distingués des règles de droit.</li>
+      <li>Écartement des sources non vérifiables : chiffres sans source, données contradictoires avec les sources officielles, contenus commerciaux.</li>
+      <li>Les points non vérifiés sont marqués dans le texte.</li>
+    </ol>
+
+    <h3>Points non vérifiés à ce jour</h3>
+    <ul>
+      <li>Reconnaissance du lipœdème dans la classification française des maladies (code exact) et recommandations HAS spécifiques.</li>
+      <li>Statut de la saisine de la HAS mentionnée par la presse.</li>
+      <li>Règles de l’assurance maladie allemande après le 30 juin 2026, et texte complet des conditions.</li>
+      <li>Règles de prise en charge au Québec.</li>
+      <li>Délais de recours et démarches exactes (service-public.fr, commissions de recours).</li>
+      <li>Tous les prix, tarifs et fourchettes de coûts : aucune source officielle fiable trouvée.</li>
+      <li>Prévalence du lipœdème en France.</li>
+    </ul>
+
+    <h3>Sources non retenues pour les chiffres et les règles</h3>
+    <p>Plusieurs sites commerciaux, blogs de cliniques ou articles non sourcés publient des données (pourcentages de patientes, taux de satisfaction, prix, délais de prise en charge, affirmations sur une « reconnaissance officielle » par l’OMS ou la HAS) qui n’ont pas pu être vérifiées ou qui sont contradictoires avec les sources officielles. Elles n’ont pas été reprises ici.</p>
+
+    <h3>Bibliographie commentée par thème</h3>
+    <h4>Définition, clinique et recommandations</h4>
+    <ol>
+      <li>Assurance Maladie. « Traitement du lipœdème ». ameli.fr, page datée du 16 juin 2025. <a href="https://www.ameli.fr/assure/sante/themes/lipoedeme/lipoedeme-traitement" target="_blank" rel="noopener noreferrer">Lien direct</a>. Référence officielle la plus directe pour le traitement et le remboursement.</li>
+      <li>Institut national d’excellence en santé et en services sociaux (INESSS, Québec). Hallée S. <em>Le lipœdème. État des connaissances</em>. Septembre 2025, 97 p. <a href="https://www.inesss.qc.ca/fileadmin/doc/INESSS/Rapports/Traitement/Lipoedeme_EC_INESSS.pdf" target="_blank" rel="noopener noreferrer">Lien direct</a>. Revue de la littérature ; pas de recommandation clinique formulée à la date du rapport.</li>
+      <li>Assemblée nationale. Question écrite n° 6704 (publiée le 20 mai 2025) et réponse publiée au Journal officiel le 1<sup>er</sup> juillet 2025. <a href="https://questions.assemblee-nationale.fr/q17/17-6704QE.htm" target="_blank" rel="noopener noreferrer">Lien direct</a>.</li>
+      <li>Hadji I. « Le lipœdème : une pathologie peu connue ». <em>Réalités en chirurgie plastique</em>, n° 47, juin 2022 (cité par ameli.fr ; non consulté directement).</li>
+      <li>Alcolea JM, Alonso Alvarez B, Arroyo Bielsa A, Domingo P et al. « Consensus document on lipedema », Espagne, 2018 (cité par ameli.fr ; non consulté directement, non inclus au tableau international).</li>
+      <li>Thomas Wright (cité par) National Geographic France, « Lipœdème : pourquoi cette maladie reste si mal comprise », article de septembre 2026. <a href="https://www.nationalgeographic.fr/sante/lipoedeme-pourquoi-cette-maladie-reste-si-mal-comprise-graisse-sous-cutanee" target="_blank" rel="noopener noreferrer">Lien direct</a>. Article de vulgarisation, utilisé pour le contexte.</li>
+    </ol>
+    <h4>Chirurgie</h4>
+    <ol start="7">
+      <li>Bertheuil N., Bustamante K. « Chirurgie du tissu adipeux ». <em>Techniques chirurgicales – Chirurgie plastique, reconstructrice et esthétique</em>. Elsevier Masson, 2019 (cité par ameli.fr ; non consulté directement).</li>
+      <li>Chevennement M. « Le lipœdème et sa prise en charge ». <em>La Presse médicale formation</em>, 2024 ; 5(5) : 331-336 (cité par ameli.fr ; non consulté directement).</li>
+    </ol>
+    <h4>Droits et prise en charge (France)</h4>
+    <ol start="9">
+      <li>Assurance Maladie (ameli.fr). Pages sur le lipœdème et les aides financières individuelles (page régionale, Haute-Garonne). <a href="https://ameli.fr/haute-garonne/assure/droits-demarches/difficultes-acces-droits-soins/aides-financieres-individuelles" target="_blank" rel="noopener noreferrer">Lien direct</a>.</li>
+      <li>Forum ameli (réponses d’agents et témoignages, 2018-2019). Non officiel ; utilisé uniquement pour illustrer la procédure CCAM. <a href="https://forum-assures.ameli.fr/questions/1917152-chirurgie-medicale-cause-lipoedeme" target="_blank" rel="noopener noreferrer">Lien direct</a>.</li>
+      <li>Association Maladie Lipœdème France (AMLF). Courrier à la CNAM, septembre 2026. <a href="https://www.lipoedemeassociation.fr/post/lip%C5%93d%C3%A8me-l-amlf-interpelle-l-assurance-maladie-sur-la-chirurgie" target="_blank" rel="noopener noreferrer">Lien direct</a>. Revendication associative.</li>
+      <li>20 Minutes (Journaliste : Elsa Provenzano). « Lipœdème : “Comme des caresses avec un cactus”… ». 8 mai 2026. <a href="https://www.20minutes.fr/sante/4221817-20260508-lip-deme-comme-caresses-cactus-longue-errance-medicale-victimes-maladie-meconnue" target="_blank" rel="noopener noreferrer">Lien direct</a>. Constat journalistique, avec avis d’un angiologue.</li>
+    </ol>
+    <h4>International</h4>
+    <ol start="13">
+      <li>Kassenärztliche Bundesvereinigung (KBV). Décision du Bewertungsausschuss (818e séance), EBM, en vigueur du 1<sup>er</sup> janvier au 30 juin 2026, rappelant la décision du G-BA du 17 juillet 2025 sur la liposuction du lipœdème. <a href="https://www.kbv.de/documents/infothek/rechtsquellen/bewertungsausschuss/ebm/2026/ba-818-liposuktion.pdf" target="_blank" rel="noopener noreferrer">Lien direct</a>.</li>
+    </ol>
+
+    <h3>Signaler une information à vérifier</h3>
+    <p>Vous avez repéré une information fausse, datée ou à vérifier ? Décrivez-la ci-dessous. <strong>Rien n’est envoyé ni enregistré par ce site</strong> : le texte est copié dans votre presse-papiers, avec l’adresse de la page et la date, afin que vous puissiez le transmettre à la personne qui gère ce site.</p>
+    <form class="no-print" onsubmit="return false;">
+      <label for="signalement-texte">Information à vérifier (ne mettez aucune donnée personnelle)</label>
+      <textarea id="signalement-texte" rows="4" style="margin:.4rem 0 .6rem"></textarea>
+      <button type="button" class="btn" id="btn-signaler">Copier le signalement</button>
+      <p id="signalement-statut" role="status" class="note-pieds"></p>
+    </form>
+
+    <h3>Rappel</h3>
+    <p>Ce site ne remplace ni une consultation, ni un diagnostic, ni un traitement, ni un avis professionnel. Il n’est pas un avis juridique. Pour votre situation, consultez votre médecin, votre caisse d’assurance maladie et votre mutuelle.</p>
+  </section>
+
+</div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <h2>Informations sur ce site</h2>
+    <p>Site d’information générale, sans publicité, sans cookie non essentiel, sans traceur, sans collecte de données. Aucune donnée n’est envoyée à un serveur. Le site fonctionne sans connexion internet une fois le fichier ouvert ; seuls les liens externes que vous ouvrez volontairement vous conduisent vers d’autres sites.</p>
+    <p>Dernière vérification des sources : 10 octobre 2026. Les règles et recommandations peuvent évoluer.</p>
+    <p><a href="#accueil">Retour à l’accueil</a> · <a href="#sources">Sources et mises à jour</a> · <a href="#questionnaire">Questionnaire</a></p>
+  </div>
+</footer>
+
+<button type="button" class="btn retour" id="retour-haut" aria-label="Revenir en haut de la page">↑ Haut de page</button>
+
+<script>
+(function () {
+  'use strict';
+  /* Ce script ne fait aucune requête réseau, n’utilise ni cookies ni stockage local
+     (localStorage, sessionStorage, IndexedDB) et n’enregistre aucune réponse. */
+
+  var STD = ['oui', 'non', 'ne-sais-pas', 'prefere-pas'];
+  var STD_LABEL = { 'oui': 'Oui', 'non': 'Non', 'ne-sais-pas': 'Je ne sais pas', 'prefere-pas': 'Je préfère ne pas répondre' };
+
+  var SECTIONS = [
+    { titre: 'A. Zones et répartition', questions: [
+      { id: 'zones', type: 'checkbox', legend: 'Quelles zones vous semblent concernées par une graisse que vous décrivez comme inhabituelle ?',
+        aide: 'Cochez ce que vous observez. Vous pouvez ne rien cocher.',
+        options: ['Hanches', 'Fesses', 'Cuisses', 'Genoux', 'Mollets', 'Chevilles', 'Pieds', 'Bras', 'Ventre ou tronc', 'Autre zone'] },
+      { id: 'symetrie', type: 'radio', legend: 'Ces zones vous semblent-elles comparables des deux côtés du corps ?',
+        aide: 'Une asymétrie n’exclut pas une situation à évaluer : signalez-la à un médecin.' }
+    ]},
+    { titre: 'B. Douleurs et sensations', questions: [
+      { id: 'douleur', type: 'radio', legend: 'Ressentez-vous des douleurs dans ces zones ?' },
+      { id: 'pression', type: 'radio', legend: 'Ces zones sont-elles sensibles au toucher, à la pression ou au pincement ?' },
+      { id: 'lourdeur', type: 'radio', legend: 'Ressentez-vous une sensation de jambes ou de bras lourds ou tendus ?' },
+      { id: 'vetements', type: 'radio', legend: 'Le port de vêtements serrés (ceinture, bas, chaussures) est-il gênant ?' },
+      { id: 'variation', type: 'radio', legend: 'Vos symptômes sont-ils plus marqués en fin de journée, avec la chaleur ou après une station debout prolongée ?' }
+    ]},
+    { titre: 'C. Ecchymoses et gonflements', questions: [
+      { id: 'bleus', type: 'radio', legend: 'Avez-vous des ecchymoses (bleus) faciles, sans choc important ?' },
+      { id: 'bleus-freq', type: 'choix', legend: 'Si oui, à quelle fréquence ?', options: ['Rarement', 'De temps en temps', 'Souvent', 'Je ne sais pas', 'Je préfère ne pas répondre'] },
+      { id: 'gonflement', type: 'radio', legend: 'Observez-vous des gonflements, notamment en fin de journée ?' },
+      { id: 'gonflement-soudain', type: 'radio', legend: 'Avez-vous observé récemment un gonflement soudain, d’un seul côté, ou accompagné de chaleur ou de rougeur ?', alerte: 'consult' }
+    ]},
+    { titre: 'D. Évolution dans le temps', questions: [
+      { id: 'duree', type: 'choix', legend: 'Depuis combien de temps remarquez-vous ces signes ?', options: ['Moins d’un an', 'De 1 à 5 ans', 'Plus de 5 ans', 'Je ne sais pas', 'Je préfère ne pas répondre'] },
+      { id: 'tendance', type: 'choix', legend: 'Comment décririez-vous l’évolution ?', options: ['Stable', 'Augmentation lente', 'Augmentation rapide', 'Variable selon les périodes', 'Je ne sais pas', 'Je préfère ne pas répondre'] },
+      { id: 'hormones', type: 'radio', legend: 'Avez-vous remarqué des changements lors de la puberté, d’une grossesse ou de la ménopause ?' }
+    ]},
+    { titre: 'E. Retentissement fonctionnel et quotidien', questions: [
+      { id: 'marche', type: 'radio', legend: 'Ces symptômes limitent-ils votre marche, la montée des escaliers ou vos déplacements ?' },
+      { id: 'quotidien', type: 'radio', legend: 'Ces symptômes limitent-ils certaines activités quotidiennes (ménage, courses, habillage) ?' },
+      { id: 'sport', type: 'radio', legend: 'Ces symptômes limitent-ils la pratique d’une activité physique ou sportive ?' },
+      { id: 'travail', type: 'radio', legend: 'Ces symptômes ont-ils un retentissement sur votre travail ou vos études ?' },
+      { id: 'moral', type: 'radio', legend: 'Ces symptômes ont-ils un retentissement sur votre moral, votre image de vous-même ou votre vie sociale ?' }
+    ]},
+    { titre: 'F. Signes pouvant nécessiter un avis médical rapide', questions: [
+      { id: 'alertes', type: 'checkbox', legend: 'Avez-vous actuellement l’un de ces signes ?', aide: 'Cochez seulement si cela vous concerne. Ce n’est pas un diagnostic.',
+        options: [
+          { label: 'Essoufflement inhabituel ou douleur dans la poitrine', niveau: 'urgent' },
+          { label: 'Jambe ou bras chaud, rouge, très douloureux et gonflé d’un seul côté, apparu récemment', niveau: 'urgent' },
+          { label: 'Fièvre avec une zone rouge, chaude et douloureuse', niveau: 'urgent' },
+          { label: 'Malaise, perte de connaissance ou faiblesse soudaine d’un côté du corps', niveau: 'urgent' },
+          { label: 'Plaie qui ne cicatrise pas ou signes d’infection', niveau: 'consult' },
+          { label: 'Aucun de ces signes', niveau: 'aucun' }
+        ] }
+    ]},
+    { titre: 'G. Consultations et examens (facultatif)', questions: [
+      { id: 'consult', type: 'radio', legend: 'Avez-vous déjà consulté un professionnel de santé au sujet de ces symptômes ?' },
+      { id: 'examens', type: 'radio', legend: 'Avez-vous déjà eu des examens pour ces symptômes (prise de sang, échographie, examen vasculaire, imagerie) ?' },
+      { id: 'essais', type: 'checkbox', legend: 'Quels moyens avez-vous déjà essayés ?',
+        options: ['Bas ou collants de compression', 'Drainage lymphatique', 'Activité physique adaptée', 'Régime alimentaire', 'Kinésithérapie', 'Médicaments contre la douleur', 'Soutien psychologique', 'Chirurgie', 'Autre', 'Aucun'] }
+    ]},
+    { titre: 'H. Histoire personnelle et familiale (entièrement facultatif)', questions: [
+      { id: 'famille', type: 'radio', legend: 'Un membre de votre famille proche présente-t-il des symptômes semblables ?' },
+      { id: 'autres-sante', type: 'radio', legend: 'Avez-vous d’autres problèmes de santé connus (cœur, reins, veines, thyroïde, système lymphatique) ?' },
+      { id: 'poids', type: 'radio', legend: 'Avez-vous remarqué une variation de poids récente que vous ne comprenez pas ?' },
+      { id: 'notes', type: 'texte', legend: 'Notes personnelles', aide: 'Facultatif. Ce texte n’est ni envoyé ni enregistré. Il disparaît quand vous quittez la page.' }
+    ]}
+  ];
+
+  var form = document.getElementById('questionnaire-form');
+  var container = document.getElementById('questions');
+  var fiche = document.getElementById('fiche');
+  var actions = document.getElementById('actions-fiche');
+  var alerteUrgence = document.getElementById('alerte-urgence');
+  var alerteConsult = document.getElementById('alerte-consult');
+  var uid = 0;
+
+  function el(tag, attrs, text) {
+    var e = document.createElement(tag);
+    if (attrs) { Object.keys(attrs).forEach(function (k) { e.setAttribute(k, attrs[k]); }); }
+    if (text) { e.textContent = text; }
+    return e;
+  }
+
+  function optionLabel(opt) { return typeof opt === 'string' ? opt : opt.label; }
+
+  function addChoice(parent, type, name, value, label, descId) {
+    var lab = el('label');
+    var input = el('input', { type: type, name: name, value: value });
+    if (descId) { input.setAttribute('aria-describedby', descId); }
+    lab.appendChild(input);
+    lab.appendChild(document.createTextNode(' ' + label));
+    parent.appendChild(lab);
+  }
+
+  function buildQuestion(q) {
+    uid += 1;
+    var fs = el('fieldset', { class: 'q', 'data-id': q.id });
+    fs.appendChild(el('legend', null, q.legend));
+    var descId = null;
+    if (q.aide) {
+      descId = 'aide-' + q.id;
+      fs.appendChild(el('p', { class: 'aide', id: descId }, q.aide));
+    }
+    if (q.type === 'texte') {
+      var ta = el('textarea', { id: 'notes-texte', name: 'notes', rows: '4' });
+      if (descId) { ta.setAttribute('aria-describedby', descId); }
+      var labelTa = el('label', { for: 'notes-texte', class: 'sr-only' }, 'Notes personnelles');
+      fs.appendChild(labelTa);
+      fs.appendChild(ta);
+      return fs;
+    }
+    var wrap = el('div', { class: 'choix' });
+    var name = 'q-' + q.id;
+    var opts = q.type === 'radio' ? STD.map(function (v) { return { value: v, label: STD_LABEL[v] }; })
+      : q.options.map(function (o, i) {
+          if (typeof o === 'string') { return { value: 'opt' + i, label: o }; }
+          return { value: 'opt' + i, label: o.label, niveau: o.niveau };
+        });
+    opts.forEach(function (o) {
+      addChoice(wrap, q.type === 'checkbox' ? 'checkbox' : 'radio', name, o.value, o.label, descId);
+      if (o.niveau) { wrap.lastChild.querySelector('input').setAttribute('data-niveau', o.niveau); }
+    });
+    fs.appendChild(wrap);
+    if (q.alerte) { fs.setAttribute('data-alerte', q.alerte); }
+    return fs;
+  }
+
+  function render() {
+    SECTIONS.forEach(function (s) {
+      var h = el('h3', { class: 'titre-section' }, s.titre);
+      container.appendChild(h);
+      s.questions.forEach(function (q) { container.appendChild(buildQuestion(q)); });
+    });
+  }
+
+  function checkedInputs(name) {
+    return Array.prototype.slice.call(form.querySelectorAll('input[name="' + name + '"]:checked'));
+  }
+
+  function updateAlerts() {
+    var urgent = false, consult = false;
+    checkedInputs('q-alertes').forEach(function (i) {
+      var n = i.getAttribute('data-niveau');
+      if (n === 'urgent') { urgent = true; }
+      if (n === 'consult') { consult = true; }
+    });
+    var gs = checkedInputs('q-gonflement-soudain');
+    if (gs.length && gs[0].value === 'oui') { consult = true; }
+    alerteUrgence.hidden = !urgent;
+    alerteConsult.hidden = !(consult && !urgent);
+  }
+
+  function answerText(q) {
+    var name = 'q-' + q.id;
+    if (q.type === 'texte') {
+      var t = document.getElementById('notes-texte');
+      return t && t.value.trim() ? t.value.trim() : null;
+    }
+    var checked = checkedInputs(name);
+    if (!checked.length) { return null; }
+    var labels = checked.map(function (i) { return i.parentNode.textContent.trim(); });
+    return labels.join(' ; ');
+  }
+
+  function generateFiche() {
+    fiche.innerHTML = '';
+    var h = el('h3', null, 'Ma fiche d’observations');
+    fiche.appendChild(h);
+    fiche.appendChild(el('p', null, 'Établie le ' + new Date().toLocaleDateString('fr-FR') + '. Ce document est un aide-mémoire pour votre consultation. Il ne contient ni diagnostic, ni score, ni stade, ni pourcentage.'));
+    SECTIONS.forEach(function (s) {
+      fiche.appendChild(el('h4', null, s.titre));
+      var ul = el('ul');
+      s.questions.forEach(function (q) {
+        var a = answerText(q);
+        var li = el('li');
+        if (q.type === 'texte') {
+          li.textContent = a ? 'Notes : ' + a : 'Notes : sans réponse';
+        } else {
+          li.textContent = q.legend + ' — ' + (a || 'sans réponse');
+        }
+        ul.appendChild(li);
+      });
+      fiche.appendChild(ul);
+    });
+    var orient = el('div', { class: 'encadre a-discuter' });
+    orient.appendChild(el('h4', null, 'Orientation prudente'));
+    var ol = el('ul');
+    [
+      'Certaines réponses peuvent justifier d’en parler à un médecin.',
+      'Ce questionnaire ne permet ni de confirmer ni d’écarter un lipœdème.',
+      'Les symptômes peuvent être dus à plusieurs causes, et plusieurs situations peuvent coexister.',
+      'Vous pouvez apporter vos réponses à votre consultation.'
+    ].forEach(function (t) { ol.appendChild(el('li', null, t)); });
+    orient.appendChild(ol);
+    fiche.appendChild(orient);
+    actions.hidden = false;
+    fiche.focus();
+  }
+
+  function clearAll() {
+    form.reset();
+    fiche.innerHTML = '';
+    actions.hidden = true;
+    updateAlerts();
+    var titre = document.getElementById('t-questionnaire');
+    if (titre) { titre.setAttribute('tabindex', '-1'); titre.focus(); }
+  }
+
+  render();
+  form.addEventListener('change', updateAlerts);
+  document.getElementById('btn-fiche').addEventListener('click', function () {
+    updateAlerts();
+    generateFiche();
+  });
+  document.getElementById('btn-effacer').addEventListener('click', clearAll);
+  document.getElementById('btn-imprimer').addEventListener('click', function () { window.print(); });
+  updateAlerts();
+
+  /* ---------- Recherche dans le site ---------- */
+  function norm(s) {
+    return (s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  }
+  var input = document.getElementById('recherche-site');
+  var results = document.getElementById('resultats-recherche');
+  var index = Array.prototype.slice.call(document.querySelectorAll('section.rubrique')).map(function (sec) {
+    var h = sec.querySelector('h2');
+    return { id: sec.id, titre: h ? h.textContent.trim() : sec.id, texte: sec.textContent.replace(/\s+/g, ' ') };
+  });
+  input.addEventListener('input', function () {
+    var q = norm(input.value.trim());
+    results.innerHTML = '';
+    if (q.length < 2) { return; }
+    var found = 0;
+    index.forEach(function (item) {
+      var pos = norm(item.texte).indexOf(q);
+      if (pos === -1 && norm(item.titre).indexOf(q) === -1) { return; }
+      found += 1;
+      var li = el('li');
+      var a = el('a', { href: '#' + item.id }, item.titre);
+      li.appendChild(a);
+      if (pos !== -1) {
+        var debut = Math.max(0, pos - 50);
+        var extrait = item.texte.substr(debut, 140);
+        li.appendChild(el('div', { class: 'note-pieds' }, (debut > 0 ? '… ' : '') + extrait + ' …'));
+      }
+      results.appendChild(li);
+    });
+    if (!found) { results.appendChild(el('li', null, 'Aucun résultat dans le site pour « ' + input.value.trim() + ' ».')); }
+  });
+  input.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') { input.value = ''; results.innerHTML = ''; }
+  });
+  results.addEventListener('click', function (e) {
+    if (e.target && e.target.tagName === 'A') { results.innerHTML = ''; input.value = ''; }
+  });
+
+  /* ---------- Bouton retour en haut ---------- */
+  var retour = document.getElementById('retour-haut');
+  function majRetour() {
+    if (window.scrollY > 500) { retour.classList.add('visible'); } else { retour.classList.remove('visible'); }
+  }
+  window.addEventListener('scroll', majRetour, { passive: true });
+  majRetour();
+  retour.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    var sk = document.querySelector('.skip');
+    if (sk) { sk.focus(); }
+  });
+
+  /* ---------- Repère de section active dans le menu ---------- */
+  var liens = Array.prototype.slice.call(document.querySelectorAll('nav.menu a'));
+  if ('IntersectionObserver' in window) {
+    var obs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) {
+          liens.forEach(function (l) {
+            l.setAttribute('aria-current', l.getAttribute('href') === '#' + en.target.id ? 'true' : 'false');
+          });
+        }
+      });
+    }, { rootMargin: '-40% 0px -55% 0px' });
+    document.querySelectorAll('section.rubrique').forEach(function (s) { obs.observe(s); });
+  }
+
+  /* ---------- Signalement (copie locale, rien n’est envoyé) ---------- */
+  var btnSig = document.getElementById('btn-signaler');
+  var statut = document.getElementById('signalement-statut');
+  btnSig.addEventListener('click', function () {
+    var txt = document.getElementById('signalement-texte').value.trim();
+    if (!txt) { statut.textContent = 'Décrivez d’abord l’information à vérifier.'; return; }
+    var message = 'Information à vérifier sur le site lipœdème\n' +
+      'Adresse de la page : ' + window.location.href + '\n' +
+      'Date du signalement : ' + new Date().toLocaleDateString('fr-FR') + '\n\n' + txt;
+    var fallback = function () {
+      var ta = document.createElement('textarea');
+      ta.value = message; document.body.appendChild(ta); ta.select();
+      var ok = false;
+      try { ok = document.execCommand('copy'); } catch (e) { ok = false; }
+      document.body.removeChild(ta);
+      statut.textContent = ok ? 'Signalement copié. Collez-le dans un message à la personne qui gère ce site.' : 'Copie impossible : sélectionnez et copiez le texte manuellement.';
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(message).then(function () {
+        statut.textContent = 'Signalement copié. Collez-le dans un message à la personne qui gère ce site.';
+      }, fallback);
+    } else { fallback(); }
+  });
+})();
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a4860ec9d8ca6f82',t:'MTc5MTYzOTg0NQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
