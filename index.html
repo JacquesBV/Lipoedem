@@ -560,7 +560,6 @@ article.recette .nutri span{background:#fff;border-radius:999px;padding:.15rem .
     .chat-panel #chat-log { min-height: 0; }
     .chat-panel .chat-suggest { max-height: 4.4rem; overflow: auto; padding: .4rem .6rem; }
     .chat-panel.reduit { height: auto; }
-    .chat-panel.reduit > :not(.chat-head) { display: none !important; }
     .chat-head #chat-reduire { white-space: nowrap; }
     @media (max-width: 760px) {
       .chat-panel { right: .6rem; left: .6rem; width: auto; bottom: 4.8rem; height: min(38vh, 320px); }
@@ -578,6 +577,44 @@ article.recette .nutri span{background:#fff;border-radius:999px;padding:.15rem .
       .chat-panel .chat-suggest { max-height: 3rem; }
       .chat-panel #chat-form { padding: .4rem .6rem .5rem; }
     }
+
+    /* Recherche réduite sur mobile : loupe qui ouvre le champ */
+    .rech-ouvrir { display: none; }
+    @media (max-width: 760px) {
+      .rech-ouvrir { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 12px; border: 0; background: var(--teal-dark, #0f5b5a); color: #fff; cursor: pointer; flex: 0 0 auto; }
+      .recherche-bar:not(.ouverte) { flex: 0 0 auto; order: 2; }
+      .recherche-bar:not(.ouverte) .wrap-rech { display: none; }
+    }
+    /* Surlignage des mots recherchés dans la page */
+    mark.surl { background: #ffe38a; color: inherit; border-radius: 3px; padding: 0 .1em; }
+    .surl-barre { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; margin: .6rem 0; padding: .45rem .7rem; background: #fff6d6; border: 1px solid #f0dca8; border-radius: 10px; font-size: .9rem; color: #4a3300; }
+    .surl-barre button { font: inherit; font-size: .85rem; background: #fff; border: 1px solid #d9c27a; border-radius: 999px; padding: .2rem .65rem; cursor: pointer; color: #4a3300; }
+    /* Chatbot plus compact */
+    .chat-panel { width: min(330px, calc(100vw - 2.2rem)); height: min(380px, calc(100vh - 8rem)); }
+    .chat-note-d { flex: 0 0 auto; border-bottom: 1px solid #f0dca8; }
+    .chat-note-sum { padding: .4rem .9rem; font-size: .8rem; font-weight: 600; background: var(--gold-soft, #fff4d6); color: #4a3300; cursor: pointer; list-style: none; }
+    .chat-note-sum::-webkit-details-marker { display: none; }
+    .chat-note-sum::after { content: ' ▾'; }
+    .chat-note-d[open] > .chat-note-sum::after { content: ' ▴'; }
+    .chat-note-d > .chat-note { border-bottom: 0; }
+    .chat-panel.reduit > :not(.chat-head):not(.chat-note-d) { display: none !important; }
+    .chat-panel.reduit > .chat-note-d > .chat-note { display: none; }
+    @media (max-width: 760px) {
+      .chat-panel { width: auto; right: .6rem; left: .6rem; bottom: 4.8rem; height: min(34vh, 290px); }
+      .chat-panel .chat-suggest { max-height: 2.6rem; }
+      .chat-panel.reduit { height: auto; }
+    }
+
+    /* Avertissement du chatbot : annule le style général des details */
+    .chat-note-d { background: none; border: 0; border-radius: 0; padding: 0; margin: 0; box-shadow: none; }
+    .chat-note-sum::before { content: none; }
+    .chat-note-d[open] > .chat-note-sum { margin-bottom: 0; }
+    .chat-note-sum { padding: .4rem .9rem; }
+    /* En-tête du chatbot : titre sur une ligne */
+    .chat-head .titre { min-width: 0; }
+    .chat-head strong, .chat-head .titre small { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .chat-head button { white-space: nowrap; }
+    .chat-panel.reduit .chat-head .titre small { display: none; }
 </style>
 </head>
 <body>
@@ -591,6 +628,7 @@ article.recette .nutri span{background:#fff;border-radius:999px;padding:.15rem .
         <span><strong>Lipœdème</strong><small>le guide sourcé</small></span>
       </a>
       <div class="recherche-bar" role="search">
+        <button type="button" class="rech-ouvrir" id="rech-ouvrir" aria-expanded="false" aria-controls="recherche-site" aria-label="Ouvrir la recherche"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M16.5 16.5 21 21" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></button>
         <div class="wrap-rech">
           <label for="recherche-site">Rechercher dans le guide</label>
           <input type="search" id="recherche-site" placeholder="Rechercher : compression, drainage, CPAM…" autocomplete="off" aria-describedby="aide-recherche">
@@ -2499,7 +2537,7 @@ article.recette .nutri span{background:#fff;border-radius:999px;padding:.15rem .
     <button type="button" id="chat-reduire" aria-expanded="true" aria-controls="chat-panel" aria-label="Réduire l’assistant">Réduire</button>
     <button type="button" id="chat-fermer" aria-label="Fermer l’assistant">Fermer</button>
   </div>
-  <p class="chat-note">Assistant automatique : il répond à partir de règles simples et renvoie vers le guide. Il ne pose pas de diagnostic, ne donne pas de conseil personnalisé et n’enregistre pas vos messages. En cas d’urgence : 15 ou 112.</p>
+  <details class="chat-note-d" open><summary class="chat-note-sum">Assistant automatique · sans diagnostic · urgence : 15 ou 112</summary><p class="chat-note">Assistant automatique : il répond à partir de règles simples et renvoie vers le guide. Il ne pose pas de diagnostic, ne donne pas de conseil personnalisé et n’enregistre pas vos messages. En cas d’urgence : 15 ou 112.</p></details>
   <div id="chat-log" role="log" aria-live="polite" aria-label="Conversation"></div>
   <div class="chat-suggest" id="chat-suggest"></div>
   <form id="chat-form" autocomplete="off">
@@ -2885,6 +2923,90 @@ article.recette .nutri span{background:#fff;border-radius:999px;padding:.15rem .
 
   var rechInput = document.getElementById('recherche-site');
   var rechRes = document.getElementById('resultats-recherche');
+  var rechBarre = document.querySelector('.recherche-bar');
+  var rechBouton = document.getElementById('rech-ouvrir');
+  rechBouton.addEventListener('click', function () {
+    var ouvert = rechBarre.classList.toggle('ouverte');
+    rechBouton.setAttribute('aria-expanded', String(ouvert));
+    if (ouvert) { rechInput.focus(); }
+  });
+
+  /* Surlignage des mots recherchés dans la partie de la page ouverte depuis un résultat */
+  var surlignage = { marques: [], barre: null };
+  function effacerSurlignage() {
+    surlignage.marques.forEach(function (m) {
+      var parent = m.parentNode;
+      if (!parent) { return; }
+      parent.replaceChild(document.createTextNode(m.textContent), m);
+      parent.normalize();
+    });
+    surlignage.marques = [];
+    if (surlignage.barre && surlignage.barre.parentNode) { surlignage.barre.parentNode.removeChild(surlignage.barre); }
+    surlignage.barre = null;
+  }
+  function surlignerPage(ancre, toks, requete) {
+    effacerSurlignage();
+    if (!toks || !toks.length) { return; }
+    var cible = document.getElementById(ancre);
+    if (!cible) { return; }
+    var sec = cible.tagName === 'SECTION' ? cible : cible.closest('section.rubrique');
+    if (!sec) { return; }
+    var rg = document.createRange();
+    if (cible === sec) {
+      rg.selectNodeContents(sec);
+    } else {
+      var titres = Array.prototype.slice.call(sec.querySelectorAll('h2, h3, h4, summary'));
+      var idx = titres.indexOf(cible);
+      rg.setStartBefore(cible);
+      if (idx >= 0 && titres[idx + 1]) { rg.setEndBefore(titres[idx + 1]); } else { rg.setEnd(sec, sec.childNodes.length); }
+    }
+    var motifs = toks.slice().sort(function (a, b) { return b.length - a.length; }).map(LipoRech.reTok);
+    var re = new RegExp('(' + motifs.join('|') + ')', 'giu');
+    var noeuds = [];
+    var marcheur = document.createTreeWalker(sec, NodeFilter.SHOW_TEXT, {
+      acceptNode: function (t) {
+        if (!rg.intersectsNode(t)) { return NodeFilter.FILTER_REJECT; }
+        var p = t.parentNode;
+        if (!p || (p.closest && p.closest('mark, script, style, textarea, input, button, .surl-barre'))) { return NodeFilter.FILTER_REJECT; }
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    while (marcheur.nextNode()) { noeuds.push(marcheur.currentNode); }
+    noeuds.forEach(function (t) {
+      var txt = t.nodeValue, frag = document.createDocumentFragment(), pos = 0, m, touche = false;
+      re.lastIndex = 0;
+      while ((m = re.exec(txt)) !== null) {
+        if (m[0].length === 0) { re.lastIndex++; continue; }
+        if (m.index > 0 && /\p{L}/u.test(txt.charAt(m.index - 1))) { continue; }
+        if (m.index > pos) { frag.appendChild(document.createTextNode(txt.slice(pos, m.index))); }
+        var marque = el('mark', { class: 'surl' }, m[0]);
+        frag.appendChild(marque);
+        surlignage.marques.push(marque);
+        pos = m.index + m[0].length;
+        touche = true;
+      }
+      if (!touche) { return; }
+      if (pos < txt.length) { frag.appendChild(document.createTextNode(txt.slice(pos))); }
+      t.parentNode.replaceChild(frag, t);
+    });
+    var nb = surlignage.marques.length;
+    var barre = el('p', { class: 'surl-barre', role: 'status' });
+    barre.appendChild(document.createTextNode(nb
+      ? nb + (nb > 1 ? ' occurrences' : ' occurrence') + ' de « ' + requete + ' » surlignée' + (nb > 1 ? 's' : '') + ' dans cette partie. '
+      : 'Aucune occurrence exacte de « ' + requete + ' » dans cette partie. '));
+    var effacer = el('button', { type: 'button' }, 'Effacer le surlignage');
+    effacer.addEventListener('click', effacerSurlignage);
+    barre.appendChild(effacer);
+    if (cible === sec) {
+      var h2 = sec.querySelector('h2');
+      if (h2) { h2.parentNode.insertBefore(barre, h2.nextSibling); }
+    } else {
+      cible.parentNode.insertBefore(barre, cible);
+    }
+    surlignage.barre = barre;
+    var premier = surlignage.marques[0];
+    if (premier) { setTimeout(function () { premier.scrollIntoView({ block: 'center' }); }, 60); }
+  }
   function afficherRecherche(q) {
     rechRes.innerHTML = '';
     var r = LipoRech.rechercher(q);
@@ -2907,6 +3029,7 @@ article.recette .nutri span{background:#fff;border-radius:999px;padding:.15rem .
     affiches.forEach(function (x) {
       var li = el('li');
       var a = el('a', { href: '#' + x.id, class: 'rech-titre' }, x.titre);
+      a.addEventListener('click', function () { surlignerPage(x.id, x.toks, q); });
       li.appendChild(a);
       li.appendChild(el('span', { class: 'rech-rub' }, x.rub));
       if (!x.complet) { li.appendChild(el('span', { class: 'rech-partiel' }, ' (correspondance partielle)')); }
@@ -2931,13 +3054,16 @@ article.recette .nutri span{background:#fff;border-radius:999px;padding:.15rem .
     afficherRecherche(q);
   });
   rechInput.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape') { rechInput.value = ''; rechRes.innerHTML = ''; }
+    if (e.key === 'Escape') { rechInput.value = ''; rechRes.innerHTML = ''; effacerSurlignage(); }
   });
   document.addEventListener('click', function (e) {
     if (e.target && e.target.closest && !e.target.closest('.wrap-rech')) { rechRes.innerHTML = ''; }
   });
   rechRes.addEventListener('click', function (e) {
-    if (e.target && e.target.tagName === 'A') { rechRes.innerHTML = ''; rechInput.value = ''; }
+    if (e.target && e.target.tagName === 'A') {
+      rechRes.innerHTML = ''; rechInput.value = '';
+      rechBarre.classList.remove('ouverte'); rechBouton.setAttribute('aria-expanded', 'false');
+    }
   });
 
   /* ---------- Bouton retour en haut ---------- */
@@ -3231,6 +3357,8 @@ article.recette .nutri span{background:#fff;border-radius:999px;padding:.15rem .
     if (panel.hidden) { ouvrir(); } else { fermerPanel(true); }
   });
   fermer.addEventListener('click', function () { fermerPanel(true); });
+  var noteD = panel.querySelector('.chat-note-d');
+  if (noteD && window.matchMedia && window.matchMedia('(max-width: 760px)').matches) { noteD.open = false; }
   var reduire = document.getElementById('chat-reduire');
   reduire.addEventListener('click', function () {
     var r = panel.classList.toggle('reduit');
@@ -3367,5 +3495,5 @@ article.recette .nutri span{background:#fff;border-radius:999px;padding:.15rem .
   });
 })();
 </script>
-<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a486f4c2987f2a3d',t:'MTc5MTY0OTI2NQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a48701c39d1f9ed8',t:'MTc5MTY0OTc5Nw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
